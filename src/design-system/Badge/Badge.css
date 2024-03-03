@@ -1,0 +1,136 @@
+.badge {
+    height: 2.4rem;
+
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space-2) + var(--space-4));
+    padding: 0 var (--space-12);
+}
+
+.badge-rounded {
+    border-radius: var(--border-radius-8);
+}
+
+.badge-circle {
+    border-radius: var(--border-radius-40);
+}
+
+.badge-outlined {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.badge__text {
+    font-family: inherit;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-18);
+}
+
+.badge__status {
+    height: 6px;
+    width: 6px;
+}
+
+.badge-rounded .badge__status {
+    border-radius: var(--border-radius-2);
+}
+
+.badge-circle .badge__status {
+    border-radius: var(--border-radius-circle);
+}
+
+.badge svg,
+.badge img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+/* Gray Badge */
+.badge-gray.badge-contained {
+    background-color: var(--gray);
+}
+
+.badge-gray.badge-outlined {
+    background-color: var(--gray);
+    border-color: var(--gray-light);
+}
+
+.badge-gray .badge__text {
+    color: var(--gray-light);
+}
+
+.badge-gray svg {
+    fill: var(--gray-light);
+}
+.badge-gray .badge__status {
+    background-color: var(--gray-light);
+}
+
+/* Blue Badge */
+.badge-blue.badge-contained {
+    background-color: var(--primary);
+}
+
+.badge-blue.badge-outlined {
+    background-color: var(--white);
+    border-color: var(--primary);
+}
+
+.badge-blue .badge__text {
+    color: var(--primary);
+}
+
+.badge-blue svg {
+    fill: var(--primary);
+}
+
+.badge-blue .badge__status {
+    background-color: var(--primary);
+}
+
+/* Green Badge */
+.badge-purple.badge-contained {
+    background-color: var(--purple-50);
+}
+
+.badge-purple.badge-outlined {
+    background-color: var(--purple-25);
+    border-color: var(--purple-200);
+}
+
+.badge-purple .badge__text {
+    color: var(--purple-600);
+}
+
+.badge-purple svg {
+    fill: var(--purple-600);
+}
+
+.badge-purple .badge__status {
+    background-color: var(--success);
+}
+
+/* Green Badge */
+.badge-green.badge-contained {
+    background-color: var(--success);
+}
+
+.badge-green.badge-outlined {
+    background-color: var(--white);
+    border-color: var(--success);
+}
+
+.badge-green .badge__text {
+    color: var(--success);
+}
+
+.badge-green svg {
+    fill: var(--success);
+}
+
+.badge-green .badge__status {
+    background-color: var(--success);
+}

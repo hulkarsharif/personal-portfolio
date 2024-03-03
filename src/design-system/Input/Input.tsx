@@ -2,7 +2,7 @@ import React from "react";
 import { InputProps } from "./types";
 
 import { trimWhiteSpaces } from "../Utils";
-// import { Label } from "../Label";
+import { Label } from "../Label";
 import "./Input.css";
 
 const sizeClassNames = {
