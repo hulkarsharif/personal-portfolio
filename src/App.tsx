@@ -1,9 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
+import { Button } from "./design-system";
 
 function App() {
-    return;
+    return (
+        <Button shape="rounded" variant="contained" size="sm" color="primary">
+            Click me
+        </Button>
+    );
 }
 
 export default App;
