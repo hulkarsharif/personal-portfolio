@@ -1,0 +1,100 @@
+.input {
+    outline: none !important;
+    height: 3.6rem;
+    border: 0.15rem solid var(--black);
+    padding: 0 var(--space-16);
+    font-family: inherit;
+    font-size: var(--font-size-16);
+    color: var(--gray-light);
+
+    width: 100%;
+
+    transition: all 0.3s;
+}
+
+input::placeholder,
+:-ms-input-placeholder {
+    color: var(--gray-light);
+}
+
+.input-small {
+    height: 4rem;
+}
+
+.input-medium {
+    height: 4.8rem;
+}
+
+.input-large {
+    height: 5.6rem;
+}
+
+.input-rounded {
+    border-radius: var(--border-radius-8);
+}
+
+.input-circle {
+    border-radius: var(--border-radius-20);
+}
+
+.input-lg.input-circle {
+    border-radius: var(--border-radius-24);
+}
+
+.input:hover:not(.input-error, :disabled) {
+    border: 0.15rem solid var(--primary);
+}
+
+.input:focus:not(.input-error) {
+    border: 0.15rem solid var(--primary);
+}
+
+.input-error {
+    border: 0.15rem solid var(--danger);
+}
+
+.input:disabled {
+    border-color: var(--gray);
+    background-color: var(--white);
+}
+
+.input:disabled::placeholder {
+    color: var(--gray-light);
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-wrapper label {
+    display: block;
+}
+
+.input-textarea {
+    resize: none;
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+}
+.input.input-textarea.input-small {
+    height: 7.2rem;
+}
+
+.input.input-textarea.input-medium {
+    height: 12rem;
+}
+
+.input.input-textarea.input-large {
+    height: 13.4rem;
+}
+
+.hint-message {
+    font-size: var(--font-size-12);
+    line-height: var(--line-height-18);
+    color: var(--jaguar-500);
+    font-weight: var(--font-weight-400);
+}
+
+.hint-message-error {
+    color: var(--red-orange-500);
+}
