@@ -1,0 +1,187 @@
+:root {
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+
+    --font-size-14: 1.4rem;
+    --font-size-16: 1.6rem;
+    --font-size-18: 1.8rem;
+    --font-size-20: 2rem;
+    --font-size-22: 2.2rem;
+    --font-size-24: 2.4rem;
+    --font-size-28: 2.8rem;
+
+    --font-size-32: 3.2rem;
+    --font-size-36: 3.6rem;
+    --font-size-40: 4rem;
+    --font-size-48: 4.8rem;
+
+    --font-size-52: 5.2rem;
+    --font-size-60: 6rem;
+    --font-size-64: 6.4rem;
+    --font-size-72: 7.2rem;
+    --font-size-80: 8rem;
+
+    --line-height-20: 2rem;
+    --line-height-22: 2.2rem;
+    --line-height-24: 2.4rem;
+    --line-height-28: 2.8rem;
+
+    --line-height-32: 3.2rem;
+    --line-height-36: 3.6rem;
+
+    --line-height-40: 4rem;
+    --line-height-48: 4.8rem;
+    --line-height-56: 5.6rem;
+    --line-height-64: 6rem;
+    --line-height-60: 7.2rem;
+
+    --line-height-68: 6.8rem;
+
+    --line-height-88: 8rem;
+    --line-height-96: 9.6rem;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+    color: var(--black-900);
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+    color: var(--white);
+}
+
+.heading-1 {
+    font-size: var(--font-size-56);
+    line-height: var(--line-height-68);
+    /* font-size: var(--font-size-48);
+    line-height: var(--line-height-60); */
+}
+
+.heading-2 {
+    font-size: var(--font-size-40);
+    line-height: var(--line-height-52);
+    /* font-size: var(--font-size-36);
+    line-height: var(--line-height-48); */
+}
+
+.heading-3 {
+    font-size: var(--font-size-32);
+    line-height: var(--line-height-40);
+    /* font-size: var(--font-size-28);
+    line-height: var(--line-height-36); */
+}
+
+.heading-4 {
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-32);
+    /* font-size: var(--font-size-22);
+    line-height: var(--line-height-32); */
+}
+
+.heading-5 {
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-24);
+    /* font-size: var(--font-size-32);
+    line-height: var(--line-height-40); */ /*semiBold*/
+}
+
+.heading-6 {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-20);
+    /* font-size: var(--font-size-32);
+    line-height: var(--line-height-40); */ /*semiBold*/
+}
+
+.paragraph-black-20,
+.paragraph-black-18,
+.paragraph-black-16,
+.paragraph-black-14 {
+    color: var(--black); /* Replace 'blue' with your desired color */
+}
+
+.paragraph-black-20 {
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-36);
+}
+
+.paragraph-black-18 {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-32);
+}
+
+.paragraph-black-16 {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-28);
+}
+
+.paragraph-black-14 {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-24);
+}
+
+/*White*/
+.paragraph-white-20,
+.paragraph-white-18,
+.paragraph-white-16,
+.paragraph-white-14 {
+    color: var(--white); /* Replace 'blue' with your desired color */
+}
+
+.paragraph-white-20 {
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-36);
+}
+
+.paragraph-white-18 {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-32);
+}
+
+.paragraph-white-16 {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-28);
+}
+
+.paragraph-white-14 {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-24);
+}
+
+/*Gray*/
+.paragraph-gray-20,
+.paragraph-gray-18,
+.paragraph-gray-16,
+.paragraph-gray-14 {
+    color: var(--gray); /* Replace 'blue' with your desired color */
+}
+
+.paragraph-gray-20 {
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-36);
+}
+
+.paragraph-gray-18 {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-32);
+}
+
+.paragraph-gray-16 {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-28);
+}
+
+.paragraph-gray-14 {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-24);
+}

@@ -1,0 +1,26 @@
+:root {
+    --primary: #1565d8;
+
+    --primary-light: #1565d8;
+
+    --secondary: #3f598a;
+
+    --success: #36b37e;
+
+    --info: #00b8d9;
+
+    --warning: #faad13;
+
+    --danger: #f16141;
+
+    --black: #183b56;
+
+    --gray: #5a7184;
+
+    --gray-light: #b3bac5;
+
+    --white: #ffffff;
+
+    --transparent: transparent;
+    --overlay-40: rgba(0, 0, 0, 0.4);
+}
