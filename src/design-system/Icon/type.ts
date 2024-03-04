@@ -5,7 +5,8 @@ export type IconName =
     | "small-gr-icon"
     | "small-sc-icon"
     | "small-pr-icon"
-    | "primary-icon";
+    | "primary-icon"
+    | "three-dots";
 
 export type IconProps = {
     iconName?: IconName;
