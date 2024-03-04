@@ -2,6 +2,7 @@ import React from "react";
 import "./Badge.css";
 import { trimWhiteSpaces } from "../Utils";
 import { BadgeProps } from "./types";
+import { Icon } from "../Icon";
 
 const shapeClassNames = {
     rounded: "badge-rounded",

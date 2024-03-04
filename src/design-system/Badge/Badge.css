@@ -92,28 +92,6 @@
 }
 
 /* Green Badge */
-.badge-purple.badge-contained {
-    background-color: var(--purple-50);
-}
-
-.badge-purple.badge-outlined {
-    background-color: var(--purple-25);
-    border-color: var(--purple-200);
-}
-
-.badge-purple .badge__text {
-    color: var(--purple-600);
-}
-
-.badge-purple svg {
-    fill: var(--purple-600);
-}
-
-.badge-purple .badge__status {
-    background-color: var(--success);
-}
-
-/* Green Badge */
 .badge-green.badge-contained {
     background-color: var(--success);
 }

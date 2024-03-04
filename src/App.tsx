@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "./design-system";
+import { Badge, Button, Icon } from "./design-system";
 import { Input } from "./design-system/Input";
 
 function App() {
@@ -16,14 +16,14 @@ function App() {
                 Click me
             </Button>
             <Button
-                shape="circle"
+                shape="rounded"
                 variant="contained"
-                size="lg"
-                color="secondary"
+                size="md"
+                color="success"
             >
                 Button
             </Button>
-            <Input shape="rounded" size="sm" value="text" onChange={() => {}} />
+            <Icon iconName="blue-icon" />
         </>
     );
 }
