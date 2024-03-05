@@ -1,6 +1,11 @@
 export type ButtonSize = "sm" | "md" | "lg";
 export type ButtonShape = "rounded" | "circle";
-export type ButtonColor = "primary" | "secondary" | "success" | "danger";
+export type ButtonColor =
+    | "primary"
+    | "secondary"
+    | "success"
+    | "danger"
+    | "gray";
 export type ButtonVariant = "contained" | "outlined" | "text";
 
 export type ButtonProps = {

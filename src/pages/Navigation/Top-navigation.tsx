@@ -18,7 +18,7 @@ const Base = styled(PageContainer)`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 184, 217, 1);
+    background-color: #bce4ecfc;
 `;
 
 const NavigationLinks = styled.header`
