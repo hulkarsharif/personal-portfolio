@@ -47,15 +47,10 @@ const Hero = () => {
         <HeroSection>
             <HeroLeftWrapper>
                 <HeroSectionRight>
-                    <HeroTitle weight="bold" variant="h5" align="inherit">
-                        Hi I am Khulkar.
+                    <HeroTitle weight="bold" variant="h6" align="inherit">
+                        HI, I AM KHULKAR
                     </HeroTitle>
-
-                    <HeroDescription
-                        weight="bold"
-                        variant="displayLG"
-                        align="center"
-                    >
+                    <HeroDescription weight="bold" variant="h6" align="center">
                         I am a full-stack developer with 1 year of experiance
                     </HeroDescription>
                     <a href="mailto:sharipovah01@gmail.com">
