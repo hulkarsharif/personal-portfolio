@@ -13,8 +13,7 @@ export const colorClassNames = {
     primary: "btn-primary",
     secondary: "btn-secondary",
     danger: "btn-danger",
-    success: "btn-success",
-    gray: "btn-gray"
+    success: "btn-success"
 };
 
 export const variantClassNames = {
