@@ -5,8 +5,9 @@ import { PageContainer } from "../components";
 
 const links = [
     { text: "HOME", link: "https://google.com" },
-    { text: "PROJECTS", link: "https://info.com" },
-    { text: "ABOUT", link: "https://facebook.com" }
+    { text: "ABOUT", link: "https://facebook.com" },
+    { text: "PROJECTS", link: "https://info.com" }
+
     // { text: "CONTACTS", link: "mailto:sharipovah01@gmail.com" }
 ];
 

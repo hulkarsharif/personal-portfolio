@@ -6,7 +6,11 @@ export type IconName =
     | "small-sc-icon"
     | "small-pr-icon"
     | "primary-icon"
-    | "three-dots";
+    | "three-dots"
+    | "instagram"
+    | "github-icon"
+    | "linkedin-svgrepo-com"
+    | "line-decoration";
 
 export type IconProps = {
     iconName?: IconName;

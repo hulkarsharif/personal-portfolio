@@ -3,12 +3,6 @@ import styled from "styled-components";
 import { PageContainer } from "../../components";
 import women from "../../../design-system/assets/image/4444.png";
 
-import instagram from "../../../design-system/assets/image/INSTAGRAM.png";
-import dribble from "../../../design-system/assets/image/DRIBBBLE.png";
-import behance from "../../../design-system/assets/image/BEHANCE.png";
-
-import blueLine from "../../../design-system/assets/image/LINE DECORATION.png";
-
 const HeroSection = styled(PageContainer)`
     display: flex;
     padding-left: 7.9rem;
@@ -22,8 +16,6 @@ const HeroLeftWrapper = styled.div`
 `;
 const HeroSectionRight = styled.div`
     max-width: 64.5rem;
-
-    /* flex: 1; */
     margin-right: var(--space-12);
 `;
 
@@ -31,9 +23,7 @@ const HeroSectionLeft = styled.div`
     width: 60rem;
     height: 60rem;
     padding-top: var(--space-70);
-    padding-left: var(--space-80);
-
-    /* flex: 1; */
+    padding-left: 12.8rem;
 `;
 const HeroTitle = styled(Typography)`
     width: 29rem;
@@ -58,8 +48,29 @@ const HeroParagraph = styled(Typography)`
 
     line-height: 2.5rem;
 `;
-const SocialMedia = styled(Icon)`
-    color: var(--black-900); // Adjust color as needed
+
+const SocialMedia = styled.div`
+    color: var(--black-900);
+    display: flex;
+    gap: var(--space-36);
+    align-items: center;
+    svg {
+        cursor: pointer;
+        height: 2.3rem;
+        width: 2rem;
+        margin-top: 0.7rem;
+        transition: all 1s;
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+`;
+
+const GreenLine = styled.div`
+    width: 10.7rem;
+    height: 0.15rem;
+    background-color: var(--green-900);
+    border-radius: 0.4rem;
 `;
 
 //
@@ -76,7 +87,7 @@ const Hero = () => {
                         variant="displaySM"
                         align="left"
                     >
-                        I am a full-stack developer with 1 year of experiance.
+                        Experienced software engeneer located in USA
                     </HeroDescription>
                     <HeroParagraph
                         weight="semibold"
@@ -91,17 +102,20 @@ const Hero = () => {
                         feedback, and deliver high-quality, scalable software
                         solutions.
                     </HeroParagraph>
-                    <a href="mailto:sharipovah01@gmail.com">
-                        <Button size="sm" color="success" shape="circle">
-                            Contact me
-                        </Button>
-                    </a>
-                    <InstagramIcon iconName={instagram}>
-                        <img src={instagram} alt="Instagram" />
-                        <img src={dribble} alt="dribble" />
-                        <img src={behance} alt="Behance" />
-                        <img src={blueLine} alt="Line" />
-                    </InstagramIcon>
+                    <SocialMedia>
+                        <a href="mailto:sharipovah01@gmail.com">
+                            <Button size="sm" color="success" shape="circle">
+                                Contact me
+                            </Button>
+                        </a>
+
+                        <Icon iconName="instagram" />
+                        <Icon iconName="github-icon" />
+                        <Icon iconName="linkedin-svgrepo-com" />
+                        <GreenLine></GreenLine>
+                        {/* 
+                        <Icon iconName="line-decoration" /> */}
+                    </SocialMedia>
                 </HeroSectionRight>
             </HeroLeftWrapper>
             <HeroSectionLeft>
