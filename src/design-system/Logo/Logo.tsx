@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../design-system/assets/image/logo-globo.png";
+import logo from "../../design-system/assets/image/green-logo-png.png";
 
 import { trimWhiteSpaces } from "../Utils";
 
@@ -32,7 +32,7 @@ const Logo: React.FC<LogoProps> = ({ layout, size, customText, className }) => {
     return (
         <div className={finalClassNames}>
             <img src={logo} alt="Logo" />
-            <div className="logo__text">{customText || "Kh/Dev"}</div>
+            <div className="logo__text">{customText || " "}</div>
         </div>
     );
 };

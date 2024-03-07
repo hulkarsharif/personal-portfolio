@@ -18,10 +18,10 @@ const Title = styled(Typography)`
     font-size: var(--space-40);
 `;
 
-const Description = styled(Typography)`
-    color: var(--jaguar-500);
-    font-size: var(--space-30);
-`;
+// const Description = styled(Typography)`
+//     color: var(--jaguar-500);
+//     font-size: var(--space-30);
+// `;
 
 const AboutCardsWrapper = styled.div`
     display: grid;
@@ -37,10 +37,10 @@ const About = () => {
                 <Title variant="displayLG" weight="bold">
                     About
                 </Title>
-                <Description variant="displaySM" weight="medium">
+                {/* <Description variant="displaySM" weight="medium">
                     Our solution provides simple yet effective project
                     management
-                </Description>
+                </Description> */}
             </FeaturesTextWrapper>
             <AboutCardsWrapper>
                 {aboutInfo.map((feature, index) => (

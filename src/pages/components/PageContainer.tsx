@@ -5,8 +5,8 @@ const PageContainer = styled.section`
     margin: 0 auto;
 
     align-items: center;
-    padding-right: 15rem;
-    padding-left: 15rem;
+    padding-right: 9.4rem;
+    padding-left: 9.7rem;
 `;
 
 export { PageContainer };

@@ -1,35 +1,43 @@
 import styled from "styled-components";
 import { NavigationLink } from "./Links";
-
-import { Button, Logo } from "../../design-system";
+import logoMe from "../../design-system/assets/image/22222.png";
 import { PageContainer } from "../components";
 
 const links = [
-    { text: "Home", link: "https://google.com" },
-    { text: "Landings", link: "https://info.com" },
-    { text: "Pages", link: "https://facebook.com" },
-    { text: "Docs", link: "https://info.com" },
-    { text: "Help", link: "https://google.com" }
+    { text: "HOME", link: "https://google.com" },
+    { text: "PROJECTS", link: "https://info.com" },
+    { text: "ABOUT", link: "https://facebook.com" }
+    // { text: "CONTACTS", link: "mailto:sharipovah01@gmail.com" }
 ];
 
 const Base = styled(PageContainer)`
-    padding-top: 2.6rem;
-    padding-bottom: 2.6rem;
+    padding-top: 2.4rem;
+    padding-left: 8.6rem;
+    padding-right: 10.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #bce4ecfc;
 `;
 
-const NavigationLinks = styled.header`
+const NavigationLinks = styled.div`
+    max-width: 124rem;
     display: flex;
-    gap: var(--space-40);
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: var(--space-20);
+`;
+const LogoWrapper = styled.div`
+    height: 4.5rem;
+    align-items: center;
 `;
 
 const TopNavigation = () => {
     return (
         <Base>
-            <Logo size="sm" layout="horizontal" />
+            <LogoWrapper>
+                <img src={logoMe} alt="Logo" />
+            </LogoWrapper>
             <NavigationLinks>
                 {links.map((link, idx) => (
                     <NavigationLink
@@ -38,15 +46,6 @@ const TopNavigation = () => {
                         linkTo={link.link}
                     />
                 ))}
-                <Button
-                    variant="contained"
-                    shape="rounded"
-                    size="sm"
-                    color="primary"
-                    onClick={() => {}}
-                >
-                    Get it now
-                </Button>
             </NavigationLinks>
         </Base>
     );

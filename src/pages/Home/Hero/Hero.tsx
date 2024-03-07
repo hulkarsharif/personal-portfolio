@@ -7,22 +7,26 @@ const HeroSection = styled(PageContainer)`
     display: flex;
     align-items: center;
     gap: 40px;
-    background-color: lightskyblue;
-`;
-const HeroSectionLeft = styled.div`
-    /* width: 50%; */
-    flex: 1;
+    background-color: var(--gray-200);
 `;
 
 const HeroLeftWrapper = styled.div`
     width: 55rem;
 `;
 const HeroSectionRight = styled.div`
-    /* max-width: 50%; */
-    flex: 1;
+    max-width: 64.5rem;
+
+    /* flex: 1; */
     margin-right: var(--space-12);
 `;
+
+const HeroSectionLeft = styled.div`
+    width: 64rem;
+    /* flex: 1; */
+`;
 const HeroTitle = styled(Typography)`
+    width: 29rem;
+    height: 14rem;
     margin-bottom: var(--space-12);
 
     margin-right: var(--space-40);
@@ -41,28 +45,18 @@ const HeroDescription = styled(Typography)`
 const Hero = () => {
     return (
         <HeroSection>
-            <HeroSectionLeft>
-                <img src={women} alt="women" />
-            </HeroSectionLeft>
-
             <HeroLeftWrapper>
                 <HeroSectionRight>
-                    <HeroTitle
-                        weight="bold"
-                        variant="displayLG"
-                        align="inherit"
-                    >
+                    <HeroTitle weight="bold" variant="h5" align="inherit">
                         Hi I am Khulkar.
                     </HeroTitle>
 
                     <HeroDescription
-                        weight="semibold"
-                        variant="displaySM"
+                        weight="bold"
+                        variant="displayLG"
                         align="center"
                     >
                         I am a full-stack developer with 1 year of experiance
-                        Node.js.
-                        <br /> Please rech out to me.
                     </HeroDescription>
                     <a href="mailto:sharipovah01@gmail.com">
                         <Button size="sm" color="danger" shape="rounded">
@@ -71,6 +65,9 @@ const Hero = () => {
                     </a>
                 </HeroSectionRight>
             </HeroLeftWrapper>
+            <HeroSectionLeft>
+                <img src={women} alt="women" />
+            </HeroSectionLeft>
         </HeroSection>
     );
 };
