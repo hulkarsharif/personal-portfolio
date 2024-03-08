@@ -4,9 +4,10 @@ import { PageContainer } from "../../components";
 import { skills } from "./data";
 
 const ToolWrapper = styled(PageContainer)`
-    width: 117.6rem;
-    margin-top: 20.7rem;
-    gap: var(--space-60);
+    padding-top: 20rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;

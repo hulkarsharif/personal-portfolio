@@ -87,7 +87,7 @@ const Hero = () => {
                         variant="displaySM"
                         align="left"
                     >
-                        Experienced software engeneer located in USA
+                        Experienced software engeneer located in Virginia.
                     </HeroDescription>
                     <HeroParagraph
                         weight="semibold"

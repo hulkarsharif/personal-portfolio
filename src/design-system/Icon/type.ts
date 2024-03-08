@@ -10,7 +10,11 @@ export type IconName =
     | "instagram"
     | "github-icon"
     | "linkedin-svgrepo-com"
-    | "line-decoration";
+    | "line-decoration"
+    | "doc-icon"
+    | "search-icon"
+    | "up-arrow"
+    | "play-icon";
 
 export type IconProps = {
     iconName?: IconName;
