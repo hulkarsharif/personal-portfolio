@@ -7,13 +7,15 @@ import { PageContainer } from "../../components";
 const SectionBase = styled(PageContainer)`
     padding-top: 11rem;
     padding-bottom: 11rem;
-
-    background-color: green;
 `;
 
 const ServiceTextWrapper = styled.div`
-    /* text-align: center;
-    margin-bottom: var(--space-50); */
+    text-align: center;
+    margin-left: 37.5rem;
+    margin-right: 37.5rem;
+    padding-bottom: 6.9rem;
+
+    /* margin-bottom: var(--space-50); */
 `;
 
 const Title = styled(Typography)`
@@ -25,6 +27,7 @@ const ServiceCardsWrapper = styled.div`
     justify-content: space-between;
     text-align: left;
     margin-bottom: var(--space-50);
+
     /* grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-30);
     margin-bottom: var(--space-50); */
