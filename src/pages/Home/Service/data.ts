@@ -4,15 +4,12 @@ import upArrow from "../../../design-system/Icon/sprite.svg";
 import playIcon from "../../../design-system/Icon/sprite.svg";
 
 import { Service } from "./ServiceCard";
-// const documents: Service[] = [
-//     { icon: "icon1", title: "Document 1", description: "Description 1" },
-//     { icon: "icon2", title: "Document 2", description: "Description 2" }
 
 // ];
 export const documents: Service[] = [
     {
         icon: "doc-icon",
-        title: "API Development",
+        title: "Developing",
         description:
             "I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest!"
     },

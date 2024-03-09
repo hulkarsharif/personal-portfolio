@@ -19,7 +19,7 @@ type ServiceCardProps = {
     item: Service;
 };
 
-export const ServiceCardBase = styled.div`
+export const ServiceCardBase = styled.div<{ icon: string }>`
     border-radius: var(--border-radius-16);
     padding: var(--space-8);
     box-shadow: var(--shadow-xs);
@@ -29,16 +29,24 @@ export const ServiceCardBase = styled.div`
     padding-left: var(--space-30);
     padding-top: var(--space-30);
     padding-bottom: 11.4rem;
-
+    cursor: pointer;
     flex-direction: column;
     align-items: center;
     background-color: var(--black-50);
 
-    & > img {
-        /* width: 10.8rem;
-        height: 10.8rem; */
-        justify-content: space-between;
-    }
+    transition: opasity 0.5s;
+    background-color: ${({ icon }) => {
+        switch (icon) {
+            case docIcon:
+                return "var(--green-25)";
+            case searchIcon:
+                return "var(--sunglow-25)";
+            case upArrow:
+                return "var(--primary-25)";
+            case playIcon:
+                return "var(--red-orange-25)";
+        }
+    }};
 `;
 const ServiceIconWrapper = styled.div`
     width: 6.2rem;
@@ -64,7 +72,7 @@ const ServiceDescription = styled(Typography)`
 
 const ServiceCard = ({ item }: ServiceCardProps) => {
     return (
-        <ServiceCardBase>
+        <ServiceCardBase icon={item.icon}>
             <ServiceIconWrapper>
                 <Icon iconName={item.icon} />
             </ServiceIconWrapper>

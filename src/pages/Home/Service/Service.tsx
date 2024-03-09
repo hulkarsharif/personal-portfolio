@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Button, Typography } from "../../../design-system";
 import { ServiceCard } from "../Service/ServiceCard";
+
 import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
@@ -27,10 +28,6 @@ const ServiceCardsWrapper = styled.div`
     justify-content: space-between;
     text-align: left;
     margin-bottom: var(--space-50);
-
-    /* grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--space-30);
-    margin-bottom: var(--space-50); */
 `;
 
 const Service = () => {
