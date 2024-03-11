@@ -11,8 +11,8 @@ const AboutSection = styled(PageContainer)`
     padding-right: 6rem;
     align-items: center;
     display: flex;
-
-    background-color: var(--black-200);
+    /* 
+    background-color: var(--black-200); */
 `;
 
 const AboutLeftWrapper = styled.div`
@@ -32,16 +32,7 @@ const AboutTitle = styled(Typography)`
 
     color: var(--white);
     padding-bottom: var(--space-20);
-    padding-right: 17.9rem;
-`;
-const AboutDescription = styled(Typography)`
-    padding-left: 10.8rem;
-    padding-right: 10.7rem;
-    /* font-size: 5rem;
-    line-height: 5.5rem; */
-    display: block;
-    align-items: center;
-    text-align: left;
+    padding-right: 18.5rem;
 `;
 
 const AboutParagraph = styled(Typography)`
@@ -76,40 +67,43 @@ const AboutSectionRight = styled.div`
     margin-left: 3.5rem;
 `;
 const AboutCard = styled.div`
-    padding-left: 3.6rem;
-    height: 16rem;
+    padding: 3.6rem;
+    height: 17.1rem;
     /* margin-bottom: 4rem; */
-    border: 2px solid black;
+    border: 2px solid var(--jaguar-300);
     border-radius: var(--space-8);
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 const AboutIcon = styled.img`
-    display: flex;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    width: 6rem;
+    object-fit: contain;
 
-    width: auto;
-    height: 4rem;
-    padding-left: 3.2rem;
+    /* height: auto; */
 `;
 const RightIconWrapper = styled.div`
     display: flex;
+    margin-right: 3.2rem;
 `;
 const RightTextWrapper = styled.div`
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
 `;
 const AboutTitleRight = styled(Typography)`
-    padding-left: 3.2rem;
     color: var(--black-100);
 
     padding-bottom: var(--space-20);
 `;
 
 const AboutDescriptionRight = styled(Typography)`
-    padding-left: 3.2rem;
-    padding-right: 10.7rem;
-    align-items: center;
+    /* padding-left: 3.2rem;
+    padding-right: 10.7rem; 
+    align-items: center;*/
     text-align: left;
 `;
 
@@ -121,16 +115,10 @@ const About = () => {
                     <AboutEllipseBlueWrapper>
                         <img src={ellipse} alt="ellipse" />
                     </AboutEllipseBlueWrapper>
-                    <AboutTitle
-                        weight="bold"
-                        variant="paragraphSM"
-                        align="inherit"
-                    >
-                        About Me
+                    <AboutTitle weight="normal" variant="h6" align="left">
+                        Working Experience
                     </AboutTitle>
-                    <AboutDescription weight="normal" variant="h6" align="left">
-                        I am software engineer located in Virginia.
-                    </AboutDescription>
+
                     <AboutParagraph weight="semibold" variant="h4" align="left">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Consectetur porro animi quidem at, veritatis quisquam

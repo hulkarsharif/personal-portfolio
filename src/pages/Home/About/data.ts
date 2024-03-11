@@ -1,4 +1,4 @@
-import UNDP from "../../../design-system/assets/image/UNDP-Logo-1.png";
+import UNDP from "../../../design-system/assets/image/UNDP Logo_000.png";
 import UN from "../../../design-system/assets/image/un-logo-000.png";
 import CMS from "../../../design-system/assets/image/center-of-med.png";
 
