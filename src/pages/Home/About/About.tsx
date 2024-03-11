@@ -1,6 +1,7 @@
-import { Button, Icon, Input, Typography } from "../../../design-system";
+import { Typography, Icon } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
+import { data } from "./data";
 import whiteLine from "../../../design-system/assets/image/line-decor-white.png";
 import ellipse from "../../../design-system/assets/image/ELLIPSE.png";
 import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.png";
@@ -25,14 +26,6 @@ const AboutSectionLeft = styled.div`
     max-width: 64.5rem;
 `;
 
-const AboutSectionRight = styled.div`
-    width: 63rem;
-    height: 59rem;
-    border-radius: var(--space-8);
-
-    margin-left: 3.5rem;
-    background-color: #656868;
-`;
 const AboutTitle = styled(Typography)`
     padding-left: 10.7rem;
     /* padding-top: 16rem; */
@@ -75,7 +68,30 @@ const AboutYellowEllipse = styled.div`
     padding-left: 9.1rem;
     padding-bottom: 4rem;
 `;
-//
+
+const AboutSectionRight = styled.div`
+    width: 63rem;
+    height: 59rem;
+    border-radius: var(--space-8);
+
+    margin-left: 3.5rem;
+`;
+const AboutCard = styled.div`
+    padding: 3.7rem;
+    margin: 2.7rem;
+    border: 2px solid black;
+    border-radius: var(--space-8);
+`;
+
+const AboutIcon = styled.img`
+    width: auto;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+`;
+
 const About = () => {
     return (
         <AboutSection>
@@ -91,11 +107,7 @@ const About = () => {
                     >
                         About Me
                     </AboutTitle>
-                    <AboutDescription
-                        weight="normal"
-                        variant="paragraphMD"
-                        align="left"
-                    >
+                    <AboutDescription weight="normal" variant="h6" align="left">
                         Aboutd software engeneer located in Virginia.
                     </AboutDescription>
                     <AboutParagraph weight="semibold" variant="h4" align="left">
@@ -114,7 +126,19 @@ const About = () => {
                 </AboutYellowEllipse>
             </AboutLeftWrapper>
 
-            <AboutSectionRight></AboutSectionRight>
+            <AboutSectionRight>
+                {data.map((item, index) => (
+                    <AboutCard key={index}>
+                        <AboutIcon src={item.icon} alt={item.title} />
+                        <Typography variant="paragraphMD" weight="bold">
+                            {item.title}
+                        </Typography>
+                        <Typography variant="paragraphSM">
+                            {item.description}
+                        </Typography>
+                    </AboutCard>
+                ))}
+            </AboutSectionRight>
         </AboutSection>
     );
 };

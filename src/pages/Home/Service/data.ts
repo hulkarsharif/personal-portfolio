@@ -5,7 +5,6 @@ import playIcon from "../../../design-system/Icon/sprite.svg";
 
 import { Service } from "./ServiceCard";
 
-// ];
 export const documents: Service[] = [
     {
         icon: "doc-icon",
