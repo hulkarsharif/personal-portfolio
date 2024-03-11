@@ -73,23 +73,44 @@ const AboutSectionRight = styled.div`
     width: 63rem;
     height: 59rem;
     border-radius: var(--space-8);
-
     margin-left: 3.5rem;
 `;
 const AboutCard = styled.div`
-    padding: 3.7rem;
-    margin: 2.7rem;
+    padding-left: 3.6rem;
+    height: 16rem;
+    /* margin-bottom: 4rem; */
     border: 2px solid black;
     border-radius: var(--space-8);
+    margin-bottom: 5rem;
 `;
 
 const AboutIcon = styled.img`
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+
     width: auto;
     height: 4rem;
-    margin-bottom: 0.5rem;
-
+    padding-left: 3.2rem;
+`;
+const RightIconWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+`;
+const RightTextWrapper = styled.div`
+    padding-right: 1rem;
+`;
+const AboutTitleRight = styled(Typography)`
+    padding-left: 3.2rem;
+    color: var(--black-100);
+
+    padding-bottom: var(--space-20);
+`;
+
+const AboutDescriptionRight = styled(Typography)`
+    padding-left: 3.2rem;
+    padding-right: 10.7rem;
+    align-items: center;
+    text-align: left;
 `;
 
 const About = () => {
@@ -108,7 +129,7 @@ const About = () => {
                         About Me
                     </AboutTitle>
                     <AboutDescription weight="normal" variant="h6" align="left">
-                        Aboutd software engeneer located in Virginia.
+                        I am software engineer located in Virginia.
                     </AboutDescription>
                     <AboutParagraph weight="semibold" variant="h4" align="left">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -129,13 +150,20 @@ const About = () => {
             <AboutSectionRight>
                 {data.map((item, index) => (
                     <AboutCard key={index}>
-                        <AboutIcon src={item.icon} alt={item.title} />
-                        <Typography variant="paragraphMD" weight="bold">
-                            {item.title}
-                        </Typography>
-                        <Typography variant="paragraphSM">
-                            {item.description}
-                        </Typography>
+                        <RightIconWrapper>
+                            <AboutIcon src={item.icon} />
+                        </RightIconWrapper>
+                        <RightTextWrapper>
+                            <AboutTitleRight variant="h6" weight="semibold">
+                                {item.title}
+                            </AboutTitleRight>
+                            <AboutDescriptionRight
+                                variant="paragraphSM"
+                                weight="normal"
+                            >
+                                {item.description}
+                            </AboutDescriptionRight>
+                        </RightTextWrapper>
                     </AboutCard>
                 ))}
             </AboutSectionRight>
