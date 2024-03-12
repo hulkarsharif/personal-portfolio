@@ -17,6 +17,11 @@ const HeroLeftWrapper = styled.div`
 const HeroSectionRight = styled.div`
     max-width: 64.5rem;
     margin-right: var(--space-12);
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.04);
+    }
 `;
 
 const HeroSectionLeft = styled.div`
@@ -24,6 +29,11 @@ const HeroSectionLeft = styled.div`
     height: 60rem;
     padding-top: var(--space-70);
     padding-left: 12.8rem;
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.04);
+    }
 `;
 const HeroTitle = styled(Typography)`
     width: 29rem;

@@ -8,6 +8,7 @@ import { PageContainer } from "../../components";
 const SectionBase = styled(PageContainer)`
     padding-top: 11rem;
     padding-bottom: 11rem;
+    transition: all 1s;
 `;
 
 const ServiceTextWrapper = styled.div`
