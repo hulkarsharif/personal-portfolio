@@ -18,7 +18,7 @@ const FooterWrapper = styled.div`
     padding-left: 12.3rem;
     padding-right: 33.8rem;
     border-radius: var(--space-8);
-    background-color: var(--green-600);
+    background-color: var(--green-400);
 `;
 
 const FooterTitle = styled(Typography)`
@@ -30,6 +30,8 @@ const SocialMedia = styled.div`
     color: var(--black-900);
     gap: 3.6rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     padding-bottom: 6.7rem;
 
@@ -39,7 +41,7 @@ const SocialMedia = styled.div`
         margin-top: 4rem;
         transition: all 1s;
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.5);
         }
     }
 `;

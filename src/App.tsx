@@ -12,12 +12,23 @@ function App() {
     return (
         <>
             <TopNavigation />
-            <Hero />
+            <section id="hero">
+                <Hero />
+            </section>
+
             <Tools />
-            <Service />
+            <section id="service">
+                <Service />
+            </section>
+
             <Icon />
-            <About />
-            <Projects />
+            <section id="about">
+                <About />
+            </section>
+            <section id="projects">
+                <Projects />
+            </section>
+
             <Footer />
         </>
     );

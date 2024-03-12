@@ -6,8 +6,8 @@ import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
 const SectionBase = styled(PageContainer)`
-    padding-top: 11rem;
-    padding-bottom: 11rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     transition: all 1s;
 `;
 

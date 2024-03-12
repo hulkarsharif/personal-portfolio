@@ -4,7 +4,8 @@ import { PageContainer } from "../../components";
 import { skills } from "./data";
 
 const ToolWrapper = styled(PageContainer)`
-    padding-top: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
     padding-left: 13rem;
     padding-right: 13rem;
 

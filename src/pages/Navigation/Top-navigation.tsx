@@ -4,24 +4,24 @@ import logoMe from "../../design-system/assets/image/22222.png";
 import { PageContainer } from "../components";
 
 const links = [
-    { text: "HOME", link: "https://google.com" },
-    { text: "ABOUT", link: "https://facebook.com" },
-    { text: "PROJECTS", link: "https://info.com" }
+    { text: "HOME", link: "#hero" },
+    { text: "SERVICE", link: "#service" },
+    { text: "ABOUT", link: "#about" },
+    { text: "PROJECTS", link: "#projects" }
 
     // { text: "CONTACTS", link: "mailto:sharipovah01@gmail.com" }
 ];
 
 const Base = styled(PageContainer)`
     padding-top: 2.4rem;
-    padding-left: 8.6rem;
-    padding-right: 10.5rem;
+    padding-bottom: 2.4rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 `;
 
 const NavigationLinks = styled.div`
-    max-width: 124rem;
     display: flex;
     align-items: center;
     text-align: center;
