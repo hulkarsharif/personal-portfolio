@@ -48,22 +48,6 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
         setPhone(value);
     };
 
-    // const resetFields = () => {
-    //     setFirstName("");
-    //     setLastName("");
-    //     setEmail("");
-    //     setPhone("");
-    // };
-
-    // const createTeamMember = () => {
-    //     const input = {
-    //         firstName,
-    //         lastName,
-    //         email,
-    //         phone
-    //     };
-    // };
-
     return (
         <Modal show={show} position="center">
             <ModalTitle variant="h6" weight="medium">

@@ -1,60 +1,57 @@
 import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
-import orange from "../../../design-system/assets/image/HIGHLIGHT.png";
-import background from "../../../design-system/assets/image/BACKGROUND.png";
+import phone from "../../../design-system/assets/image/phone-icon.png";
+import email from "../../../design-system/assets/image/email-icon.png";
 import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
 
 const FooterSection = styled(PageContainer)`
-    display: block;
+    /* display: block;
     align-items: center;
-
-    border-radius: var(--space-8);
+    border-radius: var(--space-8); */
+    padding-top: 8.5rem;
+    padding-bottom: 8.6rem;
 `;
 
 const FooterWrapper = styled.div`
-    height: 42.7rem;
+    text-align: left;
+    /* height: 42.7rem; */
     border-radius: var(--space-8);
     background-color: var(--green-600);
-    padding-left: 15.3rem;
+
+    padding: 8.6rem 15rem;
 `;
 
 const FooterTitle = styled(Typography)`
-    padding-top: 3rem;
-    justify-content: space-between;
-    text-align: left;
-    padding-top: 8.6rem;
-    padding-bottom: 3rem;
-    padding-right: 33.8rem;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
 `;
-// const ContactForm = styled.form`
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     margin-left: 16.9rem;
-//     margin-right: 16rem;
-//     padding: 5rem;
 
-//     background-color: var(--black-300);
-//     border-radius: var(--border-radius-8);
+const FooterLinkWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: var(--space-30); */
 
-//     gap: 4rem;
+    /* padding-top: 5rem; */
+`;
 
-//     > *:not(:last-child) {
-//         margin-bottom: var(--space-8);
-//     }
-// `;
+const StyledLink = styled.a`
+    font-size: 1.8rem;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    text-align: center;
+    /* gap: var(--space-20); */
+`;
 
-// const StyledTextarea = styled(Input)`
-//     grid-column: span 2;
-//     width: 100%;
+const ContactWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-20);
+`;
 
-//     textarea {
-//         resize: none;
-//         height: 4rem;
-//         overflow: hidden;
-//     }
-// `;
 const SocialMedia = styled.div`
     color: var(--black-900);
     gap: 3.6rem;
@@ -63,6 +60,7 @@ const SocialMedia = styled.div`
     justify-content: center;
     padding-bottom: 6.7rem;
     padding-top: 4.9rem;
+    gap: var(--space-20);
 
     svg {
         cursor: pointer;
@@ -83,16 +81,28 @@ const Footer = () => {
                 <FooterWrapper>
                     <FooterTitle weight="bold" variant="h3" align="inherit">
                         Have a project idea to collaborate with?{" "}
-                    </FooterTitle>{" "}
-                    <Button
-                        color="secondary"
-                        size="lg"
-                        shape="circle"
-                        variant="outlined"
-                        onClick={() => setShowCreateUsContact(true)}
-                    >
-                        Contact Us
-                    </Button>
+                    </FooterTitle>
+                    <FooterLinkWrapper>
+                        <Button
+                            color="secondary"
+                            size="lg"
+                            shape="circle"
+                            variant="outlined"
+                            onClick={() => setShowCreateUsContact(true)}
+                        >
+                            Contact Us
+                        </Button>
+                        <ContactWrapper>
+                            <img src={email} alt="email" />
+                            <StyledLink href="mailto:sharipovah01@gmail.com">
+                                sharipovah01@gmail.com
+                            </StyledLink>
+                            <img src={phone} alt="phone" />
+                            <StyledLink href="tel:+15714242397">
+                                +1 571 424 2397
+                            </StyledLink>
+                        </ContactWrapper>
+                    </FooterLinkWrapper>
                 </FooterWrapper>
 
                 <SocialMedia>
