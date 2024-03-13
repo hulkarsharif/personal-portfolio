@@ -2,6 +2,7 @@ import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
 import orange from "../../../design-system/assets/image/HIGHLIGHT.png";
+import background from "../../../design-system/assets/image/BACKGROUND.png";
 
 const FooterSection = styled(PageContainer)`
     display: block;
@@ -10,11 +11,8 @@ const FooterSection = styled(PageContainer)`
 `;
 
 const FooterWrapper = styled.div`
-    /* width: 100%; */
-    height: 42.7rem;
-
     border-radius: var(--space-8);
-    background-color: var(--black-200);
+    background-color: var(--green-50);
 `;
 
 const FooterTitle = styled(Typography)`
@@ -26,24 +24,23 @@ const FooterTitle = styled(Typography)`
 const ContactForm = styled.form`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 16.9rem;
+    margin-right: 16rem;
     padding: 5rem;
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
 
-    background-color: var(--black-100);
-    border-radius: var(--border-radius-10);
-    /* padding-bottom: 8rem; */
-    gap: 6rem;
+    background-color: var(--black-300);
+    border-radius: var(--border-radius-8);
+
+    gap: 4rem;
 
     > *:not(:last-child) {
-        margin-bottom: var(--space-20);
+        margin-bottom: var(--space-8);
     }
 `;
 
 const StyledTextarea = styled(Input)`
     grid-column: span 2;
     width: 100%;
-    /* height: 15rem; */
 
     textarea {
         resize: none;
@@ -58,12 +55,10 @@ const SocialMedia = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding-bottom: 6.7rem;
-
     svg {
         cursor: pointer;
 
-        margin-top: 4rem;
+        margin-top: 18rem;
         transition: all 1s;
         &:hover {
             transform: scale(1.5);
@@ -73,11 +68,14 @@ const SocialMedia = styled.div`
 
 const Footer = () => {
     return (
-        <FooterSection>
-            <FooterWrapper>
-                <FooterTitle weight="bold" variant="h5" align="inherit">
-                    Have a project? Contact me to collaborate
-                </FooterTitle>{" "}
+        <>
+            <FooterSection>
+                <FooterWrapper>
+                    <FooterTitle weight="bold" variant="h5" align="inherit">
+                        Have a project? Contact me to collaborate
+                    </FooterTitle>{" "}
+                </FooterWrapper>
+
                 <ContactForm>
                     <Input
                         type="text"
@@ -121,24 +119,23 @@ const Footer = () => {
                         onChange={() => {}}
                     />
 
-                    <a href="mailto:sharipovah01@gmail.com">
-                        <Button
-                            size="sm"
-                            color="success"
-                            shape="circle"
-                            variant="outlined"
-                        >
-                            Contact me
-                        </Button>
-                    </a>
+                    <Button
+                        size="md"
+                        color="secondary"
+                        shape="rounded"
+                        variant="text"
+                    >
+                        Send
+                    </Button>
                 </ContactForm>
-            </FooterWrapper>
-            <SocialMedia>
-                <Icon iconName="instagram" />
-                <Icon iconName="github-icon" />
-                <Icon iconName="linkedin-svgrepo-com" />
-            </SocialMedia>
-        </FooterSection>
+
+                <SocialMedia>
+                    <Icon iconName="instagram" />
+                    <Icon iconName="github-icon" />
+                    <Icon iconName="linkedin-svgrepo-com" />
+                </SocialMedia>
+            </FooterSection>
+        </>
     );
 };
 

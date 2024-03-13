@@ -12,7 +12,7 @@
     cursor: pointer;
 
     height: 3.6rem;
-    padding: 0 var(--space-16);
+    padding: 0 var(--space-14);
     transition: all 0.3s;
 }
 

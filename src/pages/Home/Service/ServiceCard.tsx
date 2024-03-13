@@ -34,19 +34,23 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
     align-items: center;
     background-color: var(--black-50);
 
-    transition: opasity 0.5s;
-    background-color: ${({ icon }) => {
-        switch (icon) {
-            case docIcon:
-                return "var(--green-25)";
-            case searchIcon:
-                return "var(--sunglow-25)";
-            case upArrow:
-                return "var(--primary-25)";
-            case playIcon:
-                return "var(--red-orange-25)";
+    &:hover {
+        background-color: var(--green-600);
+        p {
+            color: white;
         }
-    }};
+        icon {
+            background-color: #ffffff;
+            color: var(--primary-200);
+        }
+        h5 {
+            color: white;
+        }
+    }
+    transition: all 1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 const ServiceIconWrapper = styled.div`
     width: 6.2rem;
