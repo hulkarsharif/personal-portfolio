@@ -5,4 +5,5 @@ export * from "./Utils";
 export * from "./Badge";
 export * from "./Icon";
 export * from "./Logo";
+export * from "./Modal";
 export * from "./Typography";
