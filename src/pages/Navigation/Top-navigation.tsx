@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavigationLink } from "./Links";
 import logoMe from "../../design-system/assets/image/22222.png";
 import { PageContainer } from "../components";
+import { useState } from "react";
 
 const links = [
     { text: "HOME", link: "#hero" },
@@ -31,22 +32,45 @@ const NavigationLinks = styled.div`
 const LogoWrapper = styled.div`
     height: 4.5rem;
     align-items: center;
+
+    @media (max-width: 42.8rem) {
+        display: block;
+    }
+`;
+
+const BurgerIcon = styled.div`
+    display: none; // Hide by default on larger screens
+    cursor: pointer;
+
+    @media (max-width: 42.8rem) {
+        display: block; // Show on smaller screens
+    }
 `;
 
 const TopNavigation = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
         <Base>
             <LogoWrapper>
                 <img src={logoMe} alt="Logo" />
             </LogoWrapper>
+
             <NavigationLinks>
-                {links.map((link, idx) => (
-                    <NavigationLink
-                        key={idx}
-                        linkText={link.text}
-                        linkTo={link.link}
-                    />
-                ))}
+                <BurgerIcon onClick={() => setShowMenu(!showMenu)}>
+                    ☰
+                </BurgerIcon>
+                {showMenu && (
+                    <>
+                        {links.map((link, idx) => (
+                            <NavigationLink
+                                key={idx}
+                                linkText={link.text}
+                                linkTo={link.link}
+                            />
+                        ))}
+                    </>
+                )}
             </NavigationLinks>
         </Base>
     );

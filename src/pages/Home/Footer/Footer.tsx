@@ -1,4 +1,4 @@
-import { Button, Icon, Input, Typography } from "../../../design-system";
+import { Button, Icon, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
 import phone from "../../../design-system/assets/image/phone-icon.png";
