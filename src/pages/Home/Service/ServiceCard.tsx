@@ -53,7 +53,7 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
     }
 `;
 const ServiceIconWrapper = styled.div`
-    width: 6.2rem;
+    max-width: 6.2rem;
     height: 6.2rem;
     align-items: center;
     text-align: center;

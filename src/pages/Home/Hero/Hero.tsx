@@ -11,19 +11,54 @@ const HeroSection = styled(PageContainer)`
     justify-content: space-between;
     gap: 40px;
     background-color: var(--black-200);
+
+    @media (max-width: 81.2em) {
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+
+    @media (max-width: 75em) {
+        padding-right: 5.5rem;
+    }
+
+    @media (max-width: 56.25em) {
+        padding-left: 2.5rem;
+    }
+
+    @media (max-width: 50em) {
+        padding-right: 10.5rem;
+    }
+
+    @media (max-width: 40rem) {
+        padding-top: 10.8rem;
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 3.4rem;
+        padding-right: 3.4rem;
+        display: block;
+        text-align: center;
+    }
 `;
 
 const HeroSectionLeft = styled.div`
     width: 60%;
+
+    @media (max-width: 120.4rem) {
+        width: 50%;
+    }
+
+    @media (max-width: 56.25em) {
+        padding-right: 1rem;
+    }
+    @media (max-width: 40rem) {
+        width: 100%;
+    }
 `;
 
 const HeroSectionRight = styled.div`
     width: 40%;
 
-    /* padding-top: var(--space-70);
-    padding-left: 12.8rem; */
     transition: all 1s;
-
     &:hover {
         transform: scale(1.04);
     }
@@ -32,15 +67,37 @@ const HeroSectionRight = styled.div`
         object-fit: contain;
         height: 50rem;
     }
+    @media (max-width: 56.25em) {
+        width: 60%;
+        img {
+            height: 45rem;
+        }
+    }
+
+    @media (max-width: 56em) {
+        width: 60%;
+
+        img {
+            object-fit: cover;
+            height: 38rem;
+        }
+    }
+
+    /* @media (max-width: 40rem) {
+        width: 100%;
+    } */
 `;
 const HeroTitle = styled(Typography)`
     width: 29rem;
-
     color: var(--green-900);
-    /* margin-bottom: var(--space-70); */
-
     margin-right: var(--space-40);
     justify-content: space-between;
+
+    @media (max-width: 40rem) {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
 `;
 const HeroDescription = styled(Typography)`
     font-size: 5rem;
@@ -48,6 +105,11 @@ const HeroDescription = styled(Typography)`
     display: block;
     align-items: center;
     text-align: left;
+    @media (max-width: 40rem) {
+        font-size: 3.5rem; /* Adjust font size as needed */
+        line-height: 4rem; /* Adjust line height as needed */
+        text-align: center;
+    }
 `;
 
 const HeroParagraph = styled(Typography)`
@@ -55,6 +117,11 @@ const HeroParagraph = styled(Typography)`
     color: var(--black-400);
 
     line-height: 2.5rem;
+
+    @media (max-width: 40rem) {
+        padding-left: 0;
+        text-align: center;
+    }
 `;
 
 const SocialMedia = styled.div`
@@ -72,6 +139,18 @@ const SocialMedia = styled.div`
             transform: scale(1.25);
         }
     }
+
+    @media (max-width: 56em) {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--space-8);
+    }
+
+    @media (max-width: 40rem) {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--space-12);
+    }
 `;
 
 const GreenLine = styled.div`
@@ -79,6 +158,14 @@ const GreenLine = styled.div`
     height: 0.15rem;
     background-color: var(--green-900);
     border-radius: 0.4rem;
+
+    @media (max-width: 56em) {
+        display: none;
+    }
+
+    @media (max-width: 40rem) {
+        display: none;
+    }
 `;
 
 //
@@ -107,7 +194,7 @@ const Hero = () => {
                 </HeroParagraph>
                 <SocialMedia>
                     <a href="mailto:sharipovah01@gmail.com">
-                        <Button size="sm" color="success" shape="circle">
+                        <Button size="lg" color="success" shape="circle">
                             Contact me
                         </Button>
                     </a>
@@ -115,9 +202,8 @@ const Hero = () => {
                     <Icon iconName="instagram" />
                     <Icon iconName="github-icon" />
                     <Icon iconName="linkedin-svgrepo-com" />
+
                     <GreenLine></GreenLine>
-                    {/* 
-                        <Icon iconName="line-decoration" /> */}
                 </SocialMedia>
             </HeroSectionLeft>
 

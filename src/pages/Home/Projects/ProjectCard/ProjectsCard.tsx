@@ -61,10 +61,12 @@ const ProjectDescription = styled(Typography)`
 const ProjectImageWrapper = styled.div`
     width: 60%;
     overflow: hidden;
+    border-radius: var(--border-radius-8);
+
     img {
-        width: 100%;
+        height: 54rem;
+        /* width: 100%; */
         object-fit: cover;
-        border-radius: var(--border-radius-8);
 
         transition: all 1s;
 
