@@ -29,10 +29,14 @@ const HeroSection = styled(PageContainer)`
         padding-right: 10.5rem;
     }
 
-    @media (max-width: 40rem) {
-        padding-top: 10.8rem;
-        flex-direction: column;
-        align-items: stretch;
+    @media (max-width: 43.75em) {
+    }
+
+    @media (max-width: 37.5em) {
+    }
+    @media (max-width: 25em) {
+        flex-direction: block;
+
         padding-left: 3.4rem;
         padding-right: 3.4rem;
         display: block;
@@ -50,8 +54,115 @@ const HeroSectionLeft = styled.div`
     @media (max-width: 56.25em) {
         padding-right: 1rem;
     }
-    @media (max-width: 40rem) {
+
+    @media (max-width: 43.75em) {
+        padding-left: 0.5rem;
+    }
+
+    @media (max-width: 37.5em) {
+        padding-bottom: 5rem;
+    }
+    @media (max-width: 25em) {
         width: 100%;
+    }
+`;
+
+const HeroTitle = styled(Typography)`
+    /* width: 29rem; */
+    color: var(--green-900);
+    margin-right: var(--space-40);
+
+    @media (max-width: 25em) {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+`;
+const HeroDescription = styled(Typography)`
+    font-size: 5rem;
+    line-height: 5.5rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    @media (max-width: 25em) {
+        align-items: start;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        text-align: center;
+    }
+`;
+
+const HeroParagraph = styled(Typography)`
+    margin-bottom: var(--space-12);
+    color: var(--black-400);
+    line-height: 2.5rem;
+
+    @media (max-width: 25em) {
+        line-height: 2rem;
+        display: flex;
+        text-align: center;
+        text-align: center;
+
+        color: bold;
+    }
+`;
+
+const SocialMedia = styled.div`
+    color: var(--black-900);
+    display: flex;
+    gap: var(--space-36);
+    align-items: center;
+    svg {
+        cursor: pointer;
+        height: 2.3rem;
+        width: 2rem;
+        margin-top: 0.7rem;
+        transition: all 1s;
+        &:hover {
+            transform: scale(1.25);
+        }
+
+        @media (max-width: 56em) {
+            width: 1.5rem;
+        }
+    }
+
+    @media (max-width: 56em) {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--space-8);
+    }
+
+    @media (max-width: 43.75em) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 37.5em) {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--space-20);
+    }
+
+    @media (max-width: 25em) {
+        flex-direction: block;
+        justify-content: center;
+        gap: var(--space-22);
+    }
+`;
+
+const GreenLine = styled.div`
+    width: 10.7rem;
+    height: 0.15rem;
+    background-color: var(--green-900);
+    border-radius: 0.4rem;
+
+    @media (max-width: 56em) {
+        display: none;
     }
 `;
 
@@ -83,88 +194,21 @@ const HeroSectionRight = styled.div`
         }
     }
 
-    /* @media (max-width: 40rem) {
-        width: 100%;
-    } */
-`;
-const HeroTitle = styled(Typography)`
-    width: 29rem;
-    color: var(--green-900);
-    margin-right: var(--space-40);
-    justify-content: space-between;
+    @media (max-width: 43.75em) {
+        width: 60%;
+        padding-right: 2rem;
 
-    @media (max-width: 40rem) {
-        width: auto;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-`;
-const HeroDescription = styled(Typography)`
-    font-size: 5rem;
-    line-height: 5.5rem;
-    display: block;
-    align-items: center;
-    text-align: left;
-    @media (max-width: 40rem) {
-        font-size: 3.5rem; /* Adjust font size as needed */
-        line-height: 4rem; /* Adjust line height as needed */
-        text-align: center;
-    }
-`;
-
-const HeroParagraph = styled(Typography)`
-    margin-bottom: var(--space-12);
-    color: var(--black-400);
-
-    line-height: 2.5rem;
-
-    @media (max-width: 40rem) {
-        padding-left: 0;
-        text-align: center;
-    }
-`;
-
-const SocialMedia = styled.div`
-    color: var(--black-900);
-    display: flex;
-    gap: var(--space-36);
-    align-items: center;
-    svg {
-        cursor: pointer;
-        height: 2.3rem;
-        width: 2rem;
-        margin-top: 0.7rem;
-        transition: all 1s;
-        &:hover {
-            transform: scale(1.25);
+        img {
+            height: 38rem;
         }
     }
 
-    @media (max-width: 56em) {
-        display: flex;
-        justify-content: space-between;
-        gap: var(--space-8);
-    }
-
-    @media (max-width: 40rem) {
-        flex-direction: row;
-        justify-content: center;
-        gap: var(--space-12);
-    }
-`;
-
-const GreenLine = styled.div`
-    width: 10.7rem;
-    height: 0.15rem;
-    background-color: var(--green-900);
-    border-radius: 0.4rem;
-
-    @media (max-width: 56em) {
-        display: none;
-    }
-
-    @media (max-width: 40rem) {
-        display: none;
+    @media (max-width: 25em) {
+        width: 100%;
+        background-color: orangered;
+        img {
+            height: 30rem;
+        }
     }
 `;
 
