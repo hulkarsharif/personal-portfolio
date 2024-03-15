@@ -14,7 +14,29 @@ export type IconName =
     | "doc-icon"
     | "search-icon"
     | "up-arrow"
-    | "play-icon";
+    | "play-icon"
+    | "css"
+    | "html"
+    | "figma"
+    | "prisma"
+    | "mongodb"
+    | "javascript"
+    | "nodejs"
+    | "npm"
+    | "react"
+    | "typescript"
+    | "vscode"
+    | "expressjs"
+    | "git"
+    | "github"
+    | "terminal"
+    | "sass"
+    | "corel-draw"
+    | "frontend"
+    | "backend"
+    | "internet"
+    | "management"
+    | "database";
 
 export type IconProps = {
     iconName?: IconName;

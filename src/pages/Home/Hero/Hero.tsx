@@ -1,7 +1,7 @@
 import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
-import women from "../../../design-system/assets/image/4444.png";
+import women from "../../../design-system/assets/image/imag-half.png";
 
 const HeroSection = styled(PageContainer)`
     display: flex;
@@ -12,13 +12,17 @@ const HeroSection = styled(PageContainer)`
     gap: 40px;
     background-color: var(--black-200);
 
-    @media (max-width: 81.2em) {
+    @media (max-width: 81.25em) {
         margin-left: 5.5rem;
         margin-right: 5.5rem;
     }
 
     @media (max-width: 75em) {
         padding-right: 5.5rem;
+    }
+
+    @media (max-width: 62.5em) {
+        /* padding-left: 2.5rem; */
     }
 
     @media (max-width: 56.25em) {
@@ -146,6 +150,11 @@ const SocialMedia = styled.div`
         }
     }
 
+    @media (max-width: 62.5em) {
+        display: flex;
+        gap: var(--space-10);
+    }
+
     @media (max-width: 56em) {
         display: flex;
         justify-content: space-between;
@@ -184,6 +193,10 @@ const GreenLine = styled.div`
     background-color: var(--green-900);
     border-radius: 0.4rem;
 
+    @media (max-width: 62.5em) {
+        display: none;
+    }
+
     @media (max-width: 56em) {
         display: none;
     }
@@ -200,6 +213,12 @@ const HeroSectionRight = styled.div`
     img {
         object-fit: contain;
         height: 50rem;
+        background-color: var(--black-200);
+        /* border-radius: 22rem; */
+    }
+
+    @media (max-width: 62.5em) {
+        width: 55%;
     }
     @media (max-width: 56.25em) {
         width: 60%;
@@ -238,7 +257,8 @@ const HeroSectionRight = styled.div`
         width: 100%;
 
         img {
-            height: 28rem;
+            height: 25rem;
+            margin-right: 2rem;
         }
     }
 `;
