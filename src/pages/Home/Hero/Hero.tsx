@@ -33,6 +33,7 @@ const HeroSection = styled(PageContainer)`
     }
 
     @media (max-width: 37.5em) {
+        display: flex;
     }
     @media (max-width: 25em) {
         flex-direction: block;
@@ -68,18 +69,19 @@ const HeroSectionLeft = styled.div`
 `;
 
 const HeroTitle = styled(Typography)`
-    /* width: 29rem; */
     color: var(--green-900);
-    margin-right: var(--space-40);
+    /* margin-right: var(--space-40); */
+
+    @media (max-width: 37.5em) {
+        display: flex;
+        align-items: center;
+    }
 
     @media (max-width: 25em) {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-
+        display: block;
         font-size: 1.7rem;
-        line-height: 1.8rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
     }
 `;
 const HeroDescription = styled(Typography)`
@@ -90,9 +92,10 @@ const HeroDescription = styled(Typography)`
     text-align: left;
     @media (max-width: 25em) {
         align-items: start;
-        font-size: 3rem;
-        line-height: 3.4rem;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
         text-align: center;
+        margin-bottom: 1rem;
     }
 `;
 
@@ -102,7 +105,8 @@ const HeroParagraph = styled(Typography)`
     line-height: 2.5rem;
 
     @media (max-width: 25em) {
-        line-height: 2rem;
+        line-height: 1.8rem;
+        font-size: 1.5rem;
         display: flex;
         text-align: center;
         text-align: center;
@@ -144,14 +148,19 @@ const SocialMedia = styled.div`
 
     @media (max-width: 37.5em) {
         flex-direction: row;
-        justify-content: center;
-        gap: var(--space-20);
+        /* justify-content: center; */
+        gap: var(--space-36);
     }
 
     @media (max-width: 25em) {
-        flex-direction: block;
-        justify-content: center;
-        gap: var(--space-22);
+        display: inline-block;
+        gap: var(--space-20);
+        padding-top: 1rem;
+
+        svg {
+            padding-right: 1.5rem;
+            width: 3.5rem;
+        }
     }
 `;
 
@@ -203,11 +212,20 @@ const HeroSectionRight = styled.div`
         }
     }
 
+    @media (max-width: 37.5em) {
+        width: 60%;
+        padding-right: 2rem;
+
+        img {
+            height: 32rem;
+        }
+    }
+
     @media (max-width: 25em) {
         width: 100%;
-        background-color: orangered;
+
         img {
-            height: 30rem;
+            height: 28rem;
         }
     }
 `;
@@ -221,7 +239,7 @@ const Hero = () => {
                     HI, I AM KHULKAR
                 </HeroTitle>
                 <HeroDescription weight="bold" variant="displaySM" align="left">
-                    Experienced software engeneer located in Virginia.
+                    Software engineer located in Virginia.
                 </HeroDescription>
                 <HeroParagraph
                     weight="semibold"
