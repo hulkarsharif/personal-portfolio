@@ -33,7 +33,11 @@ const HeroSection = styled(PageContainer)`
     }
 
     @media (max-width: 37.5em) {
-        display: flex;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        padding-left: 3.4rem;
+        padding-right: 3.4rem;
     }
     @media (max-width: 25em) {
         flex-direction: block;
@@ -48,7 +52,7 @@ const HeroSection = styled(PageContainer)`
 const HeroSectionLeft = styled.div`
     width: 60%;
 
-    @media (max-width: 120.4rem) {
+    @media (max-width: 75em) {
         width: 50%;
     }
 
@@ -61,7 +65,7 @@ const HeroSectionLeft = styled.div`
     }
 
     @media (max-width: 37.5em) {
-        padding-bottom: 5rem;
+        width: 100%;
     }
     @media (max-width: 25em) {
         width: 100%;
@@ -70,11 +74,11 @@ const HeroSectionLeft = styled.div`
 
 const HeroTitle = styled(Typography)`
     color: var(--green-900);
-    /* margin-right: var(--space-40); */
 
     @media (max-width: 37.5em) {
-        display: flex;
+        display: block;
         align-items: center;
+        font-size: 2.1rem;
     }
 
     @media (max-width: 25em) {
@@ -90,6 +94,14 @@ const HeroDescription = styled(Typography)`
     display: flex;
     align-items: center;
     text-align: left;
+
+    @media (max-width: 37.5em) {
+        align-items: start;
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
     @media (max-width: 25em) {
         align-items: start;
         font-size: 2.8rem;
@@ -116,14 +128,13 @@ const HeroParagraph = styled(Typography)`
 `;
 
 const SocialMedia = styled.div`
-    color: var(--black-900);
     display: flex;
     gap: var(--space-36);
     align-items: center;
     svg {
         cursor: pointer;
         height: 2.3rem;
-        width: 2rem;
+        width: 2.3rem;
         margin-top: 0.7rem;
         transition: all 1s;
         &:hover {
@@ -147,9 +158,13 @@ const SocialMedia = styled.div`
     }
 
     @media (max-width: 37.5em) {
-        flex-direction: row;
-        /* justify-content: center; */
+        display: inline-block;
         gap: var(--space-36);
+
+        :not(:last-child) {
+            margin-right: 1.2rem;
+            margin-bottom: 2rem;
+        }
     }
 
     @media (max-width: 25em) {
@@ -157,9 +172,8 @@ const SocialMedia = styled.div`
         gap: var(--space-20);
         padding-top: 1rem;
 
-        svg {
-            padding-right: 1.5rem;
-            width: 3.5rem;
+        :not(:last-child) {
+            margin-right: 1.5rem;
         }
     }
 `;
@@ -213,8 +227,7 @@ const HeroSectionRight = styled.div`
     }
 
     @media (max-width: 37.5em) {
-        width: 60%;
-        padding-right: 2rem;
+        width: 100%;
 
         img {
             height: 32rem;
