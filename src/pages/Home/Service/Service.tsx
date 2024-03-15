@@ -1,23 +1,23 @@
 import styled from "styled-components";
-import { Button, Typography } from "../../../design-system";
+import { Typography } from "../../../design-system";
 import { ServiceCard } from "../Service/ServiceCard";
 
 import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
 const SectionBase = styled(PageContainer)`
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    /* padding-top: 10rem;
+    padding-bottom: 10rem; */
     transition: all 1s;
+
+    @media (max-width: 37.5em) {
+        padding: 1rem;
+    }
 `;
 
 const ServiceTextWrapper = styled.div`
     text-align: center;
-    margin-left: 37.5rem;
-    margin-right: 37.5rem;
-    padding-bottom: 6.9rem;
-
-    /* margin-bottom: var(--space-50); */
+    margin-bottom: 6.9rem;
 `;
 
 const Title = styled(Typography)`
@@ -25,10 +25,38 @@ const Title = styled(Typography)`
 `;
 
 const ServiceCardsWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-30);
     margin-bottom: var(--space-50);
+
+    @media (max-width: 81.25em) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 75em) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        > :last-child {
+            display: block;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 75em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        > :last-child {
+            display: block;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 37.5em) {
+        gap: var(--space-12);
+    }
 `;
 
 const Service = () => {

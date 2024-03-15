@@ -32,9 +32,6 @@ const FooterLinkWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: var(--space-30); */
-
-    /* padding-top: 5rem; */
 `;
 
 const StyledLink = styled.a`
@@ -43,7 +40,6 @@ const StyledLink = styled.a`
     color: var(--white);
     align-items: center;
     text-align: center;
-    /* gap: var(--space-20); */
 `;
 
 const ContactWrapper = styled.div`

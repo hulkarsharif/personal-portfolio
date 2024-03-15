@@ -21,17 +21,13 @@ type ServiceCardProps = {
 
 export const ServiceCardBase = styled.div<{ icon: string }>`
     border-radius: var(--border-radius-16);
-    padding: var(--space-8);
+
+    padding: var(--space-30);
     box-shadow: var(--shadow-xs);
 
     width: 28rem;
-    height: 35rem;
-    padding-left: var(--space-30);
-    padding-top: var(--space-30);
-    padding-bottom: 11.4rem;
     cursor: pointer;
     flex-direction: column;
-    align-items: center;
     background-color: var(--black-50);
 
     &:hover {
@@ -51,6 +47,9 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
     &:hover {
         transform: scale(1.1);
     }
+    @media (max-width: 81.25em) {
+        display: flex;
+    }
 `;
 const ServiceIconWrapper = styled.div`
     max-width: 6.2rem;
@@ -63,15 +62,13 @@ const ServiceIconWrapper = styled.div`
 `;
 
 const ServiceTitle = styled(Typography)`
-    padding-top: 11.4rem;
-    padding-bottom: 1.8rem;
+    margin-top: 11.4rem;
+    margin-bottom: 1.8rem;
     font-size: 2.5rem;
 `;
 
 const ServiceDescription = styled(Typography)`
     color: var(--jaguar-500);
-    margin-right: 3rem;
-    margin-bottom: 3rem;
 `;
 
 const ServiceCard = ({ item }: ServiceCardProps) => {
