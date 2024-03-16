@@ -8,41 +8,49 @@ const PageContainer = styled.section`
     padding-right: 9.55rem;
     padding-left: 9.55rem;
 
-    /* @media (max-width: 84em) {
+    /*@media (max-width: 84em) {
         //1344
-        padding: 2.5rem 11rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }
 
     @media (max-width: 75em) {
         //1200
-        padding: 2.5rem 10rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }
     @media (max-width: 69em) {
         //1104
-        padding: 2.5rem 9.3rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }
     @media (max-width: 64em) {
         //1024
-        padding: 2.5rem 8.7rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }
 
     @media (max-width: 56.25em) {
         //900
-        padding: 2.5rem 7rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }
     @media (max-width: 56.12em) {
         //834
-        padding: 2.5rem 6.1rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
     }
 
     @media (max-width: 37.5em) {
         //600
-        padding: 2.5rem 5.1rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }
 
     @media (max-width: 25em) {
         //390
-        padding: 2.5rem 5rem;
+        padding-right: 9.55rem;
+        padding-left: 9.55rem;
     }*/
 `;
 

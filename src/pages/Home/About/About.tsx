@@ -9,24 +9,18 @@ import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.pn
 const AboutSection = styled(PageContainer)`
     align-items: center;
     display: flex;
+    gap: var(--space-30);
 
     //1000px//
     @media (max-width: 62.5em) {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* padding-left: 20rem; */
-
-        :last-child {
-            display: block;
-            align-items: center;
-        }
+        display: flex;
     }
 
     //900px//
     @media (max-width: 56.25em) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* padding-left: 14rem; */
+        padding-left: 12rem;
 
         :last-child {
             display: block;
@@ -35,69 +29,91 @@ const AboutSection = styled(PageContainer)`
     }
     //834px
     @media (max-width: 52.125em) {
-        /* padding-left: 20rem; */
-        background-color: green;
+        /* padding-right: 25rem; */
     }
 
     //600px
     @media (max-width: 37.5em) {
+        align-items: center;
+        /* padding-left: 1rem;
+        padding-right: 5rem;
+        padding-bottom: 15rem; */
+    }
+
+    @media (max-width: 25em) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
-        /* padding-left: 1rem;
-        padding-right: 1rem; */
-        background-color: green;
+        align-items: center;
     }
 `;
 
 const AboutLeftWrapper = styled.div`
-    max-width: 60rem;
-    height: 59rem;
+    width: 50%;
+    /* height: 59rem; */
     border-radius: var(--space-8);
     background-color: var(--black-100);
-`;
-
-const AboutSectionLeft = styled.div`
     align-items: center;
-    /* max-width: 64.5rem; */
+    position: relative;
+    padding: 15.4rem 10.1rem 32.2rem 10.1rem;
+
+    @media (max-width: 62.5em) {
+        width: 80rem;
+    }
+    @media (max-width: 37.5em) {
+        max-width: 55rem;
+        align-items: center;
+    }
 `;
 
 const AboutTitle = styled(Typography)`
-    padding-left: 10.7rem;
+    /* padding-left: 10.7rem; */
     /* padding-top: 16rem; */
 
     color: var(--white);
-    padding-bottom: var(--space-20);
-    padding-right: 18.5rem;
+    margin-bottom: var(--space-20);
+    /* padding-right: 18.5rem; */
 `;
 
 const AboutParagraph = styled(Typography)`
     color: var(--black-400);
-    padding-left: 10.8rem;
+    /* padding-left: 10.8rem;
     padding-right: 10.7rem;
     padding-bottom: 3.8rem;
-    padding-top: 3rem;
+    padding-top: 3rem; */
     line-height: 2.5rem;
+    /* margin-bottom: 3.7rem; */
 `;
 
 const WhiteLine = styled.div`
-    padding-left: 10.8rem;
+    position: absolute;
+    left: 10.2rem;
+    bottom: 11.3rem;
+    @media (max-width: 68.75em) {
+        position: absolute;
+        left: 5.2rem;
+        bottom: 11.3rem;
+    }
+
+    /* padding-left: 10.8rem;
     padding-top: 3.8rem;
-    padding-bottom: 3.7rem;
+    padding-bottom: 3.7rem; */
 `;
 
 const AboutEllipseBlueWrapper = styled.div`
-    margin-top: 12.1rem;
-    margin-left: 48rem;
-
+    /* margin-top: 12.1rem;
+    margin-left: 48rem; */
+    position: absolute;
+    top: 11.3rem;
+    right: 11.7rem;
     @media (max-width: 62.5em) {
         padding-right: 48rem;
     }
 `;
 
 const AboutYellowEllipse = styled.div`
-    padding-left: 9.1rem;
-    padding-bottom: 4rem;
+    position: absolute;
+    left: 9.1rem;
+    bottom: 4rem;
 
     /* @media (max-width: 62.5em) {
         padding-right: 48rem;
@@ -105,55 +121,76 @@ const AboutYellowEllipse = styled.div`
 `;
 
 const AboutSectionRight = styled.div`
-    width: 63rem;
-    height: 59rem;
-    border-radius: var(--space-8);
-    margin-left: 3.5rem;
+    /* background-color: #ff00ee; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    > *:not(:last-child) {
+        margin-bottom: var(--space-20);
+    }
+
+    /* height: 59rem; */
+
+    /* margin-left: 3.5rem; */
+    @media (max-width: 68.75em) {
+        > *:not(:last-child) {
+            margin-bottom: var(--space-80);
+        }
+    }
 
     @media (max-width: 62.5em) {
-        display: block;
-        align-items: center;
-        text-align: center;
+        margin-left: 0;
+        display: flex;
     }
 `;
 const AboutCard = styled.div`
     padding: 3.6rem;
-    height: 17.1rem;
-    /* margin-bottom: 4rem; */
-    border: 2px solid var(--jaguar-300);
+    height: max-content;
+    border: 1px solid var(--jaguar-300);
     border-radius: var(--space-8);
-    margin-bottom: 3.5rem;
+    /* margin-bottom: 3.5rem; */
     display: flex;
-    transition: all 1s;
+    /*transition: all 1s;
 
     &:hover {
         transform: scale(1.1);
-    }
+    }*/
 `;
 
 const AboutIcon = styled.img`
     width: 6rem;
     object-fit: contain;
-
-    /* height: auto; */
 `;
 const RightIconWrapper = styled.div`
     display: flex;
-    margin-right: 3.2rem;
+    margin-right: 1.5rem;
 `;
-const RightTextWrapper = styled.div`
-    /* padding-right: 1rem; */
-`;
-const AboutTitleRight = styled(Typography)`
-    color: var(--black-100);
 
-    padding-bottom: var(--space-20);
+const RightTextWrapper = styled.div`
+    padding-right: 8rem;
+`;
+
+const AboutTitleRight = styled(Typography)`
+    margin-bottom: var(--space-10);
+
+    @media (max-width: 75em) {
+        /* line-height: 2rem;
+        font-size: 2rem; */
+    }
+
+    @media (max-width: 68.75em) {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+    @media (max-width: 6.25em) {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
 `;
 
 const AboutDescriptionRight = styled(Typography)`
-    /* padding-left: 3.2rem;
-    padding-right: 10.7rem; 
-    align-items: center;*/
+    align-items: center;
     text-align: left;
 `;
 
@@ -161,25 +198,23 @@ const About = () => {
     return (
         <AboutSection>
             <AboutLeftWrapper>
-                <AboutSectionLeft>
-                    <AboutEllipseBlueWrapper>
-                        <img src={ellipse} alt="ellipse" />
-                    </AboutEllipseBlueWrapper>
-                    <AboutTitle weight="normal" variant="h6" align="left">
-                        Working Experience
-                    </AboutTitle>
+                <AboutEllipseBlueWrapper>
+                    <img src={ellipse} alt="ellipse" />
+                </AboutEllipseBlueWrapper>
+                <AboutTitle weight="normal" variant="h6" align="left">
+                    Working Experience
+                </AboutTitle>
 
-                    <AboutParagraph weight="semibold" variant="h4" align="left">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur porro animi quidem at, veritatis quisquam
-                        fugit deleniti doloremque id illo quam magni dolorum
-                        amet nobis, quaerat eligendi rerum dolorem!
-                    </AboutParagraph>
+                <AboutParagraph weight="semibold" variant="h4" align="left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur porro animi quidem at, veritatis quisquam fugit
+                    deleniti doloremque id illo quam magni dolorum amet nobis,
+                    quaerat eligendi rerum dolorem!
+                </AboutParagraph>
 
-                    <WhiteLine>
-                        <img src={whiteLine} alt="line" />
-                    </WhiteLine>
-                </AboutSectionLeft>
+                <WhiteLine>
+                    <img src={whiteLine} alt="line" />
+                </WhiteLine>
                 <AboutYellowEllipse>
                     <img src={ellipseYellow} alt="yellow" />
                 </AboutYellowEllipse>

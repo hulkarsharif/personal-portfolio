@@ -18,3 +18,9 @@ body {
 a {
     text-decoration: none;
 }
+
+@media (max-width: 64em) {
+    html {
+        font-size: (--space-12);
+    }
+}

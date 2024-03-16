@@ -15,7 +15,7 @@ export const data = [
     },
     {
         icon: CMS,
-        title: "Center of Medicaid and Medicare Services in Maryland",
+        title: "Center of Medicaid and Medicare in Maryland",
         description: "Business Analyst"
     }
 ];
