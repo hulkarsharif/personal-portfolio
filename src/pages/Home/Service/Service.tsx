@@ -6,12 +6,15 @@ import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
 const SectionBase = styled(PageContainer)`
-    /* padding-top: 10rem;
-    padding-bottom: 10rem; */
     transition: all 1s;
 
     @media (max-width: 37.5em) {
         padding: 1rem;
+    }
+
+    @media (max-width: 25em) {
+        align-items: center;
+        text-align: center;
     }
 `;
 
@@ -56,6 +59,14 @@ const ServiceCardsWrapper = styled.div`
 
     @media (max-width: 37.5em) {
         gap: var(--space-12);
+    }
+
+    @media (max-width: 25em) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+        margin: 5rem;
     }
 `;
 

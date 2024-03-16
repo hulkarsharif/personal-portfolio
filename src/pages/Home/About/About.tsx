@@ -7,23 +7,59 @@ import ellipse from "../../../design-system/assets/image/ELLIPSE.png";
 import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.png";
 
 const AboutSection = styled(PageContainer)`
-    padding-left: 10rem;
-    padding-right: 6rem;
     align-items: center;
     display: flex;
-    /* 
-    background-color: var(--black-200); */
+
+    //1000px//
+    @media (max-width: 62.5em) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-left: 20rem; */
+
+        :last-child {
+            display: block;
+            align-items: center;
+        }
+    }
+
+    //900px//
+    @media (max-width: 56.25em) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-left: 14rem; */
+
+        :last-child {
+            display: block;
+            align-items: center;
+        }
+    }
+    //834px
+    @media (max-width: 52.125em) {
+        /* padding-left: 20rem; */
+        background-color: green;
+    }
+
+    //600px
+    @media (max-width: 37.5em) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+        background-color: green;
+    }
 `;
 
 const AboutLeftWrapper = styled.div`
-    width: 60rem;
+    max-width: 60rem;
     height: 59rem;
     border-radius: var(--space-8);
     background-color: var(--black-100);
 `;
 
 const AboutSectionLeft = styled.div`
-    max-width: 64.5rem;
+    align-items: center;
+    /* max-width: 64.5rem; */
 `;
 
 const AboutTitle = styled(Typography)`
@@ -51,13 +87,21 @@ const WhiteLine = styled.div`
 `;
 
 const AboutEllipseBlueWrapper = styled.div`
-    padding-top: 12.1rem;
-    padding-left: 48rem;
+    margin-top: 12.1rem;
+    margin-left: 48rem;
+
+    @media (max-width: 62.5em) {
+        padding-right: 48rem;
+    }
 `;
 
 const AboutYellowEllipse = styled.div`
     padding-left: 9.1rem;
     padding-bottom: 4rem;
+
+    /* @media (max-width: 62.5em) {
+        padding-right: 48rem;
+    }*/
 `;
 
 const AboutSectionRight = styled.div`
@@ -65,6 +109,12 @@ const AboutSectionRight = styled.div`
     height: 59rem;
     border-radius: var(--space-8);
     margin-left: 3.5rem;
+
+    @media (max-width: 62.5em) {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
 `;
 const AboutCard = styled.div`
     padding: 3.6rem;
