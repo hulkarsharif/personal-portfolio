@@ -18,26 +18,15 @@ const AboutSection = styled(PageContainer)`
 
     //900px//
     @media (max-width: 56.25em) {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-left: 12rem;
-
-        :last-child {
-            display: block;
-            align-items: center;
-        }
+        display: block;
     }
     //834px
     @media (max-width: 52.125em) {
-        /* padding-right: 25rem; */
     }
 
     //600px
     @media (max-width: 37.5em) {
         align-items: center;
-        /* padding-left: 1rem;
-        padding-right: 5rem;
-        padding-bottom: 15rem; */
     }
 
     @media (max-width: 25em) {
@@ -55,10 +44,19 @@ const AboutLeftWrapper = styled.div`
     align-items: center;
     position: relative;
     padding: 15.4rem 10.1rem 32.2rem 10.1rem;
-
+    //1000px
     @media (max-width: 62.5em) {
-        width: 80rem;
+        width: 55rem;
     }
+    //900
+    @media (max-width: 56.25em) {
+        width: 100%;
+    }
+    //834px
+    @media (max-width: 52.125em) {
+        display: block;
+    }
+
     @media (max-width: 37.5em) {
         max-width: 55rem;
         align-items: center;
@@ -66,22 +64,13 @@ const AboutLeftWrapper = styled.div`
 `;
 
 const AboutTitle = styled(Typography)`
-    /* padding-left: 10.7rem; */
-    /* padding-top: 16rem; */
-
     color: var(--white);
     margin-bottom: var(--space-20);
-    /* padding-right: 18.5rem; */
 `;
 
 const AboutParagraph = styled(Typography)`
     color: var(--black-400);
-    /* padding-left: 10.8rem;
-    padding-right: 10.7rem;
-    padding-bottom: 3.8rem;
-    padding-top: 3rem; */
     line-height: 2.5rem;
-    /* margin-bottom: 3.7rem; */
 `;
 
 const WhiteLine = styled.div`
@@ -93,20 +82,14 @@ const WhiteLine = styled.div`
         left: 5.2rem;
         bottom: 11.3rem;
     }
-
-    /* padding-left: 10.8rem;
-    padding-top: 3.8rem;
-    padding-bottom: 3.7rem; */
 `;
 
 const AboutEllipseBlueWrapper = styled.div`
-    /* margin-top: 12.1rem;
-    margin-left: 48rem; */
     position: absolute;
     top: 11.3rem;
     right: 11.7rem;
     @media (max-width: 62.5em) {
-        padding-right: 48rem;
+        /* padding-right: 48rem; */
     }
 `;
 
@@ -114,14 +97,9 @@ const AboutYellowEllipse = styled.div`
     position: absolute;
     left: 9.1rem;
     bottom: 4rem;
-
-    /* @media (max-width: 62.5em) {
-        padding-right: 48rem;
-    }*/
 `;
 
 const AboutSectionRight = styled.div`
-    /* background-color: #ff00ee; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -130,26 +108,27 @@ const AboutSectionRight = styled.div`
         margin-bottom: var(--space-20);
     }
 
-    /* height: 59rem; */
-
-    /* margin-left: 3.5rem; */
-    @media (max-width: 68.75em) {
-        > *:not(:last-child) {
-            margin-bottom: var(--space-80);
-        }
-    }
-
     @media (max-width: 62.5em) {
-        margin-left: 0;
-        display: flex;
+        width: 45rem;
     }
+    /*
+    @media (max-width: 56.15em) {
+        width: 100%;
+    }
+
+    @media (max-width: 56.125em) {
+        width: 40%;
+    }
+    @media (max-width: 56.25em) {
+        width: 100%;
+    } */
 `;
 const AboutCard = styled.div`
     padding: 3.6rem;
     height: max-content;
     border: 1px solid var(--jaguar-300);
     border-radius: var(--space-8);
-    /* margin-bottom: 3.5rem; */
+
     display: flex;
     /*transition: all 1s;
 
@@ -172,7 +151,7 @@ const RightTextWrapper = styled.div`
 `;
 
 const AboutTitleRight = styled(Typography)`
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-24);
 
     @media (max-width: 75em) {
         /* line-height: 2rem;
@@ -180,18 +159,34 @@ const AboutTitleRight = styled(Typography)`
     }
 
     @media (max-width: 68.75em) {
-        line-height: 2rem;
-        font-size: 2rem;
+        display: flex;
+        line-height: 3rem;
+        font-size: 1.2rem;
     }
-    @media (max-width: 6.25em) {
+
+    @media (max-width: 62.5em) {
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    @media (max-width: 64em) {
         line-height: 1.5rem;
         font-size: 1rem;
+    }
+
+    @media (max-width: 56.25em) {
+        line-height: 4rem;
+        font-size: 1.2rem;
     }
 `;
 
 const AboutDescriptionRight = styled(Typography)`
     align-items: center;
     text-align: left;
+
+    @media (max-width: 56.25em) {
+        line-height: 4rem;
+        font-size: 1.2rem;
+    }
 `;
 
 const About = () => {

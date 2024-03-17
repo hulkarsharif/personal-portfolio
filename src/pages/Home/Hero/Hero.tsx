@@ -76,7 +76,7 @@ const HeroSectionLeft = styled.div`
 `;
 
 const HeroTitle = styled(Typography)`
-    color: var(--green-900);
+    color: var(--dodger-blue-900);
 
     @media (max-width: 37.5em) {
         display: block;
@@ -189,7 +189,7 @@ const SocialMedia = styled.div`
 const GreenLine = styled.div`
     width: 10.7rem;
     height: 0.15rem;
-    background-color: var(--green-900);
+    background-color: var(--dodger-blue-900);
     border-radius: 0.4rem;
 
     @media (max-width: 62.5em) {

@@ -231,7 +231,7 @@
 
 /* Success Button */
 .btn-success {
-    background-color: var(--green-800);
+    background-color: var(--dodger-blue-900);
     color: var(--white);
     box-shadow: var(--shadow-s);
 }
@@ -242,11 +242,11 @@
 }
 
 .btn-success:disabled {
-    background-color: var(--green-300);
+    background-color: var(--dodger-blue-300);
 }
 
 .btn-success:focus {
-    background-color: var(--green-700);
+    background-color: var(--dodger-blue-700);
     box-shadow: var(--shadow-xs-hover);
 }
 
