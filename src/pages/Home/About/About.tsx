@@ -61,11 +61,33 @@ const AboutLeftWrapper = styled.div`
     @media (max-width: 37.5em) {
         width: 100%;
     }
+
+    @media (max-width: 25em) {
+        /* width: 36rem; */
+        height: 28rem;
+        padding-top: 3.6rem;
+        padding-left: 3.6rem;
+
+        /* width: 100%; */
+    }
+    @media (max-width: 24.375em) {
+        /* width: 36rem; */
+        height: 28rem;
+        padding-top: 3.2rem;
+        padding-left: 3.2rem;
+
+        /* width: 100%; */
+    }
 `;
 
 const AboutTitle = styled(Typography)`
     color: var(--white);
     margin-bottom: var(--space-20);
+
+    @media (max-width: 25em) {
+        //390
+        margin-top: 0.5rem;
+    }
 `;
 
 const AboutParagraph = styled(Typography)`
@@ -82,6 +104,10 @@ const WhiteLine = styled.div`
         left: 5.2rem;
         bottom: 11.3rem;
     }
+
+    @media (max-width: 25em) {
+        display: none;
+    }
 `;
 
 const AboutEllipseBlueWrapper = styled.div`
@@ -90,6 +116,10 @@ const AboutEllipseBlueWrapper = styled.div`
     right: 11.7rem;
     @media (max-width: 62.5em) {
         /* padding-right: 48rem; */
+    }
+
+    @media (max-width: 25em) {
+        top: 5rem;
     }
 `;
 
@@ -183,6 +213,12 @@ const AboutTitleRight = styled(Typography)`
         line-height: 4rem;
         font-size: 1.2rem;
     }
+
+    @media (max-width: 25em) {
+        display: flex;
+        line-height: 1rem;
+        font-size: 1rem;
+    }
 `;
 
 const AboutDescriptionRight = styled(Typography)`
@@ -192,6 +228,12 @@ const AboutDescriptionRight = styled(Typography)`
     @media (max-width: 56.25em) {
         line-height: 4rem;
         font-size: 1.2rem;
+    }
+
+    @media (max-width: 25em) {
+        display: flex;
+        line-height: 2rem;
+        font-size: 1rem;
     }
 `;
 

@@ -48,9 +48,15 @@ const PageContainer = styled.section`
     }
 
     @media (max-width: 25em) {
+        //400
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    @media (max-width: 24.375em) {
         //390
-        /* padding-right: 9.55rem;
-        padding-left: 9.55rem; */
+        /* margin-right: 1rem;
+        padding-left: 1rem; */
     }
 `;
 
