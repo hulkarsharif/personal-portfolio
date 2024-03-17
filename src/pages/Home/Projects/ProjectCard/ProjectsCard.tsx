@@ -32,7 +32,7 @@ const ProjectCardWrapper = styled.div<{ name: string }>`
             case "Furniture Website":
                 return "#5F9FFE";
             case "Restaurant Website":
-                return "#3e7741";
+                return "#56B0B9";
             default:
                 return "transparent";
         }

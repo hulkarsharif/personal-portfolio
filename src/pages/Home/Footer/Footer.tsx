@@ -18,7 +18,7 @@ const FooterWrapper = styled.div`
     text-align: left;
     /* height: 42.7rem; */
     border-radius: var(--space-8);
-    background-color: var(--green-600);
+    background-color: var(--dodger-blue-200);
 
     padding: 8.6rem 15rem;
 `;
@@ -37,7 +37,7 @@ const FooterLinkWrapper = styled.div`
 const StyledLink = styled.a`
     font-size: 1.8rem;
     display: flex;
-    color: var(--white);
+    color: var(--black-700);
     align-items: center;
     text-align: center;
 `;

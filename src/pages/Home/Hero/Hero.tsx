@@ -1,7 +1,7 @@
 import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
-import women from "../../../design-system/assets/image/last-44.png";
+import women from "../../../design-system/assets/image/blue-img.png";
 const HeroSection = styled(PageContainer)`
     display: flex;
     padding-top: 5rem;

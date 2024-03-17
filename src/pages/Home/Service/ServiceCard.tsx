@@ -31,7 +31,7 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
     background-color: var(--black-50);
 
     &:hover {
-        background-color: var(--green-600);
+        background-color: var(--dodger-blue-900);
         p {
             color: white;
         }
@@ -58,7 +58,7 @@ const ServiceIconWrapper = styled.div`
     text-align: center;
     border-radius: var(--space-12);
     padding: 1.9rem;
-    background-color: var(--green-12);
+    background-color: var(--dodger-blue-900);
 `;
 
 const ServiceTitle = styled(Typography)`

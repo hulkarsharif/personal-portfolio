@@ -27,6 +27,7 @@ const AboutSection = styled(PageContainer)`
     //600px
     @media (max-width: 37.5em) {
         align-items: center;
+        display: block;
     }
 
     @media (max-width: 25em) {
@@ -58,8 +59,7 @@ const AboutLeftWrapper = styled.div`
     }
 
     @media (max-width: 37.5em) {
-        max-width: 55rem;
-        align-items: center;
+        width: 100%;
     }
 `;
 
@@ -107,9 +107,9 @@ const AboutSectionRight = styled.div`
     > *:not(:last-child) {
         margin-bottom: var(--space-20);
     }
-
+    //1000px
     @media (max-width: 62.5em) {
-        width: 45rem;
+        width: 50rem;
     }
     /*
     @media (max-width: 56.15em) {
@@ -119,9 +119,15 @@ const AboutSectionRight = styled.div`
     @media (max-width: 56.125em) {
         width: 40%;
     }
+    */
     @media (max-width: 56.25em) {
+        margin-top: 2rem;
         width: 100%;
-    } */
+    }
+
+    @media (max-width: 37.5em) {
+        width: 100%;
+    }
 `;
 const AboutCard = styled.div`
     padding: 3.6rem;

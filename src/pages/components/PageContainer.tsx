@@ -8,7 +8,7 @@ const PageContainer = styled.section`
     padding-right: 9.55rem;
     padding-left: 9.55rem;
 
-    /*@media (max-width: 84em) {
+    @media (max-width: 84em) {
         //1344
         padding-right: 9.55rem;
         padding-left: 9.55rem;
@@ -43,15 +43,15 @@ const PageContainer = styled.section`
 
     @media (max-width: 37.5em) {
         //600
-        padding-right: 9.55rem;
-        padding-left: 9.55rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
     }
 
     @media (max-width: 25em) {
         //390
-        padding-right: 9.55rem;
-        padding-left: 9.55rem;
-    }*/
+        /* padding-right: 9.55rem;
+        padding-left: 9.55rem; */
+    }
 `;
 
 export { PageContainer };

@@ -137,7 +137,7 @@
 .btn-secondary.btn-outlined {
     background-color: var(--white);
     border: 0.15rem solid var(--jaguar-200);
-    color: var(--jaguar-500);
+    color: var(--black-900);
 }
 
 .btn-secondary.btn-outlined:hover {
@@ -150,7 +150,7 @@
 
 .btn-secondary.btn-outlined:disabled {
     border: 0.15rem solid var(--jaguar-300);
-    color: var(--jaguar-300);
+    color: var(--black);
 }
 
 .btn-secondary.btn-text {
@@ -160,7 +160,7 @@
 }
 
 .btn-secondary.btn-text:hover {
-    background-color: var(--black-50);
+    background-color: var(--black-900);
 }
 
 .btn-secondary.btn-text:focus {
