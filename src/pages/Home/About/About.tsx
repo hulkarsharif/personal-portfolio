@@ -45,6 +45,20 @@ const AboutLeftWrapper = styled.div`
     align-items: center;
     position: relative;
     padding: 15.4rem 10.1rem 32.2rem 10.1rem;
+
+    @media (max-width: 84em) {
+        //1344
+        width: 50rem;
+    }
+
+    @media (max-width: 81.25em) {
+        //1300
+        width: 60rem;
+    }
+    //1100
+    @media (max-width: 68.75em) {
+        width: 50%;
+    }
     //1000px
     @media (max-width: 62.5em) {
         width: 55rem;
@@ -137,6 +151,18 @@ const AboutSectionRight = styled.div`
     > *:not(:last-child) {
         margin-bottom: var(--space-20);
     }
+    //1344
+    @media (max-width: 84em) {
+        width: 70rem;
+    }
+    //1300
+    @media (max-width: 81.25em) {
+        width: 60rem;
+    }
+    //1100
+    @media (max-width: 68.75em) {
+        width: 40%;
+    }
     //1000px
     @media (max-width: 62.5em) {
         width: 50rem;
@@ -192,6 +218,10 @@ const AboutTitleRight = styled(Typography)`
     @media (max-width: 75em) {
         /* line-height: 2rem;
         font-size: 2rem; */
+    }
+    @media (max-width: 68.75em) {
+        line-height: 4.5rem;
+        font-size: 2.2rem;
     }
 
     @media (max-width: 68.75em) {

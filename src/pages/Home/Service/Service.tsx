@@ -8,6 +8,10 @@ import { PageContainer } from "../../components";
 const SectionBase = styled(PageContainer)`
     transition: all 1s;
 
+    @media (max-width: 56.12em) {
+        //834
+        align-items: center;
+    }
     @media (max-width: 37.5em) {
         padding: 1rem;
     }
@@ -33,6 +37,7 @@ const ServiceCardsWrapper = styled.div`
     gap: var(--space-30);
     margin-bottom: var(--space-50);
 
+    //1300
     @media (max-width: 81.25em) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -41,19 +46,20 @@ const ServiceCardsWrapper = styled.div`
     @media (max-width: 75em) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        align-items: center;
         > :last-child {
             display: block;
-            align-items: center;
         }
     }
 
-    @media (max-width: 75em) {
+    @media (max-width: 62.5em) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
+        justify-content: space-between;
+        align-items: center;
         > :last-child {
             display: block;
-            align-items: center;
         }
     }
 

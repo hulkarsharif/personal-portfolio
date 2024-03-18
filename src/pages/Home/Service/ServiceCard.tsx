@@ -2,11 +2,6 @@ import styled, { css } from "styled-components";
 import { documents } from "./data";
 import { Typography, Icon } from "../../../design-system";
 
-import docIcon from "../../../design-system/Icon/sprite.svg";
-import searchIcon from "../../../design-system/Icon/sprite.svg";
-import upArrow from "../../../design-system/Icon/sprite.svg";
-import playIcon from "../../../design-system/Icon/sprite.svg";
-
 type IconName = "doc-icon" | "search-icon" | "up-arrow" | "play-icon";
 
 export type Service = {

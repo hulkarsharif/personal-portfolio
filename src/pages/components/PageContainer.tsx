@@ -10,19 +10,19 @@ const PageContainer = styled.section`
 
     @media (max-width: 84em) {
         //1344
-        padding-right: 9.55rem;
-        padding-left: 9.55rem;
+        padding-right: 5.55rem;
+        padding-left: 5.55rem;
     }
 
     @media (max-width: 75em) {
         //1200
-        padding-right: 9.55rem;
-        padding-left: 9.55rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
     }
     @media (max-width: 69em) {
         //1104
-        padding-right: 9.55rem;
-        padding-left: 9.55rem;
+        /* padding-right: 9.55rem;
+        padding-left: 9.55rem; */
     }
     @media (max-width: 64em) {
         //1024
@@ -55,8 +55,8 @@ const PageContainer = styled.section`
 
     @media (max-width: 24.375em) {
         //390
-        /* margin-right: 1rem;
-        padding-left: 1rem; */
+        margin-right: 1rem;
+        padding-left: 1rem;
     }
 `;
 

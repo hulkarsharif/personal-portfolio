@@ -11,6 +11,12 @@ const HeroSection = styled(PageContainer)`
     gap: 40px;
     background-color: var(--black-200);
 
+    @media (max-width: 84em) {
+        //1344
+        /* padding-right: 9.55rem;
+        padding-left: 9.55rem; */
+    }
+    //1300
     @media (max-width: 81.25em) {
         margin-left: 5.5rem;
         margin-right: 5.5rem;
@@ -25,7 +31,7 @@ const HeroSection = styled(PageContainer)`
     }
 
     @media (max-width: 56.25em) {
-        padding-left: 2.5rem;
+        padding-left: 2rem;
     }
 
     @media (max-width: 50em) {
@@ -54,6 +60,10 @@ const HeroSection = styled(PageContainer)`
 
 const HeroSectionLeft = styled.div`
     width: 60%;
+    @media (max-width: 84em) {
+        //1344
+        width: 55%;
+    }
 
     @media (max-width: 75em) {
         width: 50%;
@@ -216,6 +226,9 @@ const HeroSectionRight = styled.div`
         /* border-radius: 22rem; */
     }
 
+    @media (max-width: 84em) {
+        width: 60%;
+    }
     @media (max-width: 62.5em) {
         width: 55%;
     }
@@ -293,7 +306,6 @@ const Hero = () => {
                         </Button>
                     </a>
 
-                    <Icon iconName="instagram" />
                     <Icon iconName="github-icon" />
                     <Icon iconName="linkedin-svgrepo-com" />
 
