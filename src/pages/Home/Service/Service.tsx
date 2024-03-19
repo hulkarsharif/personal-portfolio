@@ -14,7 +14,7 @@ const SectionBase = styled(PageContainer)`
     }
 
     @media (max-width: 37.5em) {
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
     @media (max-width: 25em) {
@@ -66,20 +66,19 @@ const ServiceCardsWrapper = styled.div`
     } */
 
     //834px
-    /* @media (max-width: 52.12em) {
-        height: 70rem;
-    } */
+    @media (max-width: 52.125em) {
+        padding-left: -2.5rem;
+    }
 
     //800px
     @media (max-width: 50em) {
-        padding-left: 9rem;
-        padding-bottom: 2rem;
+        padding-left: 3.5rem;
     }
 
     @media (max-width: 37.5em) {
-        background-color: paleturquoise;
-        padding-left: 4rem;
-        padding-bottom: 2rem;
+        /* padding-left: 3rem;
+        padding-bottom: 2rem; */
+        padding: 3.5rem;
     }
 
     @media (max-width: 25em) {

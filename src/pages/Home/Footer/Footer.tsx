@@ -18,14 +18,14 @@ const FooterSection = styled(PageContainer)`
 
 const FooterWrapper = styled.div`
     text-align: left;
-    /* height: 42.7rem; */
+
     border-radius: var(--space-8);
     background-color: var(--dodger-blue-200);
 
     padding-left: 12.3rem;
     padding-top: 8.6rem;
     padding-bottom: 5rem;
-    padding-right: 10rem;
+    padding-right: 20rem;
 
     @media (max-width: 25em) {
         //400
@@ -54,9 +54,12 @@ const FooterTitle = styled(Typography)`
 `;
 
 const FooterLinkWrapper = styled.div`
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: right;
+
+    /* background-color: red; */
 
     @media (max-width: 64em) {
         display: block;
@@ -72,21 +75,22 @@ const FooterLinkWrapper = styled.div`
 `;
 
 const Buttons = styled.div`
-    margin-bottom: 3rem;
-
-    display: flex;
-    align-items: center;
+    display: block;
+    align-items: left;
+    margin-bottom: 10rem;
 `;
 
 const StyledLink = styled.a`
-    font-size: 2.5rem;
-
+    padding-right: 5rem;
     display: inline-block;
-    gap: 5rem;
-    color: var(--black-700);
-    align-items: right;
-    text-align: right;
-    /* background-color: seagreen; */
+
+    padding: 1rem;
+
+    justify-content: space-between;
+
+    font-size: 1.8rem;
+
+    color: var(--black-900);
 
     //1104
     @media (max-width: 69em) {
@@ -112,12 +116,20 @@ const StyledLink = styled.a`
 `;
 
 const ContactWrapper = styled.div`
-    display: block;
-    justify-content: space-between;
-    text-align: right;
-    align-items: right;
-    /* 
-    background-color: plum; */
+    font-size: 1.8rem;
+    display: flex;
+    padding: 5rem;
+    padding-right: 1rem;
+
+    align-items: left;
+    font-size: 1.8rem;
+    color: var(--black-900);
+    font-weight: bold; /* Make the text bold */
+
+    text-align: start;
+    img {
+        filter: brightness(40%); /* Change the color to black */
+    }
 
     @media (max-width: 64em) {
         //1024
@@ -137,6 +149,7 @@ const ContactWrapper = styled.div`
 
 const SocialMedia = styled.div`
     color: var(--black-900);
+
     gap: 3.6rem;
     display: flex;
     align-items: center;

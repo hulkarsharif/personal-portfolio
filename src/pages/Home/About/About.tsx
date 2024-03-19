@@ -10,31 +10,14 @@ const AboutSection = styled(PageContainer)`
     align-items: center;
     display: flex;
     gap: var(--space-30);
-
-    //1000px//
-    @media (max-width: 62.5em) {
-        display: flex;
-    }
-
-    //900px//
     @media (max-width: 56.25em) {
-        display: block;
-    }
-    //834px
-    @media (max-width: 52.125em) {
-    }
-
-    //600px
-    @media (max-width: 37.5em) {
-        align-items: center;
+        //900
         display: block;
     }
 
-    @media (max-width: 25em) {
-        //400
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
+    @media (max-width: 56.12em) {
+        //834
+        display: block;
     }
 `;
 
@@ -47,67 +30,21 @@ const AboutLeftWrapper = styled.div`
     position: relative;
     padding: 15.4rem 10.1rem 32.2rem 10.1rem;
 
-    @media (max-width: 84em) {
-        //1344
-        width: 50rem;
-    }
-
-    @media (max-width: 81.25em) {
-        //1300
-        width: 60rem;
-    }
-
-    @media (max-width: 75em) {
-        //1200
-        width: 68%;
-    }
-    //1100
-    @media (max-width: 68.75em) {
-        max-width: 60%;
-    }
-    //1000px
-    @media (max-width: 62.5em) {
-        max-width: 65%;
-    }
-    //900
     @media (max-width: 56.25em) {
+        //900
         width: 100%;
-    }
-    //834px
-    @media (max-width: 52.125em) {
-        display: block;
+        margin-bottom: 2rem;
     }
 
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.12em) {
+        //834
         width: 100%;
-    }
-
-    @media (max-width: 25em) {
-        /* width: 36rem; */
-        height: 28rem;
-        padding-top: 3.6rem;
-        padding-left: 3.6rem;
-
-        /* width: 100%; */
-    }
-    @media (max-width: 24.375em) {
-        /* width: 36rem; */
-        height: 28rem;
-        padding-top: 3.2rem;
-        padding-left: 3.2rem;
-
-        /* width: 100%; */
     }
 `;
 
 const AboutTitle = styled(Typography)`
     color: var(--white);
     margin-bottom: var(--space-20);
-
-    @media (max-width: 25em) {
-        //390
-        margin-top: 0.5rem;
-    }
 `;
 
 const AboutParagraph = styled(Typography)`
@@ -134,13 +71,6 @@ const AboutEllipseBlueWrapper = styled.div`
     position: absolute;
     top: 11.3rem;
     right: 11.7rem;
-    @media (max-width: 62.5em) {
-        /* padding-right: 48rem; */
-    }
-
-    @media (max-width: 25em) {
-        top: 5rem;
-    }
 `;
 
 const AboutYellowEllipse = styled.div`
@@ -157,43 +87,15 @@ const AboutSectionRight = styled.div`
     > *:not(:last-child) {
         margin-bottom: var(--space-20);
     }
-    //1344
-    @media (max-width: 84em) {
-        width: 70rem;
-    }
-    //1300
-    @media (max-width: 81.25em) {
-        width: 60rem;
-    }
 
-    @media (max-width: 75em) {
-        //1200
-        width: 60%;
-    }
-    //1100
-    @media (max-width: 68.75em) {
-        width: 45%;
-    }
-    //1000px
-    @media (max-width: 62.5em) {
-        background-color: yellow;
-        max-width: 40%;
-    }
-    /*
-    @media (max-width: 56.15em) {
-        width: 100%;
-    }
-
-    @media (max-width: 56.125em) {
-        width: 40%;
-    }
-    */
     @media (max-width: 56.25em) {
-        margin-top: 2rem;
+        //900
         width: 100%;
     }
 
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.12em) {
+        //834
+
         width: 100%;
     }
 `;
@@ -236,25 +138,20 @@ const AboutTitleRight = styled(Typography)`
         font-size: 2.2rem;
     }
 
-    @media (max-width: 68.75em) {
-        display: flex;
-        line-height: 3rem;
-        font-size: 1.2rem;
-    }
-
     @media (max-width: 62.5em) {
         line-height: 3rem;
         font-size: 2.2rem;
     }
     @media (max-width: 64em) {
+        //1024
         line-height: 1.5rem;
         font-size: 1rem;
     }
 
     @media (max-width: 56.25em) {
         //1000px
-        line-height: 3.5rem;
-        font-size: 2.2rem;
+        line-height: 1.8rem;
+        font-size: 2rem;
     }
 
     @media (max-width: 25em) {

@@ -27,11 +27,8 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
 
     @media (max-width: 75em) {
         //1200px
-        background-color: goldenrod;
-        width:35rem;
-      
-        /* align-items: left; */
-      /
+
+        /* width: 35rem; */
     }
 
     /* @media (max-width: 68.75em) {
@@ -48,16 +45,12 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
         //900px
         max-width: 22rem;
     }
-
+*/
     //834px
-    @media (max-width: 52.12em) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 20rem;
-        justify-content: space-between;
-        align-items: center;
+    @media (max-width: 52.125em) {
+        align-items: left;
     }
-
+    /*
     @media (max-width: 37.5em) {
         //600px
         display: grid;

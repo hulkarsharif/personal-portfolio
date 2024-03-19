@@ -8,7 +8,6 @@ import { About } from "./pages/Home/About/About";
 import { Projects } from "./pages/Home/Projects/Projects";
 import { Footer } from "./pages/Home/Footer/Footer";
 import { ToolsBar } from "./pages/Home/Tool-section/Tools-section";
-
 function App() {
     return (
         <>

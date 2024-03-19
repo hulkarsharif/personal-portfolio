@@ -36,7 +36,9 @@ export type IconName =
     | "backend"
     | "internet"
     | "management"
-    | "database";
+    | "database"
+    | "mail"
+    | "phone";
 
 export type IconProps = {
     iconName?: IconName;
