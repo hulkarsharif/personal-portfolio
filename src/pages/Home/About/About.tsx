@@ -31,6 +31,7 @@ const AboutSection = styled(PageContainer)`
     }
 
     @media (max-width: 25em) {
+        //400
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
@@ -55,13 +56,18 @@ const AboutLeftWrapper = styled.div`
         //1300
         width: 60rem;
     }
+
+    @media (max-width: 75em) {
+        //1200
+        width: 68%;
+    }
     //1100
     @media (max-width: 68.75em) {
-        width: 50%;
+        max-width: 60%;
     }
     //1000px
     @media (max-width: 62.5em) {
-        width: 55rem;
+        max-width: 65%;
     }
     //900
     @media (max-width: 56.25em) {
@@ -159,13 +165,19 @@ const AboutSectionRight = styled.div`
     @media (max-width: 81.25em) {
         width: 60rem;
     }
+
+    @media (max-width: 75em) {
+        //1200
+        width: 60%;
+    }
     //1100
     @media (max-width: 68.75em) {
-        width: 40%;
+        width: 45%;
     }
     //1000px
     @media (max-width: 62.5em) {
-        width: 50rem;
+        background-color: yellow;
+        max-width: 40%;
     }
     /*
     @media (max-width: 56.15em) {
@@ -216,8 +228,8 @@ const AboutTitleRight = styled(Typography)`
     margin-bottom: var(--space-24);
 
     @media (max-width: 75em) {
-        /* line-height: 2rem;
-        font-size: 2rem; */
+        line-height: 2.1rem;
+        font-size: 2.1rem;
     }
     @media (max-width: 68.75em) {
         line-height: 4.5rem;
@@ -231,8 +243,8 @@ const AboutTitleRight = styled(Typography)`
     }
 
     @media (max-width: 62.5em) {
-        line-height: 2rem;
-        font-size: 1.2rem;
+        line-height: 3rem;
+        font-size: 2.2rem;
     }
     @media (max-width: 64em) {
         line-height: 1.5rem;
@@ -240,8 +252,9 @@ const AboutTitleRight = styled(Typography)`
     }
 
     @media (max-width: 56.25em) {
-        line-height: 4rem;
-        font-size: 1.2rem;
+        //1000px
+        line-height: 3.5rem;
+        font-size: 2.2rem;
     }
 
     @media (max-width: 25em) {
@@ -257,7 +270,7 @@ const AboutDescriptionRight = styled(Typography)`
 
     @media (max-width: 56.25em) {
         line-height: 4rem;
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
 
     @media (max-width: 25em) {

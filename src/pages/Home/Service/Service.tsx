@@ -8,12 +8,13 @@ import { PageContainer } from "../../components";
 const SectionBase = styled(PageContainer)`
     transition: all 1s;
 
-    @media (max-width: 56.12em) {
-        //834
-        align-items: center;
+    @media (max-width: 75em) {
+        //1200px
+        max-width: 100%;
     }
+
     @media (max-width: 37.5em) {
-        padding: 1rem;
+        padding: 2rem;
     }
 
     @media (max-width: 25em) {
@@ -44,34 +45,49 @@ const ServiceCardsWrapper = styled.div`
     }
 
     @media (max-width: 75em) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-between;
-        align-items: center;
-        > :last-child {
-            display: block;
-        }
-    }
-
-    @media (max-width: 62.5em) {
+        //1200px
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: left;
+        text-align: left;
+        padding-left: 10rem;
+    }
+    /* 
+    @media (max-width: 62.5em) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: max-content;
+        width: 30rem;
         justify-content: space-between;
         align-items: center;
         > :last-child {
             display: block;
         }
+    } */
+
+    //834px
+    /* @media (max-width: 52.12em) {
+        height: 70rem;
+    } */
+
+    //800px
+    @media (max-width: 50em) {
+        padding-left: 9rem;
+        padding-bottom: 2rem;
     }
 
     @media (max-width: 37.5em) {
-        gap: var(--space-12);
+        background-color: paleturquoise;
+        padding-left: 4rem;
+        padding-bottom: 2rem;
     }
 
     @media (max-width: 25em) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
+        text-align: left;
         margin: 5rem;
     }
 `;

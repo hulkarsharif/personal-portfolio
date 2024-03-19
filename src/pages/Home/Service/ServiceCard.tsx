@@ -25,6 +25,57 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
     flex-direction: column;
     background-color: var(--black-50);
 
+    @media (max-width: 75em) {
+        //1200px
+        background-color: goldenrod;
+        width:35rem;
+      
+        /* align-items: left; */
+      /
+    }
+
+    /* @media (max-width: 68.75em) {
+        //1100px
+        max-width: 22.5rem;
+    }
+
+    @media (max-width: 62.5em) {
+        //1000px
+        max-width: 24rem;
+    }
+
+    @media (max-width: 56.25em) {
+        //900px
+        max-width: 22rem;
+    }
+
+    //834px
+    @media (max-width: 52.12em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 20rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (max-width: 37.5em) {
+        //600px
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (max-width: 24.375em) {
+        //390
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+        justify-content: space-between;
+        align-items: center;
+    } */
+
     &:hover {
         background-color: var(--dodger-blue-900);
         p {

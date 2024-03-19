@@ -16,8 +16,8 @@ const PageContainer = styled.section`
 
     @media (max-width: 75em) {
         //1200
-        padding-right: 5rem;
-        padding-left: 5rem;
+        padding-right: 8rem;
+        padding-left: 8rem;
     }
     @media (max-width: 69em) {
         //1104
@@ -37,10 +37,9 @@ const PageContainer = styled.section`
     }
     @media (max-width: 56.12em) {
         //834
-        padding-right: 6rem;
-        padding-left: 6rem;
+        /* /* padding-right: 10rem;
+        padding-left: 12rem; */
     }
-
     @media (max-width: 37.5em) {
         //600
         padding-right: 3rem;

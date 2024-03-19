@@ -21,6 +21,6 @@ a {
 
 @media (max-width: 64em) {
     html {
-        font-size: (--space-12);
+        font-size: 50%;
     }
 }

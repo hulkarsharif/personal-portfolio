@@ -7,11 +7,13 @@ import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
 
 const FooterSection = styled(PageContainer)`
-    /* display: block;
-    align-items: center;
-    border-radius: var(--space-8); */
-    padding-top: 8.5rem;
-    padding-bottom: 8.6rem;
+    /* padding-top: 8.5rem;
+    padding-bottom: 8.6rem; */
+
+    @media (max-width: 37.5em) {
+        //600
+        margin-bottom: 2rem;
+    }
 `;
 
 const FooterWrapper = styled.div`
@@ -20,32 +22,117 @@ const FooterWrapper = styled.div`
     border-radius: var(--space-8);
     background-color: var(--dodger-blue-200);
 
-    padding: 8.6rem 15rem;
+    padding-left: 12.3rem;
+    padding-top: 8.6rem;
+    padding-bottom: 5rem;
+    padding-right: 10rem;
+
+    @media (max-width: 25em) {
+        //400
+        margin-bottom: 1.5rem;
+    }
 `;
 
 const FooterTitle = styled(Typography)`
-    padding-bottom: 4rem;
     margin-bottom: 4rem;
+
+    @media (max-width: 37.5em) {
+        //600
+        line-height: 3rem;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 25em) {
+        //400
+        /* display: flex;
+        align-items: left; */
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+    }
 `;
 
 const FooterLinkWrapper = styled.div`
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 64em) {
+        display: block;
+        align-items: right;
+    }
+
+    /* @media (max-width: 25em) {
+        //400
+        align-items: right;
+        line-height: 1.5rem;
+        font-size: 2.2rem;
+    } */
+`;
+
+const Buttons = styled.div`
+    margin-bottom: 3rem;
+
+    display: flex;
+    align-items: center;
 `;
 
 const StyledLink = styled.a`
-    font-size: 1.8rem;
-    display: flex;
+    font-size: 2.5rem;
+
+    display: inline-block;
+    gap: 5rem;
     color: var(--black-700);
-    align-items: center;
-    text-align: center;
+    align-items: right;
+    text-align: right;
+    /* background-color: seagreen; */
+
+    //1104
+    @media (max-width: 69em) {
+        display: flex;
+    }
+
+    //1024
+    @media (max-width: 64em) {
+        display: block;
+        align-items: right;
+        text-align: right;
+        line-height: 3.2rem;
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 25em) {
+        //400
+        display: block;
+        align-items: center;
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
 `;
 
 const ContactWrapper = styled.div`
-    display: flex;
+    display: block;
     justify-content: space-between;
-    gap: var(--space-20);
+    text-align: right;
+    align-items: right;
+    /* 
+    background-color: plum; */
+
+    @media (max-width: 64em) {
+        //1024
+
+        display: block;
+        align-items: right;
+        text-align: right;
+    }
+    @media (max-width: 25em) {
+        //400
+        display: block;
+        align-items: right;
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
 `;
 
 const SocialMedia = styled.div`
@@ -75,19 +162,22 @@ const Footer = () => {
         <>
             <FooterSection>
                 <FooterWrapper>
-                    <FooterTitle weight="bold" variant="h3" align="inherit">
+                    <FooterTitle weight="bold" variant="h2" align="inherit">
                         Have a project idea to collaborate with?{" "}
                     </FooterTitle>
                     <FooterLinkWrapper>
-                        <Button
-                            color="secondary"
-                            size="lg"
-                            shape="circle"
-                            variant="outlined"
-                            onClick={() => setShowCreateUsContact(true)}
-                        >
-                            Contact Us
-                        </Button>
+                        <Buttons>
+                            <Button
+                                color="secondary"
+                                size="lg"
+                                shape="circle"
+                                variant="outlined"
+                                onClick={() => setShowCreateUsContact(true)}
+                            >
+                                Contact Us
+                            </Button>
+                        </Buttons>
+
                         <ContactWrapper>
                             <img src={email} alt="email" />
                             <StyledLink href="mailto:sharipovah01@gmail.com">
