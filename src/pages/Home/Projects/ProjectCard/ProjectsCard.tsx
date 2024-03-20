@@ -163,6 +163,11 @@ const ProjectDescription = styled(Typography)`
     }
 `;
 
+const Buttons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-8);
+`;
 const ProjectImageWrapper = styled.div`
     width: 60%;
     overflow: hidden;
@@ -229,14 +234,26 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <ProjectDescription variant="h6" weight="medium">
                     {project.description}
                 </ProjectDescription>
-                <Button
-                    size="lg"
-                    variant="text"
-                    color="secondary"
-                    shape="rounded"
-                >
-                    GitHub
-                </Button>
+                <Buttons>
+                    {" "}
+                    <Button
+                        size="lg"
+                        variant="text"
+                        color="secondary"
+                        shape="rounded"
+                    >
+                        GitHub
+                    </Button>
+                    <Button
+                        size="lg"
+                        variant="text"
+                        color="primary"
+                        shape="rounded"
+                    >
+                        Demo
+                    </Button>
+                </Buttons>
+
                 <ProjectArrow>
                     <img src={whiteArrow} alt="arrow" />
                 </ProjectArrow>

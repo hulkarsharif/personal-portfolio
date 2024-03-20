@@ -305,6 +305,11 @@ const Hero = () => {
                             Contact me
                         </Button>
                     </a>
+                    <a href="mailto:sharipovah01@gmail.com">
+                        <Button size="lg" color="success" shape="circle">
+                            Download CV
+                        </Button>
+                    </a>
 
                     <Icon iconName="github-icon" />
                     <Icon iconName="linkedin-svgrepo-com" />

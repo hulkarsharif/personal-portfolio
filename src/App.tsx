@@ -29,6 +29,9 @@ function App() {
                 <Projects />
             </section>
 
+            <section id="contacts">
+                <TopNavigation />
+            </section>
             <Footer />
         </>
     );

@@ -8,7 +8,8 @@ const links = [
     { text: "HOME", link: "#hero" },
     { text: "SERVICE", link: "#service" },
     { text: "ABOUT", link: "#about" },
-    { text: "PROJECTS", link: "#projects" }
+    { text: "PROJECTS", link: "#projects" },
+    { text: "CONTACT", link: "contacts" }
 ];
 
 const Base = styled(PageContainer)`
