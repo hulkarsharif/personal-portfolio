@@ -71,21 +71,21 @@ const ProjectTextWrapper = styled.div`
 
     @media (max-width: 37.5em) {
         //600
-        display: block;
-        align-items: start;
+        /* display: block;
+        align-items: start; */
         width: 100%;
     }
-    @media (max-width: 37.5em) {
+    @media (max-width: 25em) {
         //600
-        display: block;
-        align-items: start;
+        /* display: block;
+        align-items: start; */
         width: 100%;
     }
 
     @media (max-width: 25em) {
         //400
         display: block;
-        align-items: start;
+        align-items: left;
         width: 100%;
     }
 `;
@@ -112,20 +112,18 @@ const ProjectName = styled(Typography)`
         //600
         margin-top: 2rem;
         display: flex;
-        align-items: center;
-        text-align: center;
+
         line-height: 2rem;
         font-size: 2.3rem;
     }
 
-    @media (max-width: 37.5em) {
+    @media (max-width: 25em) {
         //400
         margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        text-align: center;
+
         line-height: 1rem;
         font-size: 2.3rem;
+        text-align: left;
     }
 `;
 
@@ -152,14 +150,13 @@ const ProjectDescription = styled(Typography)`
         font-size: 2rem;
     }
 
-    @media (max-width: 37.5em) {
+    @media (max-width: 25em) {
         //400
-        display: flex;
-        text-align: start;
-        padding-top: 5rem;
-
-        line-height: 1rem;
-        font-size: 1.3rem;
+        padding: 0;
+        line-height: 2rem;
+        font-size: 2rem;
+        /* text-align: center;
+        align-items: center; */
     }
 `;
 
@@ -167,6 +164,13 @@ const Buttons = styled.div`
     display: flex;
     justify-content: space-between;
     gap: var(--space-8);
+
+    @media (max-width: 25em) {
+        //400
+        display: inline-flex;
+        padding-right: 20rem;
+        align-items: flex-start;
+    }
 `;
 const ProjectImageWrapper = styled.div`
     width: 60%;
@@ -195,20 +199,20 @@ const ProjectImageWrapper = styled.div`
         overflow: hidden;
     }
 
-    @media (max-width: 37.5em) {
-        //400
-        display: block;
+    @media (max-width: 25em) {
         width: 100%;
+        height: auto;
 
-        height: 22rem;
-        padding-bottom: 1.5rem;
-        overflow: hidden;
+        img {
+            height: auto;
+            width: 100%;
+            max-height: 20rem;
+        }
     }
 `;
 const ProjectArrow = styled.div`
     padding-top: 6rem;
 
-    /*padding-bottom: 9rem; */
     cursor: pointer;
 
     @media (max-width: 62.5em) {
@@ -220,6 +224,13 @@ const ProjectArrow = styled.div`
         padding-top: 2rem;
         display: flex;
         align-items: center;
+    }
+
+    @media (max-width: 37.5em) {
+        //600
+        padding-top: 5rem;
+        display: flex;
+        align-items: left;
     }
 `;
 
@@ -247,7 +258,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     <Button
                         size="lg"
                         variant="text"
-                        color="primary"
+                        color="secondary"
                         shape="rounded"
                     >
                         Demo
