@@ -8,18 +8,8 @@ import { PageContainer } from "../../components";
 const SectionBase = styled(PageContainer)`
     transition: all 1s;
 
-    @media (max-width: 75em) {
-        //1200px
-        max-width: 100%;
-    }
-
-    @media (max-width: 37.5em) {
-        /* padding: 2rem; */
-    }
-
-    @media (max-width: 25em) {
-        align-items: center;
-        text-align: center;
+    @media (max-width: 56.25em) {
+        //900px
     }
 `;
 
@@ -38,56 +28,16 @@ const ServiceCardsWrapper = styled.div`
     gap: var(--space-30);
     margin-bottom: var(--space-50);
 
-    //1300
-    @media (max-width: 81.25em) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    @media (max-width: 75em) {
-        //1200px
+    @media (max-width: 56.25em) {
+        //900px
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: left;
-        text-align: left;
-        padding-left: 10rem;
-    }
-    /* 
-    @media (max-width: 62.5em) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        height: max-content;
-        width: 30rem;
-        justify-content: space-between;
-        align-items: center;
-        > :last-child {
-            display: block;
-        }
-    } */
-
-    //834px
-    @media (max-width: 52.125em) {
-        padding-left: -2.5rem;
-    }
-
-    //800px
-    @media (max-width: 50em) {
-        padding-left: 3.5rem;
-    }
-
-    @media (max-width: 37.5em) {
-        /* padding-left: 3rem;
-        padding-bottom: 2rem; */
-        padding: 3.5rem;
     }
 
     @media (max-width: 25em) {
+        //400
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        margin: 5rem;
     }
 `;
 

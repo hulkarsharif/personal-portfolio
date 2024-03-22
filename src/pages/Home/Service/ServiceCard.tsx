@@ -16,51 +16,14 @@ type ServiceCardProps = {
 
 export const ServiceCardBase = styled.div<{ icon: string }>`
     border-radius: var(--border-radius-16);
-
     padding: var(--space-30);
     box-shadow: var(--shadow-xs);
-
-    width: 28rem;
+    /* max-width: 28rem; */
     cursor: pointer;
     flex-direction: column;
     background-color: var(--black-50);
 
-    @media (max-width: 75em) {
-        //1200px
-
-        /* width: 35rem; */
-    }
-
-    /* @media (max-width: 68.75em) {
-        //1100px
-        max-width: 22.5rem;
-    }
-
-    @media (max-width: 62.5em) {
-        //1000px
-        max-width: 24rem;
-    }
-
-    @media (max-width: 56.25em) {
-        //900px
-        max-width: 22rem;
-    }
-*/
-    //834px
-    @media (max-width: 52.125em) {
-        align-items: left;
-    }
-    /*
-    @media (max-width: 37.5em) {
-        //600px
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    @media (max-width: 24.375em) {
+    /* @media (max-width: 24.375em) {
         //390
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -86,9 +49,6 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
     &:hover {
         transform: scale(1.1);
     }
-    @media (max-width: 81.25em) {
-        display: flex;
-    }
 `;
 const ServiceIconWrapper = styled.div`
     max-width: 6.2rem;
@@ -104,10 +64,46 @@ const ServiceTitle = styled(Typography)`
     margin-top: 11.4rem;
     margin-bottom: 1.8rem;
     font-size: 2.5rem;
+
+    @media (max-width: 56.25em) {
+        //900px
+        font-size: 25px;
+        line-height: 15px;
+    }
+
+    @media (max-width: 43.75em) {
+        //700px
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    @media (max-width: 25em) {
+        //400
+        font-size: 20px;
+        line-height: 25px;
+    }
 `;
 
 const ServiceDescription = styled(Typography)`
     color: var(--jaguar-500);
+
+    @media (max-width: 56.25em) {
+        //900px
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    @media (max-width: 43.75em) {
+        //700px
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 25em) {
+        //400
+        font-size: 20px;
+        line-height: 25px;
+    }
 `;
 
 const ServiceCard = ({ item }: ServiceCardProps) => {

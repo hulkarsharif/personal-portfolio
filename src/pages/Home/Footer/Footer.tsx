@@ -62,12 +62,12 @@ const Buttons = styled.div`
 `;
 
 const StyledLink = styled.a`
-    padding-right: 5rem;
+    padding-right: 6rem;
     display: inline-block;
     padding: 1rem;
     justify-content: space-between;
-    font-size: 1.8rem;
-    color: var(--black-900);
+    font-size: 2rem;
+    color: var(--white);
     display: flex;
 
     @media (max-width: 69em) {
@@ -91,19 +91,18 @@ const StyledLink = styled.a`
 `;
 
 const ContactWrapper = styled.div`
-    font-size: 1.8rem;
     display: flex;
     padding: 5rem;
     padding-right: 1rem;
     align-items: left;
-    font-size: 1.8rem;
-    color: var(--black-900);
-    font-weight: bold;
+    line-height: 1rem;
+    /* color: var(--white); */
+    font-weight: bolder;
     text-align: start;
 
-    img {
+    /* img {
         filter: brightness(40%);
-    }
+    } */
 
     @media (max-width: 64em) {
         display: block;

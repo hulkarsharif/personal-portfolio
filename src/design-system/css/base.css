@@ -29,9 +29,22 @@ body {
 a {
     text-decoration: none;
 }
+@media (max-width: 75em) {
+    /* 1200 */
+    html {
+        font-size: 56%;
+    }
+}
+
+@media (max-width: 69em) {
+    /* 1104 */
+    html {
+        font-size: 53%;
+    }
+}
 
 @media (max-width: 64em) {
     html {
-        font-size: 50%;
+        font-size: 50%; /* it sets base font size to 8px */
     }
 }

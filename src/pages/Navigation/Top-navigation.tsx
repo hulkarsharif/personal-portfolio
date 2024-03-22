@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { NavigationLink } from "./Links";
-import logoMe from "../../design-system/assets/image/22222.png";
+// import logoMe from "../../design-system/assets/image/logo11.png";
 import { PageContainer } from "../components";
 
 const links = [
@@ -55,7 +55,12 @@ const NavigationLinks = styled.div<{ open: boolean }>`
 `;
 
 const LogoWrapper = styled.div`
+    width: 4.5rem;
     height: 4.5rem;
+    border-radius: 50%;
+    background-color: var(--dodger-blue-900);
+    display: flex;
+    justify-content: center;
     align-items: center;
 
     @media (max-width: 75em) {
@@ -73,12 +78,19 @@ const LogoWrapper = styled.div`
     @media (max-width: 25em) {
         //400
         display: flex;
-        padding-left: 3rem;
+        margin-left: 4rem;
+        /* padding-left: 3rem; */
     }
 `;
 
+const LogoText = styled.span`
+    color: #fff; // White color for the initials
+    font-size: 1.5rem;
+    font-weight: bolder;
+`;
+
 const StyledBurger = styled.div<{ open: boolean }>`
-    display: none; /* Initially hide on larger screens */
+    display: none;
 
     @media (max-width: 56.25em) {
         //900
@@ -119,7 +131,7 @@ const TopNavigation = () => {
     return (
         <Base>
             <LogoWrapper>
-                <img src={logoMe} alt="Logo" />
+                <LogoText>Kh</LogoText>
             </LogoWrapper>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
                 <div />

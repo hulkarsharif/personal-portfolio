@@ -101,7 +101,7 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
                 <Button
                     color="secondary"
                     size="lg"
-                    shape="rounded"
+                    shape="circle"
                     variant="outlined"
                     fullWidth
                     onClick={closeModal}
@@ -110,8 +110,8 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
                 </Button>
                 <Button
                     size="lg"
-                    shape="rounded"
-                    color="success"
+                    shape="circle"
+                    color="secondary"
                     variant="outlined"
                     fullWidth
                     onClick={() => {}}

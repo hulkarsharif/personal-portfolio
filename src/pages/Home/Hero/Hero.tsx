@@ -2,6 +2,7 @@ import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
 import women from "../../../design-system/assets/image/blue-img.png";
+import FileViewer from "./FileViewer";
 const HeroSection = styled(PageContainer)`
     display: flex;
     padding-top: 5rem;
@@ -87,6 +88,7 @@ const HeroSectionLeft = styled.div`
 
 const HeroTitle = styled(Typography)`
     color: var(--dodger-blue-900);
+    line-height: 85px;
 
     @media (max-width: 37.5em) {
         display: block;
@@ -103,7 +105,7 @@ const HeroTitle = styled(Typography)`
 `;
 const HeroDescription = styled(Typography)`
     font-size: 5rem;
-    line-height: 5.5rem;
+    line-height: 85px;
     display: flex;
     align-items: center;
     text-align: left;
@@ -127,7 +129,7 @@ const HeroDescription = styled(Typography)`
 const HeroParagraph = styled(Typography)`
     margin-bottom: var(--space-12);
     color: var(--black-400);
-    line-height: 2.5rem;
+    line-height: 25px;
 
     @media (max-width: 25em) {
         line-height: 1.8rem;
@@ -284,7 +286,7 @@ const Hero = () => {
                     HI, I AM KHULKAR
                 </HeroTitle>
                 <HeroDescription weight="bold" variant="displaySM" align="left">
-                    Software engineer located in Virginia.
+                    Software engineer.
                 </HeroDescription>
                 <HeroParagraph
                     weight="semibold"
@@ -305,14 +307,7 @@ const Hero = () => {
                             Contact me
                         </Button>
                     </a>
-                    <a href="mailto:sharipovah01@gmail.com">
-                        <Button size="lg" color="success" shape="circle">
-                            Download CV
-                        </Button>
-                    </a>
-
-                    <Icon iconName="github-icon" />
-                    <Icon iconName="linkedin-svgrepo-com" />
+                    <FileViewer />
 
                     <GreenLine></GreenLine>
                 </SocialMedia>

@@ -249,7 +249,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     {" "}
                     <Button
                         size="lg"
-                        variant="text"
+                        variant="outlined"
                         color="secondary"
                         shape="rounded"
                     >
@@ -257,7 +257,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     </Button>
                     <Button
                         size="lg"
-                        variant="text"
+                        variant="outlined"
                         color="secondary"
                         shape="rounded"
                     >
