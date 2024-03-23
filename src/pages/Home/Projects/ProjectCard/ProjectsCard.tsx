@@ -14,6 +14,7 @@ type ProjectCardProps = {
 
 const ProjectCardWrapper = styled.div<{ name: string }>`
     padding: var(--space-40);
+
     width: 124.4rem;
     height: 41rem;
 
@@ -139,12 +140,12 @@ const ProjectDescription = styled(Typography)`
     }
     @media (max-width: 37.5em) {
         //600
-        display: flex;
-        text-align: start;
-        padding-top: 5rem;
+        /* display: flex;
+        text-align: start; */
+        padding-top: 3rem;
 
         line-height: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     @media (max-width: 26.75em) {
@@ -202,12 +203,15 @@ const ProjectImageWrapper = styled.div`
 
     @media (max-width: 37.5em) {
         //600
-        display: block;
-        width: 45rem;
 
-        height: 20rem;
-        padding-bottom: 1.5rem;
-        overflow: hidden;
+        width: 100%;
+        height: auto;
+
+        img {
+            height: auto;
+            width: 100%;
+            max-height: 18rem;
+        }
     }
 
     @media (max-width: 26.75em) {
@@ -251,16 +255,17 @@ const ProjectArrow = styled.div`
         //1000
         display: none;
     }
-    @media (max-width: 37.5em) {
-        //600
-        padding-top: 2rem;
-        display: flex;
-        align-items: center;
-    }
 
     @media (max-width: 37.5em) {
         //600
-        padding-top: 5rem;
+        padding: 3rem;
+        display: flex;
+        align-items: left;
+    }
+
+    @media (max-width: 26.75em) {
+        //428
+        padding: 2rem;
         display: flex;
         align-items: left;
     }

@@ -63,6 +63,11 @@ const LogoWrapper = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 80em) {
+        //1280
+        margin-left: 2rem;
+    }
+
     @media (max-width: 75em) {
         //1200
         display: flex;
@@ -73,6 +78,11 @@ const LogoWrapper = styled.div`
         //900
         display: flex;
         padding-left: 0rem;
+    }
+
+    @media (max-width: 37.5em) {
+        //600
+        margin-left: 4rem;
     }
 
     @media (max-width: 26.75em) {
@@ -107,7 +117,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
 
     @media (max-width: 56.25em) {
         //900
-        margin-right: -28rem;
+        margin-right: -30rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -125,7 +135,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
     }
 
     div {
-        width: 3rem;
+        width: 3.5rem;
         height: 0.3rem;
         background-color: #333333bc;
         border-radius: 15px;
