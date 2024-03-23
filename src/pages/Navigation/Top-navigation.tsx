@@ -75,10 +75,17 @@ const LogoWrapper = styled.div`
         padding-left: 0rem;
     }
 
+    @media (max-width: 25.75em) {
+        //412
+
+        margin-left: 7rem;
+        /* padding-left: 3rem; */
+    }
+
     @media (max-width: 25em) {
         //400
         display: flex;
-        margin-left: 4rem;
+        margin-left: 5rem;
         /* padding-left: 3rem; */
     }
 `;
@@ -94,7 +101,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
 
     @media (max-width: 56.25em) {
         //900
-        margin-right: -25rem;
+        margin-right: -28rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -102,6 +109,13 @@ const StyledBurger = styled.div<{ open: boolean }>`
         height: 2rem;
         cursor: pointer;
         z-index: 20;
+
+        @media (max-width: 25.75em) {
+            //412
+
+            margin-left: 5rem;
+            /* padding-left: 3rem; */
+        }
     }
 
     div {

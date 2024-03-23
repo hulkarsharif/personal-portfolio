@@ -14,4 +14,5 @@ export type ButtonProps = {
     children: React.ReactNode;
     onClick?: () => void;
     buttonRef?: React.ForwardedRef<HTMLButtonElement>;
+    type?: "button" | "submit" | "reset"; // Add type prop
 };

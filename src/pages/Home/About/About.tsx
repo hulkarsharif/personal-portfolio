@@ -48,6 +48,11 @@ const AboutLeftWrapper = styled.div`
         //834
         width: 100%;
     }
+
+    @media (max-width: 25.75em) {
+        //412
+        padding: 15rem 3rem;
+    }
 `;
 
 const AboutTitle = styled(Typography)`
@@ -68,6 +73,10 @@ const WhiteLine = styled.div`
         position: absolute;
         left: 5.2rem;
         bottom: 11.3rem;
+    }
+
+    @media (max-width: 25.75em) {
+        display: none;
     }
 
     @media (max-width: 25em) {

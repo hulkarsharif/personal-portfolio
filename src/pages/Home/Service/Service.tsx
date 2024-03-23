@@ -34,6 +34,11 @@ const ServiceCardsWrapper = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
 
+    @media (max-width: 26.87em) {
+        //430
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     @media (max-width: 25em) {
         //400
         display: grid;

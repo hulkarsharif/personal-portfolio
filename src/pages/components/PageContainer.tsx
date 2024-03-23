@@ -46,11 +46,12 @@ const PageContainer = styled.section`
         padding-left: 3rem;
     }
 
-    @media (max-width: 25em) {
+    /* @media (max-width: 25em) {
         //400
         padding-right: 3rem;
         padding-left: 3rem;
-    }
+      
+    } */
 
     @media (max-width: 24.375em) {
         //390

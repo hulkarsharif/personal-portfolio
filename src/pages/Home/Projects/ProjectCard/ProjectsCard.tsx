@@ -91,9 +91,6 @@ const ProjectTextWrapper = styled.div`
 `;
 
 const ProjectName = styled(Typography)`
-    /* padding: 4rem; */
-    /* align-items: center;
-    text-align: center; */
     margin-top: 9rem;
     line-height: 2.3rem;
     font-size: 3rem;
@@ -150,6 +147,13 @@ const ProjectDescription = styled(Typography)`
         font-size: 2rem;
     }
 
+    @media (max-width: 25.75em) {
+        //412
+        padding: 0;
+        line-height: 1rem;
+        font-size: 1.5rem;
+        text-align: left;
+    }
     @media (max-width: 25em) {
         //400
         padding: 0;
@@ -199,6 +203,16 @@ const ProjectImageWrapper = styled.div`
         overflow: hidden;
     }
 
+    @media (max-width: 25.75em) {
+        width: 100%;
+        height: auto;
+
+        img {
+            height: auto;
+            width: 100%;
+            max-height: 18rem;
+        }
+    }
     @media (max-width: 25em) {
         width: 100%;
         height: auto;
