@@ -147,6 +147,13 @@ const ProjectDescription = styled(Typography)`
         font-size: 2rem;
     }
 
+    @media (max-width: 26.75em) {
+        //412
+        padding: 0;
+        line-height: 1rem;
+        font-size: 1.1rem;
+        text-align: left;
+    }
     @media (max-width: 25.75em) {
         //412
         padding: 0;
@@ -201,6 +208,17 @@ const ProjectImageWrapper = styled.div`
         height: 20rem;
         padding-bottom: 1.5rem;
         overflow: hidden;
+    }
+
+    @media (max-width: 26.75em) {
+        width: 100%;
+        height: auto;
+
+        img {
+            height: auto;
+            width: 100%;
+            max-height: 18rem;
+        }
     }
 
     @media (max-width: 25.75em) {

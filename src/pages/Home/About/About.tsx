@@ -51,6 +51,11 @@ const AboutLeftWrapper = styled.div`
 
     @media (max-width: 25.75em) {
         //412
+        padding: 13rem 3rem;
+    }
+
+    @media (max-width: 25.75em) {
+        //412
         padding: 15rem 3rem;
     }
 `;
@@ -73,6 +78,12 @@ const WhiteLine = styled.div`
         position: absolute;
         left: 5.2rem;
         bottom: 11.3rem;
+    }
+
+    @media (max-width: 26.75em) {
+        position: absolute;
+        left: 0;
+        bottom: 10rem;
     }
 
     @media (max-width: 25.75em) {

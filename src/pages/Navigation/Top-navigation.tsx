@@ -75,6 +75,12 @@ const LogoWrapper = styled.div`
         padding-left: 0rem;
     }
 
+    @media (max-width: 26.75em) {
+        //412
+
+        margin-left: 7rem;
+        /* padding-left: 3rem; */
+    }
     @media (max-width: 25.75em) {
         //412
 
