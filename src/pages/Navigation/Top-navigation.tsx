@@ -50,7 +50,7 @@ const NavigationLinks = styled.div<{ open: boolean }>`
         right: 0;
         height: 5.5rem;
         width: 20rem;
-        padding-top: 3.5rem;
+        padding-top: 8.5rem;
     }
 `;
 
