@@ -80,6 +80,12 @@ const WhiteLine = styled.div`
         bottom: 11.3rem;
     }
 
+    @media (max-width: 57.87em) {
+        position: absolute;
+        left: 2rem;
+        bottom: 9.3rem;
+    }
+
     @media (max-width: 26.75em) {
         position: absolute;
         left: 0;
@@ -120,6 +126,11 @@ const AboutSectionRight = styled.div`
         //1104
         width: 60%;
     }
+
+    /* @media (max-width: 57.87em) {
+        //926px
+        width: ;
+    } */
     @media (max-width: 56.25em) {
         //900
         width: 100%;
@@ -180,6 +191,12 @@ const AboutTitleRight = styled(Typography)`
         font-size: 2rem;
     }
 
+    @media (max-width: 57.875em) {
+        //926px
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+
     @media (max-width: 56.25em) {
         //1000px
         line-height: 1.8rem;
@@ -203,6 +220,11 @@ const AboutDescriptionRight = styled(Typography)`
         font-size: 2rem;
     }
 
+    @media (max-width: 57.87em) {
+        //926px
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
     @media (max-width: 56.25em) {
         line-height: 4rem;
         font-size: 2.2rem;

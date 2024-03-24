@@ -16,6 +16,5 @@ export const tools: Tool[] = [
     { title: "Git", icon: "git" },
     { title: "GitHub", icon: "github" },
     { title: "Terminal", icon: "terminal" },
-    { title: "Sass", icon: "sass" },
-    { title: "CorelDRAW", icon: "corel-draw" }
+    { title: "Sass", icon: "sass" }
 ];

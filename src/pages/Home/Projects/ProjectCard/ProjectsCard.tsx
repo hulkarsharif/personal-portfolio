@@ -253,7 +253,7 @@ const ProjectArrow = styled.div`
 
     @media (max-width: 62.5em) {
         //1000
-        display: none;
+        /* display: none; */
     }
 
     @media (max-width: 37.5em) {
