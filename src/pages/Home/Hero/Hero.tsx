@@ -3,13 +3,14 @@ import styled from "styled-components";
 import { PageContainer } from "../../components";
 import women from "../../../design-system/assets/image/blue-img.png";
 import FileViewer from "./FileViewer";
-const HeroSection = styled(PageContainer)`
+const HeroContainer = styled(PageContainer)`
     display: flex;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     padding-bottom: 5rem;
     align-items: center;
+    gap: var(--spacing-16);
     justify-content: space-between;
-    gap: 40px;
+
     background-color: var(--black-200);
 
     @media (max-width: 84em) {
@@ -61,6 +62,8 @@ const HeroSection = styled(PageContainer)`
 
 const HeroSectionLeft = styled.div`
     width: 60%;
+    padding-right: 2.5rem;
+    padding-left: 7.9rem;
     @media (max-width: 84em) {
         //1344
         width: 55%;
@@ -87,8 +90,11 @@ const HeroSectionLeft = styled.div`
 `;
 
 const HeroTitle = styled(Typography)`
+    letter-spacing: 0.4em;
     color: var(--dodger-blue-900);
-    line-height: 85px;
+    padding-top: 0rem;
+
+    margin: 48px 0px 0px;
 
     @media (max-width: 37.5em) {
         display: block;
@@ -107,7 +113,7 @@ const HeroDescription = styled(Typography)`
     font-size: 5rem;
     line-height: 85px;
     display: flex;
-    align-items: center;
+    align-items: left;
     text-align: left;
 
     @media (max-width: 37.5em) {
@@ -127,9 +133,10 @@ const HeroDescription = styled(Typography)`
 `;
 
 const HeroParagraph = styled(Typography)`
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-20);
     color: var(--black-400);
-    line-height: 25px;
+    line-height: 2.9rem;
+    font-weight: 50rem;
 
     @media (max-width: 25em) {
         line-height: 1.8rem;
@@ -146,6 +153,7 @@ const SocialMedia = styled.div`
     display: flex;
     gap: var(--space-36);
     align-items: center;
+
     svg {
         cursor: pointer;
         height: 2.3rem;
@@ -198,7 +206,7 @@ const SocialMedia = styled.div`
     }
 `;
 
-const GreenLine = styled.div`
+const BlueLine = styled.div`
     width: 10.7rem;
     height: 0.15rem;
     background-color: var(--dodger-blue-900);
@@ -216,6 +224,8 @@ const GreenLine = styled.div`
 const HeroSectionRight = styled.div`
     width: 40%;
 
+    margin-right: 6.5rem;
+
     transition: all 1s;
     &:hover {
         transform: scale(1.04);
@@ -223,7 +233,8 @@ const HeroSectionRight = styled.div`
 
     img {
         object-fit: contain;
-        height: 50rem;
+        height: 48rem;
+
         background-color: var(--black-200);
         /* border-radius: 22rem; */
     }
@@ -280,13 +291,13 @@ const HeroSectionRight = styled.div`
 //
 const Hero = () => {
     return (
-        <HeroSection>
+        <HeroContainer>
             <HeroSectionLeft>
                 <HeroTitle weight="bold" variant="h6" align="inherit">
                     HI, I AM KHULKAR
                 </HeroTitle>
                 <HeroDescription weight="bold" variant="displaySM" align="left">
-                    Software engineer.
+                    I am FullStack Developer
                 </HeroDescription>
                 <HeroParagraph
                     weight="semibold"
@@ -309,14 +320,14 @@ const Hero = () => {
                     </a>
                     <FileViewer />
 
-                    <GreenLine></GreenLine>
+                    <BlueLine></BlueLine>
                 </SocialMedia>
             </HeroSectionLeft>
 
             <HeroSectionRight>
                 <img src={women} alt="women" />
             </HeroSectionRight>
-        </HeroSection>
+        </HeroContainer>
     );
 };
 

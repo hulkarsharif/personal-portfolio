@@ -6,7 +6,9 @@ import whiteLine from "../../../design-system/assets/image/line-decor-white.png"
 import ellipse from "../../../design-system/assets/image/ELLIPSE.png";
 import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.png";
 
-const AboutSection = styled(PageContainer)`
+const AboutBase = styled(PageContainer)`
+    padding-right: 6rem;
+    padding-left: 10rem;
     align-items: center;
     display: flex;
     gap: var(--space-30);
@@ -22,7 +24,7 @@ const AboutSection = styled(PageContainer)`
 `;
 
 const AboutLeftWrapper = styled.div`
-    width: 50%;
+    width: 60rem;
     /* height: 59rem; */
     border-radius: var(--space-8);
     background-color: var(--black-100);
@@ -114,12 +116,14 @@ const AboutYellowEllipse = styled.div`
 `;
 
 const AboutSectionRight = styled.div`
-    width: 50%;
+    width: 60.7em;
     display: flex;
     flex-direction: column;
+    /* padding-right: 14px;
+    padding-left: 14px; */
 
     > *:not(:last-child) {
-        margin-bottom: var(--space-20);
+        margin-bottom: var(--space-30);
     }
 
     @media (max-width: 64em) {
@@ -213,6 +217,8 @@ const AboutTitleRight = styled(Typography)`
 const AboutDescriptionRight = styled(Typography)`
     align-items: center;
     text-align: left;
+    line-height: 2rem;
+    font-weight: 60rem;
 
     @media (max-width: 64em) {
         //1024
@@ -223,7 +229,7 @@ const AboutDescriptionRight = styled(Typography)`
     @media (max-width: 57.87em) {
         //926px
         line-height: 2.5rem;
-        font-size: 2rem;
+        font-size: rem;
     }
     @media (max-width: 56.25em) {
         line-height: 4rem;
@@ -239,7 +245,7 @@ const AboutDescriptionRight = styled(Typography)`
 
 const About = () => {
     return (
-        <AboutSection>
+        <AboutBase>
             <AboutLeftWrapper>
                 <AboutEllipseBlueWrapper>
                     <img src={ellipse} alt="ellipse" />
@@ -283,7 +289,7 @@ const About = () => {
                     </AboutCard>
                 ))}
             </AboutSectionRight>
-        </AboutSection>
+        </AboutBase>
     );
 };
 

@@ -15,8 +15,8 @@ type ProjectCardProps = {
 const ProjectCardWrapper = styled.div<{ name: string }>`
     padding: var(--space-40);
 
-    width: 124.4rem;
-    height: 41rem;
+    width: 124rem;
+    height: 44rem;
 
     display: flex;
     align-items: right;
@@ -190,7 +190,7 @@ const ProjectImageWrapper = styled.div`
     border-radius: var(--border-radius-8);
 
     img {
-        height: 54rem;
+        /* height: 50rem; */
         /* width: 100%; */
         object-fit: cover;
 

@@ -13,11 +13,14 @@ const links = [
 ];
 
 const Base = styled(PageContainer)`
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding-left: 7.9rem;
+    padding-right: 11rem;
 
     @media (max-width: 84em) {
         //1344

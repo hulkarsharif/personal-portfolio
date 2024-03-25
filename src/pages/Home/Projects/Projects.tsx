@@ -4,9 +4,12 @@ import { ProjectCard } from "./ProjectCard";
 import { projects } from "./ProjectCard/data";
 import { PageContainer } from "../../components";
 
-const SectionBase = styled(PageContainer)`
-    padding-top: 12rem;
-    padding-bottom: 8rem;
+const ProjectBase = styled(PageContainer)`
+    /* background-color: springgreen; */
+    padding-left: 10.6rem;
+    padding-right: 8.5rem;
+    padding-top: 10rem;
+    /*padding-bottom: 8rem; */
 `;
 
 const Title = styled(Typography)`
@@ -21,7 +24,7 @@ const ProjectCardsWrapper = styled.div`
 
 const Projects = () => {
     return (
-        <SectionBase>
+        <ProjectBase>
             <Title variant="h3" weight="semibold">
                 Featured <span>Projects</span>
             </Title>
@@ -31,7 +34,7 @@ const Projects = () => {
                     <ProjectCard key={index} project={project} />
                 ))}
             </ProjectCardsWrapper>
-        </SectionBase>
+        </ProjectBase>
     );
 };
 

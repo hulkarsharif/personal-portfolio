@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const PageContainer = styled.section`
+const PageContainer = styled.div`
     max-width: 144rem;
     margin: 0 auto;
 
     align-items: center;
-    padding-right: 9.55rem;
-    padding-left: 9.55rem;
+    /* padding-right: 9.55rem;
+    padding-left: 9.55rem; */
 
     @media (max-width: 84em) {
         //1344

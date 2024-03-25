@@ -7,6 +7,9 @@ import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
 
 const FooterSection = styled(PageContainer)`
+    padding-right: 9.55rem;
+    padding-left: 9.55rem;
+    padding-top: 10rem;
     @media (max-width: 37.5em) {
         margin-bottom: 2rem;
     }
@@ -14,12 +17,14 @@ const FooterSection = styled(PageContainer)`
 
 const FooterWrapper = styled.div`
     text-align: left;
-    border-radius: var(--space-8);
+    border-radius: var(--space-12);
     background-color: var(--dodger-blue-200);
-    padding-left: 12.3rem;
+
     padding-top: 8.6rem;
     padding-bottom: 5rem;
-    padding-right: 20rem;
+
+    padding-right: 9.55rem;
+    padding-left: 9.55rem;
 
     @media (max-width: 64em) {
         padding-right: 12rem;

@@ -5,7 +5,11 @@ import { ServiceCard } from "../Service/ServiceCard";
 import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
-const SectionBase = styled(PageContainer)`
+const SectionBase = styled.div`
+    max-width: 124rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+
     transition: all 1s;
 
     @media (max-width: 56.25em) {

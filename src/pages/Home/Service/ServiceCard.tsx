@@ -58,6 +58,15 @@ const ServiceIconWrapper = styled.div`
     border-radius: var(--space-12);
     padding: 1.9rem;
     background-color: var(--dodger-blue-900);
+
+    &:hover {
+        background-color: var(--dodger-blue-400);
+
+        icon {
+            background-color: #5c0e0e;
+            color: var(--primary-600);
+        }
+    }
 `;
 
 const ServiceTitle = styled(Typography)`

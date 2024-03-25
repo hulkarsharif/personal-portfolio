@@ -1,6 +1,6 @@
 import project1 from "../../../../design-system/assets/image/delisiozo.png";
 import project2 from "../../../../design-system/assets/image/fur.png";
-import project3 from "../../../../design-system/assets/image/projectify-i.png";
+import project3 from "../../../../design-system/assets/image/Screenshot.png";
 
 import project4 from "../../../../../assets/projects/project-4.jpg";
 import project5 from "../../../../../assets/projects/project-5.png";
