@@ -15,33 +15,19 @@ const HeroContainer = styled(PageContainer)`
     display: flex;
     padding-bottom: 5rem;
     align-items: center;
-    gap: 9rem;
-    /* gap: var(--space-20); */
+    /* gap: 9rem; */
     justify-content: space-between;
 
-    @media (max-width: 84em) {
-        //1344
-        /* padding-top: 1.5rem;
-        padding-bottom: 1.5rem; */
-    }
-
-    //1300
-    @media (max-width: 81.25em) {
-        margin-left: 5.5rem;
-        margin-right: 5.5rem;
-    }
-
-    @media (max-width: 75em) {
-        padding-right: 5.5rem;
-    }
-
-    @media (max-width: 62.5em) {
-    }
-
     @media (max-width: 56.25em) {
-        padding-left: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        display: block;
+        align-items: center;
+        text-align: center;
+        /* padding-left: 9.5rem;
+        padding-right: 9.5rem; */
     }
-
+    /*
     @media (max-width: 50em) {
         padding-right: 10.5rem;
     }
@@ -63,25 +49,25 @@ const HeroContainer = styled(PageContainer)`
         padding-right: 3.4rem;
         display: block;
         text-align: center;
-    }
+    }*/
 `;
 
 const HeroSectionLeft = styled.div`
     width: 50%;
     /* padding-right: 2.5rem; */
     /* padding-left: 7.9rem; */
-    @media (max-width: 84em) {
-        //1344
-    }
-
-    @media (max-width: 75em) {
-        width: 50%;
-    }
 
     @media (max-width: 56.25em) {
-        padding-right: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
+    /*
     @media (max-width: 43.75em) {
         padding-left: 0.5rem;
     }
@@ -91,7 +77,7 @@ const HeroSectionLeft = styled.div`
     }
     @media (max-width: 25em) {
         width: 100%;
-    }
+    }*/
 `;
 
 const HeroTitle = styled(Typography)`
@@ -101,14 +87,17 @@ const HeroTitle = styled(Typography)`
 
     /* margin: 48px 0px 0px; */
 
-    @media (max-width: 84em) {
-        line-height: 8rem;
-        font-size: 2.1rem;
-    }
-
-    @media (max-width: 37.5em) {
-        display: block;
+    @media (max-width: 56.25em) {
+        //900
+        /* font-size: 5rem;
+        line-height: 8rem; */
+        margin-bottom: 2rem;
         align-items: center;
+        text-align: center;
+    }
+    @media (max-width: 37.5em) {
+        /* display: block;
+        align-items: center; */
         font-size: 2.1rem;
     }
 
@@ -121,11 +110,11 @@ const HeroTitle = styled(Typography)`
 `;
 
 const YellowLine = styled.span`
-    position: absolute;
+    /* position: absolute; */
     left: 51%;
     bottom: -10%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 20%;
     z-index: -1;
     @media (max-width: 84em) {
         //1344
@@ -138,18 +127,30 @@ const HeroDescription = styled(Typography)`
     font-size: 4rem;
     line-height: 6rem;
     display: flex;
-    align-items: left;
-    text-align: left;
+    /* align-items: left;
+    text-align: left; */
 
-    position: relative;
-    z-index: 4;
+    /* position: relative;
+    z-index: 4; */
 
     @media (max-width: 84em) {
         //1344
-        font-size: 4rem;
-        line-height: 4rem;
-        margin-bottom: 2rem;
+        font-size: 2rem;
+        line-height: 2rem;
+
+        align-items: center;
+        text-align: center;
     }
+
+    @media (max-width: 56.25em) {
+        //900
+        font-size: 5rem;
+        line-height: 10rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    /*
     @media (max-width: 37.5em) {
         align-items: start;
         font-size: 3rem;
@@ -163,7 +164,7 @@ const HeroDescription = styled(Typography)`
         line-height: 3.8rem;
         text-align: center;
         margin-bottom: 1rem;
-    }
+    }*/
 `;
 
 const HeroParagraph = styled(Typography)`
@@ -171,6 +172,15 @@ const HeroParagraph = styled(Typography)`
     color: var(--black-400);
     line-height: 2.8rem;
     font-weight: 65rem;
+
+    @media (max-width: 56.25em) {
+        //900
+        font-size: 2rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+    }
 
     @media (max-width: 25em) {
         line-height: 1.8rem;
@@ -188,12 +198,15 @@ const SocialMedia = styled.div`
     gap: var(--space-36);
     align-items: center;
 
-    @media (max-width: 62.5em) {
+    @media (max-width: 56.25em) {
+        //900
+        /* margin-left: 12rem; */
+        align-items: center;
+        text-align: center;
         display: flex;
-        gap: var(--space-10);
     }
 
-    @media (max-width: 56em) {
+    /* @media (max-width: 56em) {
         display: flex;
         justify-content: space-between;
         gap: var(--space-8);
@@ -222,7 +235,7 @@ const SocialMedia = styled.div`
         :not(:last-child) {
             margin-right: 1.5rem;
         }
-    }
+    }*/
 `;
 
 const BlueLine = styled.div`
@@ -251,34 +264,28 @@ const HeroSectionRight = styled.div`
 
     img {
         object-fit: contain;
-        height: rem;
-
-        /* background-color: var(--black-200); */
-        /* border-radius: 22rem; */
+        /* height: 45rem; */
     }
 
-    @media (max-width: 84em) {
-        width: 40%;
-        margin-left: 20rem;
+    @media (max-width: 62.5em) {
+        height: 50%;
 
         img {
-            object-fit: contain;
-            height: 35rem;
-
-            background-color: var(--black-200);
-            /* border-radius: 22rem; */
+            /* height: max-content; */
         }
-    }
-    @media (max-width: 62.5em) {
-        width: 55%;
     }
     @media (max-width: 56.25em) {
-        width: 60%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
         img {
-            height: 45rem;
+            width: 60%;
+            text-align: center;
+            align-items: center;
         }
     }
-
+    /*
     @media (max-width: 56em) {
         width: 60%;
 
@@ -312,7 +319,7 @@ const HeroSectionRight = styled.div`
             height: 25rem;
             margin-right: 2rem;
         }
-    }
+    }*/
 `;
 
 //
@@ -331,9 +338,9 @@ const Hero = () => {
                         align="left"
                     >
                         I am FullStack Developer
-                        <YellowLine>
+                        {/* <YellowLine>
                             <img src={yellow} alt="yellow" />
-                        </YellowLine>
+                        </YellowLine> */}
                     </HeroDescription>
 
                     <HeroParagraph

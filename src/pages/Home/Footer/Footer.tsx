@@ -6,7 +6,8 @@ import email from "../../../design-system/assets/image/email-icon.png";
 import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
 import yellow from "../../../design-system/assets/image/HIGHLIGHT-md.png";
-
+import BigCircle from "../../../design-system/assets/image/ELLIPSE-cr-lg.png";
+import CircleMd from "../../../design-system/assets/image/ELLIPSE-cr-md.png";
 import circle from "../../../design-system/assets/image/ELLIPSE-cr.png";
 
 const SectionsBase = styled.section`
@@ -26,16 +27,28 @@ const Circle = styled.span`
     bottom: 45rem;
 `;
 
+const CircleLarge = styled.span`
+    position: absolute;
+    top: 8rem;
+    right: 0;
+`;
+
+const MediumCircle = styled.span`
+    position: absolute;
+    left: 0;
+    top: 4rem;
+`;
 const FooterWrapper = styled.div`
     text-align: left;
     border-radius: var(--space-12);
     background-color: var(--dodger-blue-200);
 
-    padding-top: 8.6rem;
+    padding: 7rem 7rem;
+    /* padding-top: 8rem;
     padding-bottom: 5rem;
 
     padding-right: 9.55rem;
-    padding-left: 9.55rem;
+    padding-left: 9.55rem; */
 
     @media (max-width: 64em) {
         padding-right: 12rem;
@@ -91,7 +104,7 @@ const Buttons = styled.div`
 `;
 
 const StyledLink = styled.a`
-    padding-right: 6rem;
+    /* padding-right: 6rem; */
     display: inline-block;
     padding: 1rem;
     justify-content: space-between;
@@ -177,14 +190,19 @@ const Footer = () => {
                 <FooterSection>
                     <FooterWrapper>
                         <Circle>
-                            {" "}
                             <img src={circle} alt="ellipse" />
                         </Circle>
+                        <CircleLarge>
+                            <img src={BigCircle} alt="circle" />
+                        </CircleLarge>
+                        <MediumCircle>
+                            <img src={CircleMd} alt="circle" />
+                        </MediumCircle>
                         <FooterTitle weight="bold" variant="h2" align="inherit">
                             Have a project idea to collaborate with?
-                            <YellowLine>
+                            {/* <YellowLine>
                                 <img src={yellow} alt="yellow" />
-                            </YellowLine>
+                            </YellowLine> */}
                         </FooterTitle>
                         <FooterLinkWrapper>
                             <Buttons>

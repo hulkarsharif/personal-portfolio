@@ -5,11 +5,13 @@ import { projects } from "./ProjectCard/data";
 import { PageContainer } from "../../components";
 
 const SectionsBase = styled.section`
-    padding-left: 10.6rem;
-    padding-right: 8.5rem;
+    padding-left: 9.55rem;
+    padding-right: 9.55rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 `;
 const ProjectBase = styled(PageContainer)`
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     /*padding-bottom: 8rem; */
 `;
 
@@ -20,7 +22,9 @@ const Title = styled(Typography)`
 `;
 
 const ProjectCardsWrapper = styled.div`
-    /* row-gap: var(--space-20); */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 `;
 
 const Projects = () => {

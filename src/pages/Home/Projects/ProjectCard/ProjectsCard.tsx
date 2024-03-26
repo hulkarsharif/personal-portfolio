@@ -15,16 +15,15 @@ type ProjectCardProps = {
 const ProjectCardWrapper = styled.div<{ name: string }>`
     padding: var(--space-40);
 
-    width: 124rem;
     height: 44rem;
 
     display: flex;
-    align-items: right;
+    /* align-items: right; */
     gap: var(--space-20);
 
     border-radius: var(--border-radius-8);
     box-shadow: var(--shadow-m);
-    margin-bottom: var(--space-40);
+    /* margin-bottom: var(--space-40); */
 
     background-color: ${({ name }) => {
         switch (name) {
@@ -273,7 +272,6 @@ const ProjectArrow = styled.div`
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
-        // <ProjectCardBase>
         <ProjectCardWrapper name={project.name}>
             <ProjectTextWrapper>
                 <ProjectName variant="h5" weight="bold">
@@ -311,7 +309,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <img src={project.image} alt="Project" />
             </ProjectImageWrapper>
         </ProjectCardWrapper>
-        // </ProjectCardBase>
     );
 };
 

@@ -5,9 +5,11 @@ import yellow from "../../../design-system/assets/image/HIGHLIGHT-sm.png";
 import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
+const SectionsBase = styled.section`
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+`;
 const SectionBase = styled.div`
-    max-width: 124rem;
-    margin: 0 auto;
     padding-top: 5rem;
 
     transition: all 1s;
@@ -20,10 +22,6 @@ const SectionBase = styled.div`
     }
 `;
 
-const SectionsBase = styled.section`
-    padding-left: 9.5rem;
-    padding-right: 9.5rem;
-`;
 const ServiceTextWrapper = styled.div`
     text-align: center;
     margin-bottom: 6.9rem;
@@ -55,6 +53,12 @@ const ServiceCardsWrapper = styled.div`
         //900px
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 32em) {
+        //512
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @media (max-width: 26.87em) {

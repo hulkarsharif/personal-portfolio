@@ -5,9 +5,15 @@ import { Icon } from "../../../design-system";
 import { PageContainer } from "../../components";
 import { tools } from "./data";
 
-const ToolBarWrapper = styled(PageContainer)`
+const SectionsBase = styled.section`
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+`;
+
+const ToolBarWrapper = styled.div`
     margin-top: var(--space-60);
-    padding: 3rem 5rem;
+
+    /* padding: 3rem 5rem; */
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
@@ -80,18 +86,20 @@ interface ToolBarProps {
 
 const ToolBar: React.FC<ToolBarProps> = ({ tools }) => {
     return (
-        <ToolBarWrapper>
-            {tools.map((tool, idx) => (
-                <ToolBox key={idx}>
-                    <StyledIcon
-                        height="4rem"
-                        width="4rem"
-                        iconName={tool.icon}
-                    />
-                    <SkillTitle>{tool.title}</SkillTitle>
-                </ToolBox>
-            ))}
-        </ToolBarWrapper>
+        <SectionsBase>
+            <ToolBarWrapper>
+                {tools.map((tool, idx) => (
+                    <ToolBox key={idx}>
+                        <StyledIcon
+                            height="4rem"
+                            width="4rem"
+                            iconName={tool.icon}
+                        />
+                        <SkillTitle>{tool.title}</SkillTitle>
+                    </ToolBox>
+                ))}
+            </ToolBarWrapper>
+        </SectionsBase>
     );
 };
 

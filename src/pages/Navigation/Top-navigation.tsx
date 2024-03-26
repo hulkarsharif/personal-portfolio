@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { NavigationLink } from "./Links";
 import logoMe from "../../design-system/assets/image/Klogo.png";
 import { PageContainer } from "../components";
+import KLogo from "../../design-system/assets/image/L1995.png";
 
 const links = [
     { text: "HOME", link: "#hero" },
@@ -61,10 +62,10 @@ const NavigationLinks = styled.div<{ open: boolean }>`
 `;
 
 const LogoWrapper = styled.div`
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    background-color: var(--dodger-blue-900);
+    /* background-color: var(--dodger-blue-900); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,11 +113,11 @@ const LogoWrapper = styled.div`
     }
 `;
 
-const LogoText = styled.span`
-    color: #fff; // White color for the initials
-    font-size: 1.5rem;
-    font-weight: bolder;
-`;
+// const LogoText = styled.span`
+//     color: #fff; // White color for the initials
+//     font-size: 1.5rem;
+//     font-weight: bolder;
+// `;
 
 const StyledBurger = styled.div<{ open: boolean }>`
     display: none;
@@ -168,7 +169,7 @@ const TopNavigation = () => {
         <SectionsBase>
             <Base>
                 <LogoWrapper>
-                    <LogoText>Kh</LogoText>
+                    <img src={KLogo} alt="ellipse" />
                 </LogoWrapper>
                 <StyledBurger open={open} onClick={() => setOpen(!open)}>
                     <div />

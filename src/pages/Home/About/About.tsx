@@ -7,33 +7,35 @@ import ellipse from "../../../design-system/assets/image/ELLIPSE.png";
 import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.png";
 
 const SectionsBase = styled.section`
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 9.55rem;
+    padding-right: 9.55rem;
 `;
 
 const AboutBase = styled(PageContainer)`
-    align-items: center;
+    align-items: stretch;
     display: flex;
     gap: var(--space-30);
+
     @media (max-width: 56.25em) {
         //900
-        display: block;
-    }
-
-    @media (max-width: 56.12em) {
-        //834
         display: block;
     }
 `;
 
 const AboutLeftWrapper = styled.div`
     width: 50%;
-    /* width: 60.7rem; */
     border-radius: var(--space-8);
     background-color: var(--black-100);
-    align-items: center;
     position: relative;
-    padding: 15.4rem 10.1rem 32.2rem 10.1rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9rem 10rem;
+
+    /* padding-right: 10rem;
+    padding-left: 10rem; */
+    /* padding: 15.4rem 10.1rem 31rem 10.1rem; */
 
     @media (max-width: 64em) {
         width: 60%;
@@ -46,9 +48,14 @@ const AboutLeftWrapper = styled.div`
     @media (max-width: 56.25em) {
         //900
         width: 100%;
+        display: inline-block;
+        align-items: stretch;
+        gap: var(--space-30);
         margin-bottom: 2rem;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
     }
-
+    /*
     @media (max-width: 56.12em) {
         //834
         width: 100%;
@@ -62,7 +69,7 @@ const AboutLeftWrapper = styled.div`
     @media (max-width: 25.75em) {
         //412
         padding: 15rem 3rem;
-    }
+    }*/
 `;
 
 const AboutTitle = styled(Typography)`
@@ -73,35 +80,12 @@ const AboutTitle = styled(Typography)`
 const AboutParagraph = styled(Typography)`
     color: var(--black-400);
     line-height: 2.5rem;
+    margin-bottom: 4rem;
 `;
 
 const WhiteLine = styled.div`
-    position: absolute;
-    left: 10.2rem;
-    bottom: 11.3rem;
-    @media (max-width: 68.75em) {
-        position: absolute;
-        left: 5.2rem;
-        bottom: 11.3rem;
-    }
-
-    @media (max-width: 57.87em) {
-        position: absolute;
-        left: 2rem;
-        bottom: 9.3rem;
-    }
-
-    @media (max-width: 26.75em) {
-        position: absolute;
-        left: 0;
-        bottom: 10rem;
-    }
-
-    @media (max-width: 25.75em) {
-        display: none;
-    }
-
-    @media (max-width: 25em) {
+    @media (max-width: 32em) {
+        //512
         display: none;
     }
 `;
@@ -122,22 +106,16 @@ const AboutSectionRight = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* padding-right: 14px;
-    padding-left: 14px; */
-
-    > *:not(:last-child) {
+    justify-content: space-between;
+    gap: 3rem;
+    /* > *:not(:last-child) {
         margin-bottom: var(--space-30);
-    }
-
+    } */
     @media (max-width: 64em) {
         //1104
         width: 60%;
     }
 
-    /* @media (max-width: 57.87em) {
-        //926px
-        width: ;
-    } */
     @media (max-width: 56.25em) {
         //900
         width: 100%;
