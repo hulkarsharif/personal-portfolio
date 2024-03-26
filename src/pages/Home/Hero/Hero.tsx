@@ -2,22 +2,29 @@ import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
 import women from "../../../design-system/assets/image/blue-img.png";
+
+import yellow from "../../../design-system/assets/image/HIGHLIGHT-yellow.png";
 import FileViewer from "./FileViewer";
+
+const SectionsBase = styled.section`
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+    background-color: var(--black-200);
+`;
 const HeroContainer = styled(PageContainer)`
     display: flex;
-    /* padding-top: 5rem; */
     padding-bottom: 5rem;
     align-items: center;
-    gap: var(--spacing-16);
+    gap: 9rem;
+    /* gap: var(--space-20); */
     justify-content: space-between;
-
-    background-color: var(--black-200);
 
     @media (max-width: 84em) {
         //1344
-        /* padding-right: 9.55rem;
-        padding-left: 9.55rem; */
+        /* padding-top: 1.5rem;
+        padding-bottom: 1.5rem; */
     }
+
     //1300
     @media (max-width: 81.25em) {
         margin-left: 5.5rem;
@@ -29,7 +36,6 @@ const HeroContainer = styled(PageContainer)`
     }
 
     @media (max-width: 62.5em) {
-        /* padding-left: 2.5rem; */
     }
 
     @media (max-width: 56.25em) {
@@ -61,12 +67,11 @@ const HeroContainer = styled(PageContainer)`
 `;
 
 const HeroSectionLeft = styled.div`
-    width: 60%;
-    padding-right: 2.5rem;
-    padding-left: 7.9rem;
+    width: 50%;
+    /* padding-right: 2.5rem; */
+    /* padding-left: 7.9rem; */
     @media (max-width: 84em) {
         //1344
-        width: 55%;
     }
 
     @media (max-width: 75em) {
@@ -94,7 +99,12 @@ const HeroTitle = styled(Typography)`
     color: var(--dodger-blue-900);
     padding-top: 0rem;
 
-    margin: 48px 0px 0px;
+    /* margin: 48px 0px 0px; */
+
+    @media (max-width: 84em) {
+        line-height: 8rem;
+        font-size: 2.1rem;
+    }
 
     @media (max-width: 37.5em) {
         display: block;
@@ -109,13 +119,37 @@ const HeroTitle = styled(Typography)`
         margin-bottom: 1rem;
     }
 `;
+
+const YellowLine = styled.span`
+    position: absolute;
+    left: 51%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+    @media (max-width: 84em) {
+        //1344
+        width: -40%;
+        /* bottom: -1rem;
+        bottom: -10%; */
+    }
+`;
 const HeroDescription = styled(Typography)`
-    font-size: 5rem;
-    line-height: 85px;
+    font-size: 4rem;
+    line-height: 6rem;
     display: flex;
     align-items: left;
     text-align: left;
 
+    position: relative;
+    z-index: 4;
+
+    @media (max-width: 84em) {
+        //1344
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
     @media (max-width: 37.5em) {
         align-items: start;
         font-size: 3rem;
@@ -135,8 +169,8 @@ const HeroDescription = styled(Typography)`
 const HeroParagraph = styled(Typography)`
     margin-bottom: var(--space-20);
     color: var(--black-400);
-    line-height: 2.9rem;
-    font-weight: 50rem;
+    line-height: 2.8rem;
+    font-weight: 65rem;
 
     @media (max-width: 25em) {
         line-height: 1.8rem;
@@ -153,21 +187,6 @@ const SocialMedia = styled.div`
     display: flex;
     gap: var(--space-36);
     align-items: center;
-
-    svg {
-        cursor: pointer;
-        height: 2.3rem;
-        width: 2.3rem;
-        margin-top: 0.7rem;
-        transition: all 1s;
-        &:hover {
-            transform: scale(1.25);
-        }
-
-        @media (max-width: 56em) {
-            width: 1.5rem;
-        }
-    }
 
     @media (max-width: 62.5em) {
         display: flex;
@@ -222,9 +241,8 @@ const BlueLine = styled.div`
 `;
 
 const HeroSectionRight = styled.div`
-    width: 40%;
-
-    margin-right: 6.5rem;
+    width: 50%;
+    text-align: right;
 
     transition: all 1s;
     &:hover {
@@ -233,14 +251,23 @@ const HeroSectionRight = styled.div`
 
     img {
         object-fit: contain;
-        height: 48rem;
+        height: rem;
 
-        background-color: var(--black-200);
+        /* background-color: var(--black-200); */
         /* border-radius: 22rem; */
     }
 
     @media (max-width: 84em) {
-        width: 60%;
+        width: 40%;
+        margin-left: 20rem;
+
+        img {
+            object-fit: contain;
+            height: 35rem;
+
+            background-color: var(--black-200);
+            /* border-radius: 22rem; */
+        }
     }
     @media (max-width: 62.5em) {
         width: 55%;
@@ -291,43 +318,51 @@ const HeroSectionRight = styled.div`
 //
 const Hero = () => {
     return (
-        <HeroContainer>
-            <HeroSectionLeft>
-                <HeroTitle weight="bold" variant="h6" align="inherit">
-                    HI, I AM KHULKAR
-                </HeroTitle>
-                <HeroDescription weight="bold" variant="displaySM" align="left">
-                    I am FullStack Developer
-                </HeroDescription>
-                <HeroParagraph
-                    weight="semibold"
-                    variant="subtitleSM"
-                    align="left"
-                >
-                    With a keen eye for detail and a passion for creating
-                    seamless user experiences, I have crafted innovative
-                    solutions that meet client requirements and exceed
-                    expectations. My portfolio demonstrates my ability to
-                    effectively communicate with stakeholders, iterate on
-                    feedback, and deliver high-quality, scalable software
-                    solutions.
-                </HeroParagraph>
-                <SocialMedia>
-                    <a href="mailto:sharipovah01@gmail.com">
-                        <Button size="lg" color="success" shape="circle">
-                            Contact me
-                        </Button>
-                    </a>
-                    <FileViewer />
+        <SectionsBase>
+            <HeroContainer>
+                <HeroSectionLeft>
+                    <HeroTitle weight="bold" variant="h6" align="inherit">
+                        HI, I AM KHULKAR
+                    </HeroTitle>
 
-                    <BlueLine></BlueLine>
-                </SocialMedia>
-            </HeroSectionLeft>
+                    <HeroDescription
+                        weight="bold"
+                        variant="displaySM"
+                        align="left"
+                    >
+                        I am FullStack Developer
+                        <YellowLine>
+                            <img src={yellow} alt="yellow" />
+                        </YellowLine>
+                    </HeroDescription>
 
-            <HeroSectionRight>
-                <img src={women} alt="women" />
-            </HeroSectionRight>
-        </HeroContainer>
+                    <HeroParagraph
+                        weight="semibold"
+                        variant="subtitleSM"
+                        align="left"
+                    >
+                        With a keen eye for detail and a passion for creating
+                        seamless user experiences, I have crafted innovative
+                        solutions that meet client requirements and exceed
+                        expectations.
+                    </HeroParagraph>
+                    <SocialMedia>
+                        <a href="mailto:sharipovah01@gmail.com">
+                            <Button size="lg" color="success" shape="circle">
+                                Contact me
+                            </Button>
+                        </a>
+                        <FileViewer />
+
+                        <BlueLine></BlueLine>
+                    </SocialMedia>
+                </HeroSectionLeft>
+
+                <HeroSectionRight>
+                    <img src={women} alt="women" />
+                </HeroSectionRight>
+            </HeroContainer>
+        </SectionsBase>
     );
 };
 

@@ -12,15 +12,17 @@ const links = [
     { text: "CONTACT", link: "contacts" }
 ];
 
+const SectionsBase = styled.section`
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+`;
+
 const Base = styled(PageContainer)`
     padding-top: 2rem;
     padding-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding-left: 7.9rem;
-    padding-right: 11rem;
 
     @media (max-width: 84em) {
         //1344
@@ -45,6 +47,7 @@ const NavigationLinks = styled.div<{ open: boolean }>`
         transition: all 0.3s ease-in-out;
         transform: ${({ open }) =>
             open ? "translateX(0)" : "translateX(100%)"};
+
         //900
         flex-flow: column nowrap;
         background-color: var(--gray-200);
@@ -162,25 +165,27 @@ const TopNavigation = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <Base>
-            <LogoWrapper>
-                <LogoText>Kh</LogoText>
-            </LogoWrapper>
-            <StyledBurger open={open} onClick={() => setOpen(!open)}>
-                <div />
-                <div />
-                <div />
-            </StyledBurger>
-            <NavigationLinks open={open}>
-                {links.map((link, idx) => (
-                    <NavigationLink
-                        key={idx}
-                        linkText={link.text}
-                        linkTo={link.link}
-                    />
-                ))}
-            </NavigationLinks>
-        </Base>
+        <SectionsBase>
+            <Base>
+                <LogoWrapper>
+                    <LogoText>Kh</LogoText>
+                </LogoWrapper>
+                <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                    <div />
+                    <div />
+                    <div />
+                </StyledBurger>
+                <NavigationLinks open={open}>
+                    {links.map((link, idx) => (
+                        <NavigationLink
+                            key={idx}
+                            linkText={link.text}
+                            linkTo={link.link}
+                        />
+                    ))}
+                </NavigationLinks>
+            </Base>
+        </SectionsBase>
     );
 };
 

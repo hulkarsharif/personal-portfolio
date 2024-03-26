@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Typography } from "../../../design-system";
 import { ServiceCard } from "../Service/ServiceCard";
-
+import yellow from "../../../design-system/assets/image/HIGHLIGHT-sm.png";
 import { documents } from "../Service/data";
 import { PageContainer } from "../../components";
 
@@ -12,11 +12,18 @@ const SectionBase = styled.div`
 
     transition: all 1s;
 
+    @media (max-width: 84em) {
+        //1344px
+    }
     @media (max-width: 56.25em) {
         //900px
     }
 `;
 
+const SectionsBase = styled.section`
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+`;
 const ServiceTextWrapper = styled.div`
     text-align: center;
     margin-bottom: 6.9rem;
@@ -24,6 +31,18 @@ const ServiceTextWrapper = styled.div`
 
 const Title = styled(Typography)`
     color: var(--jaguar-900);
+    font-size: var(--space-45);
+
+    position: relative;
+    z-index: 4;
+`;
+const YellowLine = styled.span`
+    position: absolute;
+    left: 43%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
 `;
 
 const ServiceCardsWrapper = styled.div`
@@ -52,18 +71,23 @@ const ServiceCardsWrapper = styled.div`
 
 const Service = () => {
     return (
-        <SectionBase>
-            <ServiceTextWrapper>
-                <Title variant="h5" weight="bold">
-                    What Service do I provide.
-                </Title>
-            </ServiceTextWrapper>
-            <ServiceCardsWrapper>
-                {documents.map((docs, index) => (
-                    <ServiceCard key={index} item={docs} />
-                ))}
-            </ServiceCardsWrapper>
-        </SectionBase>
+        <SectionsBase>
+            <SectionBase>
+                <ServiceTextWrapper>
+                    <Title variant="h5" weight="bold">
+                        What service do I provide.
+                        <YellowLine>
+                            <img src={yellow} alt="yellow" />
+                        </YellowLine>
+                    </Title>
+                </ServiceTextWrapper>
+                <ServiceCardsWrapper>
+                    {documents.map((docs, index) => (
+                        <ServiceCard key={index} item={docs} />
+                    ))}
+                </ServiceCardsWrapper>
+            </SectionBase>
+        </SectionsBase>
     );
 };
 

@@ -63,7 +63,6 @@ const ServiceIconWrapper = styled.div`
         background-color: var(--dodger-blue-400);
 
         icon {
-            background-color: #5c0e0e;
             color: var(--primary-600);
         }
     }
@@ -73,6 +72,11 @@ const ServiceTitle = styled(Typography)`
     margin-top: 11.4rem;
     margin-bottom: 1.8rem;
     font-size: 2.5rem;
+    @media (max-width: 84em) {
+        //1344px
+        font-size: 25px;
+        line-height: 18px;
+    }
 
     @media (max-width: 56.25em) {
         //900px
@@ -96,6 +100,11 @@ const ServiceTitle = styled(Typography)`
 const ServiceDescription = styled(Typography)`
     color: var(--jaguar-500);
 
+    @media (max-width: 84em) {
+        //1344px
+        font-size: 8px;
+        line-height: 20px;
+    }
     @media (max-width: 56.25em) {
         //900px
         font-size: 15px;

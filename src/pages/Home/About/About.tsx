@@ -6,9 +6,12 @@ import whiteLine from "../../../design-system/assets/image/line-decor-white.png"
 import ellipse from "../../../design-system/assets/image/ELLIPSE.png";
 import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.png";
 
+const SectionsBase = styled.section`
+    padding-left: 12rem;
+    padding-right: 12rem;
+`;
+
 const AboutBase = styled(PageContainer)`
-    padding-right: 6rem;
-    padding-left: 10rem;
     align-items: center;
     display: flex;
     gap: var(--space-30);
@@ -24,8 +27,8 @@ const AboutBase = styled(PageContainer)`
 `;
 
 const AboutLeftWrapper = styled.div`
-    width: 60rem;
-    /* height: 59rem; */
+    width: 50%;
+    /* width: 60.7rem; */
     border-radius: var(--space-8);
     background-color: var(--black-100);
     align-items: center;
@@ -116,7 +119,7 @@ const AboutYellowEllipse = styled.div`
 `;
 
 const AboutSectionRight = styled.div`
-    width: 60.7em;
+    width: 50%;
     display: flex;
     flex-direction: column;
     /* padding-right: 14px;
@@ -217,8 +220,9 @@ const AboutTitleRight = styled(Typography)`
 const AboutDescriptionRight = styled(Typography)`
     align-items: center;
     text-align: left;
-    line-height: 2rem;
+    line-height: 1.8rem;
     font-weight: 60rem;
+    font-size: 2rem;
 
     @media (max-width: 64em) {
         //1024
@@ -245,51 +249,53 @@ const AboutDescriptionRight = styled(Typography)`
 
 const About = () => {
     return (
-        <AboutBase>
-            <AboutLeftWrapper>
-                <AboutEllipseBlueWrapper>
-                    <img src={ellipse} alt="ellipse" />
-                </AboutEllipseBlueWrapper>
-                <AboutTitle weight="normal" variant="h6" align="left">
-                    Working Experience
-                </AboutTitle>
+        <SectionsBase>
+            <AboutBase>
+                <AboutLeftWrapper>
+                    <AboutEllipseBlueWrapper>
+                        <img src={ellipse} alt="ellipse" />
+                    </AboutEllipseBlueWrapper>
+                    <AboutTitle weight="normal" variant="h6" align="left">
+                        Working Experience
+                    </AboutTitle>
 
-                <AboutParagraph weight="semibold" variant="h4" align="left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consectetur porro animi quidem at, veritatis quisquam fugit
-                    deleniti doloremque id illo quam magni dolorum amet nobis,
-                    quaerat eligendi rerum dolorem!
-                </AboutParagraph>
+                    <AboutParagraph weight="semibold" variant="h4" align="left">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur porro animi quidem at, veritatis quisquam
+                        fugit deleniti doloremque id illo quam magni dolorum
+                        amet nobis, quaerat eligendi rerum dolorem!
+                    </AboutParagraph>
 
-                <WhiteLine>
-                    <img src={whiteLine} alt="line" />
-                </WhiteLine>
-                <AboutYellowEllipse>
-                    <img src={ellipseYellow} alt="yellow" />
-                </AboutYellowEllipse>
-            </AboutLeftWrapper>
+                    <WhiteLine>
+                        <img src={whiteLine} alt="line" />
+                    </WhiteLine>
+                    <AboutYellowEllipse>
+                        <img src={ellipseYellow} alt="yellow" />
+                    </AboutYellowEllipse>
+                </AboutLeftWrapper>
 
-            <AboutSectionRight>
-                {data.map((item, index) => (
-                    <AboutCard key={index}>
-                        <RightIconWrapper>
-                            <AboutIcon src={item.icon} />
-                        </RightIconWrapper>
-                        <RightTextWrapper>
-                            <AboutTitleRight variant="h6" weight="semibold">
-                                {item.title}
-                            </AboutTitleRight>
-                            <AboutDescriptionRight
-                                variant="paragraphSM"
-                                weight="normal"
-                            >
-                                {item.description}
-                            </AboutDescriptionRight>
-                        </RightTextWrapper>
-                    </AboutCard>
-                ))}
-            </AboutSectionRight>
-        </AboutBase>
+                <AboutSectionRight>
+                    {data.map((item, index) => (
+                        <AboutCard key={index}>
+                            <RightIconWrapper>
+                                <AboutIcon src={item.icon} />
+                            </RightIconWrapper>
+                            <RightTextWrapper>
+                                <AboutTitleRight variant="h6" weight="semibold">
+                                    {item.title}
+                                </AboutTitleRight>
+                                <AboutDescriptionRight
+                                    variant="paragraphSM"
+                                    weight="semibold"
+                                >
+                                    {item.description}
+                                </AboutDescriptionRight>
+                            </RightTextWrapper>
+                        </AboutCard>
+                    ))}
+                </AboutSectionRight>
+            </AboutBase>
+        </SectionsBase>
     );
 };
 

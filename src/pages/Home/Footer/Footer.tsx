@@ -5,14 +5,25 @@ import phone from "../../../design-system/assets/image/phone-icon.png";
 import email from "../../../design-system/assets/image/email-icon.png";
 import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
+import yellow from "../../../design-system/assets/image/HIGHLIGHT-md.png";
 
-const FooterSection = styled(PageContainer)`
-    padding-right: 9.55rem;
+import circle from "../../../design-system/assets/image/ELLIPSE-cr.png";
+
+const SectionsBase = styled.section`
     padding-left: 9.55rem;
-    padding-top: 10rem;
+    padding-right: 9.55rem;
+`;
+const FooterSection = styled(PageContainer)`
+    position: relative;
     @media (max-width: 37.5em) {
         margin-bottom: 2rem;
     }
+`;
+
+const Circle = styled.span`
+    position: absolute;
+    right: 3.4rem;
+    bottom: 45rem;
 `;
 
 const FooterWrapper = styled.div`
@@ -37,6 +48,11 @@ const FooterWrapper = styled.div`
 
 const FooterTitle = styled(Typography)`
     margin-bottom: 4rem;
+    font-size: 7rem;
+    line-height: 9rem;
+
+    position: relative;
+    z-index: 4;
 
     @media (max-width: 37.5em) {
         line-height: 3rem;
@@ -48,6 +64,14 @@ const FooterTitle = styled(Typography)`
     }
 `;
 
+const YellowLine = styled.span`
+    position: absolute;
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+`;
 const FooterLinkWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -149,53 +173,62 @@ const Footer = () => {
 
     return (
         <>
-            <FooterSection>
-                <FooterWrapper>
-                    <FooterTitle weight="bold" variant="h2" align="inherit">
-                        Have a project idea to collaborate with?
-                    </FooterTitle>
-                    <FooterLinkWrapper>
-                        <Buttons>
-                            <Button
-                                color="secondary"
-                                size="lg"
-                                shape="circle"
-                                variant="outlined"
-                                onClick={() => setShowCreateUsContact(true)}
-                            >
-                                Contact Us
-                            </Button>
-                        </Buttons>
+            <SectionsBase>
+                <FooterSection>
+                    <FooterWrapper>
+                        <Circle>
+                            {" "}
+                            <img src={circle} alt="ellipse" />
+                        </Circle>
+                        <FooterTitle weight="bold" variant="h2" align="inherit">
+                            Have a project idea to collaborate with?
+                            <YellowLine>
+                                <img src={yellow} alt="yellow" />
+                            </YellowLine>
+                        </FooterTitle>
+                        <FooterLinkWrapper>
+                            <Buttons>
+                                <Button
+                                    color="secondary"
+                                    size="lg"
+                                    shape="circle"
+                                    variant="outlined"
+                                    onClick={() => setShowCreateUsContact(true)}
+                                >
+                                    Contact Us
+                                </Button>
+                            </Buttons>
 
-                        <ContactWrapper>
-                            <img src={email} alt="email" />
-                            <StyledLink href="mailto:sharipovah01@gmail.com">
-                                sharipovah01@gmail.com
-                            </StyledLink>
-                            <img src={phone} alt="phone" />
-                            <StyledLink href="tel:+15714242397">
-                                +1 571 424 2397
-                            </StyledLink>
-                        </ContactWrapper>
-                    </FooterLinkWrapper>
-                </FooterWrapper>
+                            <ContactWrapper>
+                                <img src={email} alt="email" />
+                                <StyledLink href="mailto:sharipovah01@gmail.com">
+                                    sharipovah01@gmail.com
+                                </StyledLink>
+                                <img src={phone} alt="phone" />
+                                <StyledLink href="tel:+15714242397">
+                                    +1 571 424 2397
+                                </StyledLink>
+                            </ContactWrapper>
+                        </FooterLinkWrapper>
+                    </FooterWrapper>
 
-                <SocialMedia>
-                    <Icon iconName="instagram" />
-                    <Icon iconName="github-icon" />
-                    <Icon iconName="linkedin-svgrepo-com" />
-                </SocialMedia>
-            </FooterSection>
+                    <SocialMedia>
+                        <Icon iconName="instagram" />
+                        <Icon iconName="github-icon" />
+                        <Icon iconName="linkedin-svgrepo-com" />
+                    </SocialMedia>
+                </FooterSection>
 
-            <CreateContactUsModal
-                show={showCreateUsContact}
-                closeModal={() => setShowCreateUsContact(false)}
-            />
+                <CreateContactUsModal
+                    show={showCreateUsContact}
+                    closeModal={() => setShowCreateUsContact(false)}
+                />
 
-            {/* <ContactForm
+                {/* <ContactForm
                 show={showCreateUsContact}
                 closeModal={() => setShowCreateUsContact(false)}
             /> */}
+            </SectionsBase>
         </>
     );
 };

@@ -1,8 +1,8 @@
 .btn {
     font-family: inherit;
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-500);
-    line-height: var(--line-height-20);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-700);
+    line-height: var(--line-height-30);
     border: none;
     outline: none;
     display: flex;
@@ -38,7 +38,7 @@
 }
 
 .btn-large {
-    height: 4rem;
+    height: 5rem;
     padding: 0 var(--space-20);
 }
 
