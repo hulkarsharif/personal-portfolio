@@ -10,6 +10,12 @@ const SectionsBase = styled.section`
     padding-left: 9.5rem;
     padding-right: 9.5rem;
     background-color: var(--black-200);
+
+    @media (max-width: 56.25em) {
+        //900
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
 `;
 const HeroContainer = styled(PageContainer)`
     display: flex;

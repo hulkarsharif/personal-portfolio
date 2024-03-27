@@ -7,8 +7,14 @@ import ellipse from "../../../design-system/assets/image/ELLIPSE.png";
 import ellipseYellow from "../../../design-system/assets/image/ELLIPSE-yellow.png";
 
 const SectionsBase = styled.section`
-    padding-left: 9.55rem;
-    padding-right: 9.55rem;
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+
+    @media (max-width: 56.25em) {
+        //900
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
 `;
 
 const AboutBase = styled(PageContainer)`
@@ -16,6 +22,10 @@ const AboutBase = styled(PageContainer)`
     display: flex;
     gap: var(--space-30);
 
+    @media (max-width: 57em) {
+        //912
+        display: block;
+    }
     @media (max-width: 56.25em) {
         //900
         display: block;
@@ -44,6 +54,17 @@ const AboutLeftWrapper = styled.div`
     @media (max-width: 62.5em) {
         width: 55%;
         //1104
+    }
+
+    @media (max-width: 57em) {
+        //912
+        width: 100%;
+        display: inline-block;
+        align-items: stretch;
+        gap: var(--space-30);
+        margin-bottom: 2rem;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
     }
     @media (max-width: 56.25em) {
         //900
@@ -116,6 +137,10 @@ const AboutSectionRight = styled.div`
         width: 60%;
     }
 
+    @media (max-width: 57em) {
+        //912
+        width: 100%;
+    }
     @media (max-width: 56.25em) {
         //900
         width: 100%;

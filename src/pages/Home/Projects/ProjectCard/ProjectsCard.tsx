@@ -52,6 +52,9 @@ const ProjectCardWrapper = styled.div<{ name: string }>`
         width: 100%;
     }
 
+    @media (max-width: 44em) {
+        //704
+    }
     @media (max-width: 37.5em) {
         //600
         align-items: center;

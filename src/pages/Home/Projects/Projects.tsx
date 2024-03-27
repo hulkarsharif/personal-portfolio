@@ -5,10 +5,16 @@ import { projects } from "./ProjectCard/data";
 import { PageContainer } from "../../components";
 
 const SectionsBase = styled.section`
-    padding-left: 9.55rem;
-    padding-right: 9.55rem;
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
+
+    @media (max-width: 56.25em) {
+        //900
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
 `;
 const ProjectBase = styled(PageContainer)`
     /* padding-top: 10rem; */

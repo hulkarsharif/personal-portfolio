@@ -38,6 +38,7 @@ const Base = styled(PageContainer)`
 `;
 
 const NavigationLinks = styled.div<{ open: boolean }>`
+    background-color: royalblue;
     display: flex;
     align-items: center;
     text-align: center;
@@ -58,6 +59,9 @@ const NavigationLinks = styled.div<{ open: boolean }>`
         height: 5.5rem;
         width: 20rem;
         padding-top: 8.5rem;
+    }
+    @media (max-width: 30em) {
+        //480
     }
 `;
 
@@ -92,25 +96,29 @@ const LogoWrapper = styled.div`
         margin-left: 4rem;
     }
 
-    @media (max-width: 26.75em) {
+    @media (max-width: 30em) {
+        //480
+        margin-left: 2rem;
+    }
+    /*@media (max-width: 26.75em) {
         //412
 
         margin-left: 7rem;
-        /* padding-left: 3rem; */
+      
     }
     @media (max-width: 25.75em) {
         //412
 
         margin-left: 7rem;
-        /* padding-left: 3rem; */
+       
     }
 
     @media (max-width: 25em) {
         //400
         display: flex;
         margin-left: 5rem;
-        /* padding-left: 3rem; */
-    }
+        
+    }*/
 `;
 
 // const LogoText = styled.span`
