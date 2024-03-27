@@ -49,6 +49,10 @@ const FooterWrapper = styled.div`
     background-color: var(--dodger-blue-200);
 
     padding: 7rem 7rem;
+
+    @media (max-width: 25em) {
+        padding: 3rem 1rem;
+    }
 `;
 
 const FooterTitle = styled(Typography)`
@@ -70,11 +74,8 @@ const FooterTitle = styled(Typography)`
     }
 
     @media (max-width: 25em) {
-        //400px
-        display: flex;
-        align-items: left;
-        font-size: 5.4rem;
-        line-height: 4.4rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 `;
 
@@ -109,20 +110,6 @@ const FooterLinkWrapper = styled.div`
 const Buttons = styled.div`
     display: flex;
     align-items: left;
-    /* margin-bottom: 10rem; */
-
-    /* @media (max-width: 37.5em) {
-        display: flex;
-        align-items: center;
-        margin-left: 8rem;
-    }
-
-    @media (max-width: 32rem) {
-        margin-bottom: 1.5rem;
-    }
-    @media (max-width: 25em) {
-        margin-bottom: 2rem;
-    } */
 `;
 
 const StyledLink = styled.a`
@@ -134,24 +121,9 @@ const StyledLink = styled.a`
     color: var(--white);
     display: flex;
 
-    /* @media (max-width: 69em) {
-        display: flex;
-    }
-
-    @media (max-width: 64em) {
-        display: block;
-        align-items: right;
-        text-align: right;
-        line-height: 3.2rem;
-        font-size: 1.8rem;
-    }
-    @media (max-width: 32rem) {
-        font-size: 1.4rem;
-    }
-
     @media (max-width: 25em) {
-        font-size: 1.8rem;
-    } */
+        font-size: 1.2rem;
+    }
 `;
 
 const ContactWrapper = styled.div`
@@ -165,29 +137,17 @@ const ContactWrapper = styled.div`
     text-align: start;
 
     @media (max-width: 37.5rem) {
-        align-items: right;
+        align-items: left;
         display: inline-block;
     }
     /* img {
         filter: brightness(40%);
     } */
-    /*
-    @media (max-width: 64em) {
-        display: block;
-        align-items: right;
-        text-align: right;
-    }
-
-    @media (max-width: 32rem) {
-        align-items: center;
-    }
 
     @media (max-width: 25em) {
         display: block;
         align-items: right;
-        line-height: 3.5rem;
-        font-size: 2rem;
-    }*/
+    }
 `;
 
 const SocialMedia = styled.div`

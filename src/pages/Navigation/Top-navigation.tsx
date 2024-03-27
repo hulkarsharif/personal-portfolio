@@ -38,7 +38,6 @@ const Base = styled(PageContainer)`
 `;
 
 const NavigationLinks = styled.div<{ open: boolean }>`
-    background-color: royalblue;
     display: flex;
     align-items: center;
     text-align: center;

@@ -25,7 +25,6 @@ const HeroContainer = styled(PageContainer)`
     justify-content: space-between;
 
     @media (max-width: 56.25em) {
-        padding-top: 10rem;
         padding-bottom: 10rem;
         display: block;
         align-items: center;
@@ -92,12 +91,14 @@ const HeroTitle = styled(Typography)`
     padding-top: 0rem;
 
     /* margin: 48px 0px 0px; */
-
+    @media (max-width: 84em) {
+        //1344
+        font-size: 2.5rem;
+        line-height: 8rem;
+    }
     @media (max-width: 56.25em) {
         //900
-        /* font-size: 5rem;
-        line-height: 8rem; */
-        margin-bottom: 2rem;
+        padding-top: 3rem;
         align-items: center;
         text-align: center;
     }
@@ -131,7 +132,7 @@ const YellowLine = styled.span`
 `;
 const HeroDescription = styled(Typography)`
     font-size: 4rem;
-    line-height: 6rem;
+    /* line-height: 6rem; */
     display: flex;
     /* align-items: left;
     text-align: left; */
@@ -141,18 +142,18 @@ const HeroDescription = styled(Typography)`
 
     @media (max-width: 84em) {
         //1344
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 4rem;
+        line-height: 3rem;
 
-        align-items: center;
-        text-align: center;
+        /* align-items: center;
+        text-align: center; */
     }
 
     @media (max-width: 56.25em) {
         //900
-        font-size: 5rem;
-        line-height: 10rem;
-        margin-bottom: 2rem;
+        font-size: 4.5rem;
+        line-height: 6rem;
+
         align-items: center;
         text-align: center;
     }
@@ -179,11 +180,21 @@ const HeroParagraph = styled(Typography)`
     line-height: 2.8rem;
     font-weight: 65rem;
 
+    @media (max-width: 84em) {
+        //1344
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        margin-top: 2rem;
+
+        /* align-items: center;
+        text-align: center; */
+    }
+
     @media (max-width: 56.25em) {
         //900
         font-size: 2rem;
         line-height: 4rem;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
         align-items: center;
         text-align: center;
     }
