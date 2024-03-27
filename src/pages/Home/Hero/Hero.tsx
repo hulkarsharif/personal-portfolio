@@ -112,6 +112,16 @@ const YellowLine = styled.span`
     width: 50rem;
     height: 2.2rem;
     background-color: #ffbe62;
+    @media (max-width: 61.75em) {
+        //988
+        width: 40%;
+        left: 0;
+    }
+    @media (max-width: 56.25em) {
+        //900
+        width: 100%;
+        left: 0;
+    }
     @media (max-width: 37.5em) {
         //600
         width: 50%;

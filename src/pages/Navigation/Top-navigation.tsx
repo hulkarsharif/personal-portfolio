@@ -17,10 +17,17 @@ const SectionsBase = styled.section`
     padding-left: 9.5rem;
     padding-right: 9.5rem;
 
-    /* @media (max-width: 82em) {
+    @media (max-width: 82em) {
         //1300
-        padding: 2.5rem 9rem;
-    } */
+        /* padding-left: 3.5rem;
+        padding-right: 3.5rem; */
+    }
+
+    @media (max-width: 26.75em) {
+        //428
+        padding-left: 7rem;
+        padding-right: 6rem;
+    }
 `;
 
 const Base = styled(PageContainer)`
@@ -58,8 +65,9 @@ const NavigationLinks = styled.div<{ open: boolean }>`
         width: 20rem;
         padding-top: 8.5rem;
     }
-    @media (max-width: 30em) {
-        //480
+    @media (max-width: 26.75em) {
+        //428
+        margin-left: 5rem;
     }
 `;
 
@@ -93,13 +101,6 @@ const StyledBurger = styled.div<{ open: boolean }>`
         height: 2rem;
         cursor: pointer;
         z-index: 20;
-
-        @media (max-width: 25.75em) {
-            //412
-
-            margin-left: 5rem;
-            /* padding-left: 3rem; */
-        }
     }
 
     div {

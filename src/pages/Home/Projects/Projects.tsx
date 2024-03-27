@@ -36,6 +36,38 @@ const YellowLine = styled.span`
     width: 15rem;
     height: 1.5rem;
     background-color: #ffbe62;
+
+    @media (max-width: 62.5em) {
+        //1000px
+        width: 20rem;
+        left: 38rem;
+    }
+    @media (max-width: 56.25em) {
+        //900px
+        width: 20rem;
+        left: 32rem;
+    }
+    @media (max-width: 50em) {
+        //800px
+        width: 20rem;
+        left: 26rem;
+    }
+
+    @media (max-width: 43.75em) {
+        //700px
+        width: 20rem;
+        left: 20rem;
+    }
+    @media (max-width: 25em) {
+        //400px
+        width: 20rem;
+        left: 1rem;
+    }
+    @media (max-width: 24.75em) {
+        //390px
+        width: 20rem;
+        left: 12rem;
+    }
 `;
 
 const Title = styled(Typography)`

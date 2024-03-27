@@ -237,7 +237,7 @@
 }
 
 .btn-success:hover {
-    background-color: var(--green-600);
+    background-color: var(--dodger-blue-600);
     box-shadow: var(--shadow-s-hover);
 }
 
