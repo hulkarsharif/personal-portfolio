@@ -71,6 +71,11 @@ const YellowLine = styled.span`
     width: 50rem;
     height: 2.2rem;
     background-color: #ffbe62;
+
+    @media (max-width: 45.87em) {
+        //734px
+        width: 20rem;
+    }
 `;
 
 const FooterTitle = styled(Typography)`
