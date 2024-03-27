@@ -27,10 +27,24 @@ const ProjectBase = styled(PageContainer)`
     /*padding-bottom: 8rem; */
 `;
 
+const YellowLine = styled.span`
+    position: absolute;
+    right: 70rem;
+    bottom: 5%;
+
+    z-index: -1;
+    width: 15rem;
+    height: 1.5rem;
+    background-color: #ffbe62;
+`;
+
 const Title = styled(Typography)`
     color: var(--jaguar-900);
     text-align: center;
     margin-bottom: var(--space-50);
+
+    position: relative;
+    z-index: 4;
 `;
 
 const ProjectCardsWrapper = styled.div`
@@ -45,6 +59,7 @@ const Projects = () => {
             <ProjectBase>
                 <Title variant="h3" weight="semibold">
                     Featured <span>Projects</span>
+                    <YellowLine></YellowLine>
                 </Title>
 
                 <ProjectCardsWrapper>

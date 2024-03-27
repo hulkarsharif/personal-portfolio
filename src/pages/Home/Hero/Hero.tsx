@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { PageContainer } from "../../components";
 import women from "../../../design-system/assets/image/blue-img.png";
 
-import yellow from "../../../design-system/assets/image/HIGHLIGHT-yellow.png";
 import FileViewer from "./FileViewer";
 
 const SectionsBase = styled.section`
@@ -71,18 +70,6 @@ const HeroSectionLeft = styled.div`
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-
-    /*
-    @media (max-width: 43.75em) {
-        padding-left: 0.5rem;
-    }
-
-    @media (max-width: 37.5em) {
-        width: 100%;
-    }
-    @media (max-width: 25em) {
-        width: 100%;
-    }*/
 `;
 
 const HeroTitle = styled(Typography)`
@@ -117,36 +104,32 @@ const HeroTitle = styled(Typography)`
 `;
 
 const YellowLine = styled.span`
-    /* position: absolute; */
-    left: 51%;
-    bottom: -10%;
-    transform: translateX(-50%);
-    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: -2%;
+
     z-index: -1;
-    @media (max-width: 84em) {
-        //1344
-        width: -40%;
-        /* bottom: -1rem;
-        bottom: -10%; */
+    width: 50rem;
+    height: 2.2rem;
+    background-color: #ffbe62;
+    @media (max-width: 37.5em) {
+        //600
+        width: 50%;
+        left: 12rem;
     }
 `;
 const HeroDescription = styled(Typography)`
     font-size: 4rem;
     /* line-height: 6rem; */
     display: flex;
-    /* align-items: left;
-    text-align: left; */
 
-    /* position: relative;
-    z-index: 4; */
+    position: relative;
+    z-index: 4;
 
     @media (max-width: 84em) {
         //1344
         font-size: 4rem;
         line-height: 3rem;
-
-        /* align-items: center;
-        text-align: center; */
     }
 
     @media (max-width: 56.25em) {
@@ -157,21 +140,6 @@ const HeroDescription = styled(Typography)`
         align-items: center;
         text-align: center;
     }
-    /*
-    @media (max-width: 37.5em) {
-        align-items: start;
-        font-size: 3rem;
-        line-height: 4rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    @media (max-width: 25em) {
-        align-items: start;
-        font-size: 2.8rem;
-        line-height: 3.8rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }*/
 `;
 
 const HeroParagraph = styled(Typography)`
@@ -185,9 +153,6 @@ const HeroParagraph = styled(Typography)`
         font-size: 1.6rem;
         line-height: 3.5rem;
         margin-top: 2rem;
-
-        /* align-items: center;
-        text-align: center; */
     }
 
     @media (max-width: 56.25em) {
@@ -355,9 +320,7 @@ const Hero = () => {
                         align="left"
                     >
                         I am FullStack Developer
-                        {/* <YellowLine>
-                            <img src={yellow} alt="yellow" />
-                        </YellowLine> */}
+                        <YellowLine></YellowLine>
                     </HeroDescription>
 
                     <HeroParagraph

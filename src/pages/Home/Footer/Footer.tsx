@@ -62,6 +62,17 @@ const FooterWrapper = styled.div`
     }
 `;
 
+const YellowLine = styled.span`
+    position: absolute;
+    left: 0;
+    bottom: 4%;
+
+    z-index: -1;
+    width: 50rem;
+    height: 2.2rem;
+    background-color: #ffbe62;
+`;
+
 const FooterTitle = styled(Typography)`
     font-size: 7rem;
     line-height: 9rem;
@@ -87,14 +98,6 @@ const FooterTitle = styled(Typography)`
     }
 `;
 
-const YellowLine = styled.span`
-    position: absolute;
-    left: 50%;
-    bottom: -5%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: -1;
-`;
 const FooterLinkWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -199,9 +202,7 @@ const Footer = () => {
                         </MediumCircle>
                         <FooterTitle weight="bold" variant="h2" align="inherit">
                             Have a project idea to collaborate with?
-                            {/* <YellowLine>
-                                <img src={yellow} alt="yellow" />
-                            </YellowLine> */}
+                            <YellowLine></YellowLine>
                         </FooterTitle>
                         <FooterLinkWrapper>
                             <Buttons>
