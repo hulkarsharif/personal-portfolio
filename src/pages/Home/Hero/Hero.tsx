@@ -31,29 +31,6 @@ const HeroContainer = styled(PageContainer)`
         /* padding-left: 9.5rem;
         padding-right: 9.5rem; */
     }
-    /*
-    @media (max-width: 50em) {
-        padding-right: 10.5rem;
-    }
-
-    @media (max-width: 43.75em) {
-    }
-
-    @media (max-width: 37.5em) {
-        display: inline-block;
-        text-align: center;
-        align-items: center;
-        padding-left: 3.4rem;
-        padding-right: 3.4rem;
-    }
-    @media (max-width: 25em) {
-        flex-direction: block;
-
-        padding-left: 3.4rem;
-        padding-right: 3.4rem;
-        display: block;
-        text-align: center;
-    }*/
 `;
 
 const HeroSectionLeft = styled.div`
@@ -124,8 +101,19 @@ const YellowLine = styled.span`
     }
     @media (max-width: 37.5em) {
         //600
+        width: 35%;
+        left: 12rem;
+    }
+    @media (max-width: 26.75em) {
+        //428
         width: 50%;
         left: 12rem;
+        bottom: 1%;
+    }
+    @media (max-width: 25em) {
+        //400
+        width: 50%;
+        left: 11rem;
     }
 `;
 const HeroDescription = styled(Typography)`
@@ -197,37 +185,6 @@ const SocialMedia = styled.div`
         text-align: center;
         display: flex;
     }
-
-    /* @media (max-width: 56em) {
-        display: flex;
-        justify-content: space-between;
-        gap: var(--space-8);
-    }
-
-    @media (max-width: 43.75em) {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    @media (max-width: 37.5em) {
-        display: inline-block;
-        gap: var(--space-36);
-
-        :not(:last-child) {
-            margin-right: 1.2rem;
-            margin-bottom: 2rem;
-        }
-    }
-
-    @media (max-width: 25em) {
-        display: inline-block;
-        gap: var(--space-20);
-        padding-top: 1rem;
-
-        :not(:last-child) {
-            margin-right: 1.5rem;
-        }
-    }*/
 `;
 
 const BlueLine = styled.div`
@@ -277,41 +234,6 @@ const HeroSectionRight = styled.div`
             align-items: center;
         }
     }
-    /*
-    @media (max-width: 56em) {
-        width: 60%;
-
-        img {
-            object-fit: cover;
-            height: 38rem;
-        }
-    }
-
-    @media (max-width: 43.75em) {
-        width: 60%;
-        padding-right: 2rem;
-
-        img {
-            height: 38rem;
-        }
-    }
-
-    @media (max-width: 37.5em) {
-        width: 100%;
-
-        img {
-            height: 32rem;
-        }
-    }
-
-    @media (max-width: 25em) {
-        width: 100%;
-
-        img {
-            height: 25rem;
-            margin-right: 2rem;
-        }
-    }*/
 `;
 
 //

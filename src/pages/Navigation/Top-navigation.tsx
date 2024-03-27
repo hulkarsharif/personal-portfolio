@@ -75,7 +75,7 @@ const LogoWrapper = styled.div`
     /* width: 3rem;
     height: 3rem;
     border-radius: 50%;
-   
+
     display: flex;
     justify-content: center;
     align-items: center; */

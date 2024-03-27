@@ -58,6 +58,16 @@ const YellowLine = styled.span`
         width: 20rem;
         left: 20rem;
     }
+    @media (max-width: 37.5em) {
+        //600
+        width: 32%;
+        left: 13rem;
+    }
+    @media (max-width: 31.25em) {
+        //500
+        width: 30%;
+        left: 12rem;
+    }
     @media (max-width: 25em) {
         //400px
         width: 20rem;
@@ -68,6 +78,12 @@ const YellowLine = styled.span`
         width: 20rem;
         left: 12rem;
     }
+    @media (max-width: 26.75em) {
+        //428
+        width: 34%;
+        left: 8rem;
+        bottom: 9%;
+    }
 `;
 
 const Title = styled(Typography)`
@@ -77,6 +93,11 @@ const Title = styled(Typography)`
 
     position: relative;
     z-index: 4;
+
+    @media (max-width: 31.25em) {
+        //500
+        font-size: 3.5rem;
+    }
 `;
 
 const ProjectCardsWrapper = styled.div`

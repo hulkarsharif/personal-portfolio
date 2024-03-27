@@ -27,7 +27,7 @@ const SectionsBase = styled.section`
         padding-right: 2.5rem;
     } */
 `;
-const SectionBase = styled.div`
+const SectionBase = styled(PageContainer)`
     padding-top: 5rem;
     transition: all 1s;
 
@@ -53,6 +53,19 @@ const Title = styled(Typography)`
 
     position: relative;
     z-index: 4;
+
+    @media (max-width: 31.25em) {
+        //500
+        font-size: var(--space-40);
+    }
+    @media (max-width: 26.75em) {
+        //428
+        font-size: 3.3rem;
+    }
+    @media (max-width: 25em) {
+        //400
+        font-size: 3rem;
+    }
 `;
 const YellowLine = styled.span`
     position: absolute;
@@ -61,6 +74,12 @@ const YellowLine = styled.span`
     transform: translateX(-50%);
     width: 100%;
     z-index: -1;
+
+    @media (max-width: 26.75em) {
+        //428
+        width: 50%;
+        left: 22rem;
+    }
 `;
 
 const ServiceCardsWrapper = styled.div`

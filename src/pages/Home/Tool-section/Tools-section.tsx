@@ -16,7 +16,7 @@ const SectionsBase = styled.section`
     }
 `;
 
-const ToolBarWrapper = styled.div`
+const ToolBarWrapper = styled(PageContainer)`
     margin-top: var(--space-60);
 
     /* padding: 3rem 5rem; */
@@ -72,7 +72,7 @@ const StyledIcon = styled(Icon)`
 
 const SkillTitle = styled.span`
     font-size: var(--font-size-20);
-    font-weight: var(--font-weight-700);
+
     color: var(--gray-500);
 `;
 
