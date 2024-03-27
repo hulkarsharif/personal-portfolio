@@ -23,6 +23,7 @@ const SectionsBase = styled.section`
 const FooterSection = styled(PageContainer)`
     position: relative;
     @media (max-width: 25em) {
+        padding: 0;
     }
 `;
 
@@ -74,8 +75,9 @@ const FooterTitle = styled(Typography)`
     }
 
     @media (max-width: 25em) {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        text-align: left;
+        padding-top: 5rem;
+        padding-left: 3rem;
     }
 `;
 
@@ -95,21 +97,22 @@ const FooterLinkWrapper = styled.div`
 
     @media (max-width: 64em) {
         //1024
-        display: block;
+
         align-items: right;
     }
 
     @media (max-width: 32rem) {
         align-items: center;
     }
-
-    @media (max-width: 25em) {
-    }
 `;
 
 const Buttons = styled.div`
     display: flex;
     align-items: left;
+
+    @media (max-width: 25em) {
+        padding-left: 3rem;
+    }
 `;
 
 const StyledLink = styled.a`

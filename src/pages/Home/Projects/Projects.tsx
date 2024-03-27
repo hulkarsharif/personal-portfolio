@@ -7,8 +7,8 @@ import { PageContainer } from "../../components";
 const SectionsBase = styled.section`
     padding-left: 9.5rem;
     padding-right: 9.5rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
     @media (max-width: 56.25em) {
         //900
@@ -24,7 +24,7 @@ const ProjectBase = styled(PageContainer)`
 const Title = styled(Typography)`
     color: var(--jaguar-900);
     text-align: center;
-    margin-bottom: var(--space-70);
+    margin-bottom: var(--space-50);
 `;
 
 const ProjectCardsWrapper = styled.div`
