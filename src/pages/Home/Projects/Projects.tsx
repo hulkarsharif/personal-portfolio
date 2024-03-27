@@ -10,6 +10,12 @@ const SectionsBase = styled.section`
     padding-top: 5rem;
     padding-bottom: 5rem;
 
+    @media (max-width: 81.25em) {
+        //1300
+
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
     @media (max-width: 56.25em) {
         //900
         padding-left: 2.5rem;

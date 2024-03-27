@@ -15,6 +15,13 @@ const SectionsBase = styled.section`
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
+
+    @media (max-width: 81.25em) {
+        //1300
+
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
 `;
 
 const AboutBase = styled(PageContainer)`

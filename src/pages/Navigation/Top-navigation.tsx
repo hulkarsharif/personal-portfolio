@@ -16,6 +16,11 @@ const links = [
 const SectionsBase = styled.section`
     padding-left: 9.5rem;
     padding-right: 9.5rem;
+
+    /* @media (max-width: 82em) {
+        //1300
+        padding: 2.5rem 9rem;
+    } */
 `;
 
 const Base = styled(PageContainer)`
@@ -25,16 +30,10 @@ const Base = styled(PageContainer)`
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 84em) {
-        //1344
-        display: flex;
-        padding-right: 50rem;
-    }
-
-    @media (max-width: 75em) {
+    /* @media (max-width: 75em) {
         //1200
         padding-right: 40rem;
-    }
+    } */
 `;
 
 const NavigationLinks = styled.div<{ open: boolean }>`
@@ -42,7 +41,7 @@ const NavigationLinks = styled.div<{ open: boolean }>`
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    gap: var(--space-20);
+    gap: var(--space-40);
 
     @media (max-width: 56.25em) {
         transition: all 0.3s ease-in-out;
@@ -65,59 +64,14 @@ const NavigationLinks = styled.div<{ open: boolean }>`
 `;
 
 const LogoWrapper = styled.div`
-    width: 3rem;
+    /* width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    /* background-color: var(--dodger-blue-900); */
+   
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    @media (max-width: 80em) {
-        //1280
-        margin-left: 2rem;
-    }
-
-    @media (max-width: 75em) {
-        //1200
-        display: flex;
-        padding-left: 6rem;
-    }
-
-    @media (max-width: 56.25em) {
-        //900
-        display: flex;
-        padding-left: 0rem;
-    }
-
-    @media (max-width: 37.5em) {
-        //600
-        margin-left: 4rem;
-    }
-
-    @media (max-width: 30em) {
-        //480
-        margin-left: 2rem;
-    }
-    /*@media (max-width: 26.75em) {
-        //412
-
-        margin-left: 7rem;
-      
-    }
-    @media (max-width: 25.75em) {
-        //412
-
-        margin-left: 7rem;
-       
-    }
-
-    @media (max-width: 25em) {
-        //400
-        display: flex;
-        margin-left: 5rem;
-        
-    }*/
+    align-items: center; */
+    /* margin-right: var(--space-40); */
 `;
 
 // const LogoText = styled.span`
@@ -131,7 +85,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
 
     @media (max-width: 56.25em) {
         //900
-        margin-right: -30rem;
+        margin-right: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
