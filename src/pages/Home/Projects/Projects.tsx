@@ -78,12 +78,12 @@ const YellowLine = styled.span`
         width: 50%;
         left: 0;
     }
-    /* @media (max-width: 26.75em) {
+    @media (max-width: 26.75em) {
         //428
         width: 34%;
         left: 8rem;
-        bottom: 9%;
-    } */
+        bottom: 20%;
+    }
 `;
 
 const Title = styled(Typography)`
