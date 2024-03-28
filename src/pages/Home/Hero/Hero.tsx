@@ -115,6 +115,11 @@ const YellowLine = styled.span`
         width: 50%;
         left: 11rem;
     }
+    @media (max-width: 23.125em) {
+        //370
+        width: 50%;
+        left: 8rem;
+    }
 `;
 const HeroDescription = styled(Typography)`
     font-size: 4rem;
