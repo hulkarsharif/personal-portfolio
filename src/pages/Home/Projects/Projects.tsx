@@ -70,20 +70,20 @@ const YellowLine = styled.span`
     }
     @media (max-width: 25em) {
         //400px
-        width: 20rem;
-        left: 1rem;
+        width: 17rem;
+        left: 5rem;
     }
-    @media (max-width: 24.375em) {
-        //390px
-        width: 40%;
-        left: 15rem;
+    @media (max-width: 24.0625em) {
+        // 385px
+        width: 50%;
+        left: 0;
     }
-    @media (max-width: 26.75em) {
+    /* @media (max-width: 26.75em) {
         //428
         width: 34%;
         left: 8rem;
         bottom: 9%;
-    }
+    } */
 `;
 
 const Title = styled(Typography)`
