@@ -116,9 +116,9 @@ const YellowLine = styled.span`
         width: 50%;
         left: 11rem;
     }
-    @media (max-width: 23.25em) {
-        //371
-        width: 50%;
+    @media (max-width: 24.37em) {
+        //389
+        width: 60%;
         left: 8rem;
     }
 `;

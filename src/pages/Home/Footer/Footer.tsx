@@ -366,6 +366,12 @@ const YellowLine = styled.span`
         width: 30%;
         left: 3rem;
     }
+
+    @media (max-width: 24.375em) {
+        //390px
+        width: 40%;
+        left: 5rem;
+    }
 `;
 
 const FooterTitle = styled(Typography)`

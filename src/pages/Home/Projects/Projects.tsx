@@ -73,10 +73,10 @@ const YellowLine = styled.span`
         width: 20rem;
         left: 1rem;
     }
-    @media (max-width: 24.75em) {
+    @media (max-width: 24.375em) {
         //390px
-        width: 20rem;
-        left: 12rem;
+        width: 40%;
+        left: 15rem;
     }
     @media (max-width: 26.75em) {
         //428
