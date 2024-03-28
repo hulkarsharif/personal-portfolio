@@ -38,7 +38,9 @@ export type IconName =
     | "management"
     | "database"
     | "mail"
-    | "phone";
+    | "phone"
+    | "close"
+    | "list-menu";
 
 export type IconProps = {
     iconName?: IconName;

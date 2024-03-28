@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { NavigationLink } from "./Links";
+
 import logoMe from "../../design-system/assets/image/Klogo.png";
 import { PageContainer } from "../components";
 import KLogo from "../../design-system/assets/image/L1995.png";

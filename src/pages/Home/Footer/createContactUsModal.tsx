@@ -65,7 +65,7 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
     return (
         <Modal show={show} position="center">
             <ModalTitle variant="h6" weight="medium">
-                Contacts
+                Get in Touch
             </ModalTitle>
             <Inputs>
                 <Input
