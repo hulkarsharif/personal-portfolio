@@ -81,18 +81,22 @@ const YellowLine = styled.span`
 
         top: 10%;
     }
-    /*
+
     @media (max-width: 26.75em) {
-        //428
+        // 428px
         width: 60%;
         left: 40%;
     }
 
     @media (max-width: 24.375em) {
-        //390
-        width: 35%;
-        left: 18rem;
-    }*/
+        // 390px
+        width: 40%;
+    }
+
+    @media (max-width: 24.0625em) {
+        // 385px
+        width: 30%; // Set the width to the desired value for 389em
+    }
 `;
 
 const ServiceCardsWrapper = styled.div`
