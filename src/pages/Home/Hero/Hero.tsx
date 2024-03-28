@@ -94,6 +94,7 @@ const YellowLine = styled.span`
         width: 40%;
         left: 0;
     }
+
     @media (max-width: 56.25em) {
         //900
         width: 100%;
@@ -115,8 +116,8 @@ const YellowLine = styled.span`
         width: 50%;
         left: 11rem;
     }
-    @media (max-width: 23.125em) {
-        //370
+    @media (max-width: 23.25em) {
+        //371
         width: 50%;
         left: 8rem;
     }
