@@ -75,11 +75,24 @@ const YellowLine = styled.span`
     width: 100%;
     z-index: -1;
 
+    @media (max-width: 26.87em) {
+        //430
+        width: 20%;
+
+        top: 10%;
+    }
+    /*
     @media (max-width: 26.75em) {
         //428
-        width: 50%;
-        left: 22rem;
+        width: 60%;
+        left: 40%;
     }
+
+    @media (max-width: 24.375em) {
+        //390
+        width: 35%;
+        left: 18rem;
+    }*/
 `;
 
 const ServiceCardsWrapper = styled.div`

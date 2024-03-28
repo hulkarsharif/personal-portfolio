@@ -111,16 +111,18 @@ const YellowLine = styled.span`
         left: 12rem;
         bottom: 1%;
     }
+
     @media (max-width: 25em) {
         //400
         width: 50%;
         left: 11rem;
     }
+    /*
     @media (max-width: 24.37em) {
         //389
-        width: 60%;
-        left: 8rem;
-    }
+        width: 50%;
+        left: 11rem;
+    }*/
 `;
 const HeroDescription = styled(Typography)`
     font-size: 4rem;
