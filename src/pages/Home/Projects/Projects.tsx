@@ -63,6 +63,7 @@ const YellowLine = styled.span`
         width: 32%;
         left: 13rem;
     }
+
     @media (max-width: 31.25em) {
         //500
         width: 30%;
@@ -70,20 +71,29 @@ const YellowLine = styled.span`
     }
     @media (max-width: 25.0625em) {
         //401px
-        width: 17rem;
-        left: 5rem;
+
+        width: 30%;
+        left: 8rem;
     }
+    /*
     @media (max-width: 23.4375em) {
         // 375
-        background-color: red;
+
         width: 15rem;
         left: 8rem;
+    } */
+    @media (max-width: 24.375em) {
+        // 390
+
+        width: 25%;
+        left: 5rem;
+        bottom: 20%;
     }
     @media (max-width: 26.75em) {
         //428
         width: 34%;
         left: 8rem;
-        bottom: 20%;
+        bottom: 15%;
     }
 `;
 

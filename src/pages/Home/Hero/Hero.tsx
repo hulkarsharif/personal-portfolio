@@ -115,7 +115,7 @@ const YellowLine = styled.span`
     @media (max-width: 25em) {
         //400
         width: 50%;
-        left: 11rem;
+        left: 10rem;
     }
     @media (max-width: 24.0625em) {
         // 385px
