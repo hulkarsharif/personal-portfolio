@@ -1,8 +1,8 @@
 import { Button, Icon, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
-import phone from "../../../design-system/assets/image/phone-icon.png";
-import email from "../../../design-system/assets/image/email-icon.png";
+import phone from "../../../design-system/assets/image/Frame16.png";
+import email from "../../../design-system/assets/image/Frame15.png";
 import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
 import yellow from "../../../design-system/assets/image/HIGHLIGHT-md.png";
@@ -118,17 +118,20 @@ const FooterLinkWrapper = styled.div`
 `;
 
 const Buttons = styled.div`
-    display: center;
-    align-items: left;
+    display: flex;
+    align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 `;
 
 const StyledLink = styled.a`
+    /* background-color: darkolivegreen; */
     padding: 1rem;
     justify-content: space-between;
-    font-size: 3rem;
-    line-height: 3rem;
-    color: var(--white);
+    font-size: 2rem;
+    line-height: 1rem;
+    align-items: left;
+    color: var(--black);
     @media (max-width: 50em) {
         display: block;
     }
@@ -141,12 +144,15 @@ const StyledLink = styled.a`
 `;
 
 const ContactWrapper = styled.div`
+    /* background-color: darkturquoise; */
     display: flex;
-    margin-top: 3rem;
-    padding: 2rem;
-    line-height: 1rem;
-    font-weight: bolder;
+    margin-top: 5rem;
+
+    line-height: 3rem;
+    font-weight: bold;
+    font-size: 2.4rem;
     text-align: left;
+    align-items: left;
 
     @media (max-width: 50em) {
         display: inline-flex;
@@ -198,7 +204,7 @@ const Footer = () => {
                         <MediumCircle>
                             <img src={CircleMd} alt="circle" />
                         </MediumCircle>
-                        <FooterTitle weight="bold" variant="h2" align="inherit">
+                        <FooterTitle weight="bold" variant="h2" align="left">
                             Have a project idea to collaborate with?
                             <YellowLine></YellowLine>
                         </FooterTitle>

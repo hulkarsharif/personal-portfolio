@@ -57,14 +57,18 @@ const NavigationLinks = styled.div<{ open: boolean }>`
             open ? "translateX(0)" : "translateX(100%)"};
 
         //900
-        flex-flow: column nowrap;
-        background-color: var(--gray-200);
+
+        display: flex;
+        flex-direction: column;
+        background-color: white;
         position: fixed;
         top: 0;
         right: 0;
-        height: 5.5rem;
-        width: 20rem;
-        padding-top: 8.5rem;
+        height: 100vh;
+        width: 50%;
+        padding-top: 12rem;
+        justify-content: flex-start;
+        z-index: 9;
     }
     @media (max-width: 26.75em) {
         //428
