@@ -73,7 +73,7 @@ const YellowLine = styled.span`
         width: 20rem;
     }
     @media (max-width: 26.75em) {
-        width: 40%;
+        width: 35%;
         left: 0;
     }
     /*
