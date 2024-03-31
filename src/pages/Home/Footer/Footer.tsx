@@ -63,10 +63,17 @@ const YellowLine = styled.span`
     left: 0;
     bottom: 4%;
     z-index: -1;
-    width: 15%;
+    width: 80%;
     height: 2.2rem;
     background-color: #ffbe62;
 
+    @media (max-width: 44.95em) {
+        //719
+
+        width: 30%;
+        left: 1rem;
+    }
+    /*
     @media (max-width: 81.25em) {
         //900
 
@@ -81,14 +88,9 @@ const YellowLine = styled.span`
         //800
         width: 80%;
         left: 12rem;
-    }
-    @media (max-width: 44.95em) {
-        //719
-
-        width: 70%;
-        left: 12rem;
-    }
-
+    }/*
+  
+/*
     @media (max-width: 45.87em) {
         width: 30%;
         left: 0;
@@ -116,22 +118,19 @@ const YellowLine = styled.span`
 `;
 
 const FooterTitle = styled(Typography)`
-    font-size: 6.5rem;
+    /* font-size: 6.5rem; */
     /* line-height: 1.2em; */
-    display: block;
+    display: inline-block;
 
     position: relative;
     z-index: 4;
 
     @media (max-width: 25em) {
-        //400
-        font-size: 4.5rem;
-        line-height: 1.2em;
+        /* font-size: 3.5rem; */
     }
+
     @media (max-width: 20em) {
-        //320
-        font-size: 3rem;
-        line-height: 1.2em;
+        /* font-size: 3rem; */
     }
 `;
 
@@ -170,31 +169,35 @@ const StyledLink = styled.a`
 `;
 
 const ContactWrapper = styled.div`
-    /* background-color: darkturquoise; */
     display: flex;
     margin-top: 5rem;
 
     line-height: 3rem;
     font-weight: bold;
     font-size: 2.4rem;
-    text-align: left;
-    align-items: left;
-
+    /* text-align: left;
+    align-items: left; */
     @media (max-width: 50em) {
         display: inline-flex;
         flex-direction: column;
         gap: 1rem;
 
-        img {
+        /* img {
             width: 50px; // Adjust the width of the images here
             height: auto; // Maintain aspect ratio
-        }
+        } */
     }
 
     @media (max-width: 20em) {
         //320
         display: block;
     }
+`;
+
+const LogoWrapper = styled.div`
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
 `;
 
 const SocialMedia = styled.div`
@@ -235,8 +238,13 @@ const Footer = () => {
                         <MediumCircle>
                             <img src={CircleMd} alt="circle" />
                         </MediumCircle>
-                        <FooterTitle weight="bold" variant="h2" align="left">
-                            Have a project idea to collaborate with?
+                        <FooterTitle
+                            weight="semibold"
+                            variant="h3"
+                            align="left"
+                        >
+                            Have a project idea to
+                            <br /> collaborate with?
                             <YellowLine></YellowLine>
                         </FooterTitle>
                         <FooterLinkWrapper>
@@ -253,11 +261,15 @@ const Footer = () => {
                             </Buttons>
                         </FooterLinkWrapper>
                         <ContactWrapper>
-                            <img src={email} alt="email" />
+                            <LogoWrapper>
+                                <img src={email} alt="email" />
+                            </LogoWrapper>
                             <StyledLink href="mailto:sharipovah01@gmail.com">
                                 sharipovah01@gmail.com
                             </StyledLink>
-                            <img src={phone} alt="phone" />
+                            <LogoWrapper>
+                                <img src={phone} alt="phone" />
+                            </LogoWrapper>
                             <StyledLink href="tel:+15714242397">
                                 +1 571 424 2397
                             </StyledLink>

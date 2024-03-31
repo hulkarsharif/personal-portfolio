@@ -144,8 +144,8 @@ const ProjectImageWrapper = styled.div`
     border-radius: 2.4rem;
 
     img {
-        /* height: 50rem; */
-        /* width: 100%; */
+        height: 50rem;
+        width: 100%;
         object-fit: cover;
 
         transition: all 1s;
@@ -159,38 +159,36 @@ const ProjectImageWrapper = styled.div`
         //600
 
         width: 100%;
-        height: auto;
+        /* height: auto; */
 
         img {
             border-radius: 2.4rem;
-            height: auto;
-            width: 80%;
-            max-height: 18rem;
+            /* height: auto; */
+            width: 100%;
+            max-height: 19rem;
         }
     }
 
     @media (max-width: 26.75em) {
         width: 100%;
         height: auto;
+        border-radius: 1rem;
 
         img {
-            border-radius: 2.4rem;
-            height: auto;
-            width: 80%;
-            max-height: 16rem;
+            border-radius: 0;
         }
     }
 
-    /* @media (max-width: 25em) {
+    @media (max-width: 25em) {
         width: 100%;
-        height: auto;
+        height: 18rem;
+        border-radius: 0;
 
         img {
-            height: auto;
-            width: 100%;
-            max-height: 20rem;
+            height: 100%;
+            border-radius: 0;
         }
-    } */
+    }
 `;
 // const ProjectArrow = styled.div`
 //     padding-top: 6rem;
