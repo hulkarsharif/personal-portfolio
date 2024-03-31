@@ -16,7 +16,7 @@ type ServiceCardProps = {
 
 export const ServiceCardBase = styled.div<{ icon: string }>`
     border-radius: var(--border-radius-16);
-    padding: var(--space-30);
+    padding: var(--space-24);
     box-shadow: var(--shadow-xs);
     /* max-width: 28rem; */
     cursor: pointer;
@@ -32,7 +32,7 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
         align-items: center;
     } */
 
-    &:hover {
+    /* &:hover {
         background-color: var(--dodger-blue-900);
         p {
             color: white;
@@ -44,8 +44,8 @@ export const ServiceCardBase = styled.div<{ icon: string }>`
         h5 {
             color: white;
         }
-    }
-    transition: all 1s;
+    } */
+    transition: all 2s;
     &:hover {
         transform: scale(1.1);
     }
@@ -71,56 +71,57 @@ const ServiceIconWrapper = styled.div`
 const ServiceTitle = styled(Typography)`
     margin-top: 11.4rem;
     margin-bottom: 1.8rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     @media (max-width: 84em) {
         //1344px
-        font-size: 25px;
-        line-height: 18px;
+        /* font-size: 25px;
+        line-height: 18px; */
     }
 
     @media (max-width: 56.25em) {
         //900px
-        font-size: 25px;
-        line-height: 15px;
+        /* font-size: 25px;
+        line-height: 15px; */
     }
 
     @media (max-width: 43.75em) {
         //700px
-        font-size: 25px;
-        line-height: 25px;
+        /* font-size: 25px;
+        line-height: 25px; */
     }
 
     @media (max-width: 25em) {
         //400
-        font-size: 20px;
-        line-height: 25px;
+        /* font-size: 20px;
+        line-height: 25px; */
     }
 `;
 
 const ServiceDescription = styled(Typography)`
-    color: var(--jaguar-500);
+    color: var(--jaguar-600);
+    /* background-color: paleturquoise; */
+    font-size: 1.2rem;
+    line-height: 1.7em;
 
     @media (max-width: 84em) {
         //1344px
-        font-size: 8px;
-        line-height: 20px;
+        /* font-size: 8px;
+        line-height: 20px; */
     }
     @media (max-width: 56.25em) {
         //900px
-        font-size: 15px;
-        line-height: 25px;
     }
 
     @media (max-width: 43.75em) {
         //700px
-        font-size: 10px;
-        line-height: 20px;
+        /* font-size: 10px;
+        line-height: 20px; */
     }
 
     @media (max-width: 25em) {
         //400
-        font-size: 20px;
-        line-height: 25px;
+        /* font-size: 20px;
+        line-height: 25px; */
     }
 `;
 

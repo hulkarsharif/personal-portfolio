@@ -17,17 +17,23 @@ const links = [
 const SectionsBase = styled.section`
     padding-left: 9.5rem;
     padding-right: 9.5rem;
+    background-color: var(--black-200);
 
-    @media (max-width: 82em) {
+    @media (max-width: 81.25em) {
         //1300
-        /* padding-left: 3.5rem;
-        padding-right: 3.5rem; */
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    @media (max-width: 56.25em) {
+        //900
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
 
     @media (max-width: 26.75em) {
         //428
-        padding-left: 7rem;
-        padding-right: 6rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 `;
 
@@ -37,11 +43,6 @@ const Base = styled(PageContainer)`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    /* @media (max-width: 75em) {
-        //1200
-        padding-right: 40rem;
-    } */
 `;
 
 const NavigationLinks = styled.div<{ open: boolean }>`
@@ -50,6 +51,7 @@ const NavigationLinks = styled.div<{ open: boolean }>`
     text-align: center;
     justify-content: space-between;
     gap: var(--space-40);
+    font-size: var(--font-size-12);
 
     @media (max-width: 56.25em) {
         transition: all 0.3s ease-in-out;

@@ -30,16 +30,6 @@ const SectionsBase = styled.section`
 const SectionBase = styled(PageContainer)`
     padding-top: 5rem;
     transition: all 1s;
-
-    @media (max-width: 57em) {
-        //912px
-    }
-
-    @media (max-width: 30em) {
-        //480x
-        padding-left: -2rem;
-        padding-right: -2rem;
-    }
 `;
 
 const ServiceTextWrapper = styled.div`
@@ -49,12 +39,12 @@ const ServiceTextWrapper = styled.div`
 
 const Title = styled(Typography)`
     color: var(--jaguar-900);
-    font-size: var(--space-45);
+    font-size: var(--space-40);
 
     position: relative;
     z-index: 4;
 
-    @media (max-width: 31.25em) {
+    /* @media (max-width: 31.25em) {
         //500
         font-size: var(--space-40);
     }
@@ -65,17 +55,27 @@ const Title = styled(Typography)`
     @media (max-width: 25em) {
         //400
         font-size: 3rem;
-    }
+    } */
 `;
 const YellowLine = styled.span`
     position: absolute;
-    left: 43%;
-    bottom: -10%;
-    transform: translateX(-50%);
-    width: 100%;
+    left: 40%;
+    bottom: -11%;
+    transform: translateX(-36%);
+    width: 30%;
     z-index: -1;
 
-    @media (max-width: 26.87em) {
+    @media (max-width: 43.75em) {
+        //700
+        left: 35%;
+        top: 10%;
+    }
+    @media (max-width: 31.25em) {
+        //500
+        left: 47%;
+        top: 10%;
+    }
+    /*@media (max-width: 26.87em) {
         //430
         width: 20%;
 
@@ -96,7 +96,7 @@ const YellowLine = styled.span`
     @media (max-width: 24.0625em) {
         // 385px
         width: 30%; // Set the width to the desired value for 389em
-    }
+    }*/
 `;
 
 const ServiceCardsWrapper = styled.div`

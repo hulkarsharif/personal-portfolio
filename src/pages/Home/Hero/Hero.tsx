@@ -10,6 +10,12 @@ const SectionsBase = styled.section`
     padding-right: 9.5rem;
     background-color: var(--black-200);
 
+    @media (max-width: 81.25em) {
+        //900
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
     @media (max-width: 56.25em) {
         //900
         padding-left: 2.5rem;
@@ -28,8 +34,6 @@ const HeroContainer = styled(PageContainer)`
         display: block;
         align-items: center;
         text-align: center;
-        /* padding-left: 9.5rem;
-        padding-right: 9.5rem; */
     }
 `;
 
@@ -53,12 +57,13 @@ const HeroTitle = styled(Typography)`
     letter-spacing: 0.4em;
     color: var(--dodger-blue-900);
     padding-top: 0rem;
+    font-size: var(--space-16);
 
     /* margin: 48px 0px 0px; */
     @media (max-width: 84em) {
         //1344
-        font-size: 2.5rem;
-        line-height: 8rem;
+        /* font-size: 2.5rem; */
+        /* line-height: 8rem; */
     }
     @media (max-width: 56.25em) {
         //900
@@ -69,12 +74,12 @@ const HeroTitle = styled(Typography)`
     @media (max-width: 37.5em) {
         /* display: block;
         align-items: center; */
-        font-size: 2.1rem;
+        /* font-size: 2.1rem; */
     }
 
     @media (max-width: 25em) {
         display: block;
-        font-size: 1.7rem;
+        /* font-size: 1.7rem; */
         line-height: 4rem;
         margin-bottom: 1rem;
     }
@@ -83,10 +88,10 @@ const HeroTitle = styled(Typography)`
 const YellowLine = styled.span`
     position: absolute;
     left: 0;
-    bottom: -2%;
+    bottom: 2%;
 
     z-index: -1;
-    width: 50rem;
+    width: 30rem;
     height: 2.2rem;
     background-color: #ffbe62;
     @media (max-width: 61.75em) {
@@ -124,8 +129,10 @@ const YellowLine = styled.span`
     }
 `;
 const HeroDescription = styled(Typography)`
-    font-size: 4rem;
-    /* line-height: 6rem; */
+    margin: 1.6rem 0;
+    /* background-color: yellow; */
+    font-size: 5.6rem;
+    line-height: 6rem;
     display: flex;
 
     position: relative;
@@ -133,14 +140,14 @@ const HeroDescription = styled(Typography)`
 
     @media (max-width: 84em) {
         //1344
-        font-size: 4rem;
-        line-height: 3rem;
+        /* font-size: 4rem; */
+        /* line-height: 3rem; */
     }
 
     @media (max-width: 56.25em) {
         //900
-        font-size: 4.5rem;
-        line-height: 6rem;
+        /* font-size: 4.5rem; */
+        /* line-height: 6rem; */
 
         align-items: center;
         text-align: center;
@@ -148,35 +155,34 @@ const HeroDescription = styled(Typography)`
 `;
 
 const HeroParagraph = styled(Typography)`
-    margin-bottom: var(--space-20);
+    margin-bottom: var(--space-24);
     color: var(--black-400);
-    line-height: 2.8rem;
-    font-weight: 65rem;
+    line-height: 1.7em;
+    font-weight: 500;
+    font-size: var(--space-16);
 
     @media (max-width: 84em) {
         //1344
-        font-size: 1.6rem;
-        line-height: 3.5rem;
-        margin-top: 2rem;
+        /* font-size: 1.6rem; */
+        /* line-height: 3.5rem;
+        margin-top: 2rem; */
     }
 
     @media (max-width: 56.25em) {
         //900
-        font-size: 2rem;
-        line-height: 4rem;
+        /* font-size: 2rem; */
+        /* line-height: 4rem; */
         padding-bottom: 2rem;
         align-items: center;
         text-align: center;
     }
 
     @media (max-width: 25em) {
-        line-height: 1.8rem;
-        font-size: 1.5rem;
+        /* line-height: 1.8rem; */
+        /* font-size: 1.5rem; */
         display: flex;
         text-align: center;
         text-align: center;
-
-        color: bold;
     }
 `;
 
@@ -188,9 +194,9 @@ const SocialMedia = styled.div`
     @media (max-width: 56.25em) {
         //900
         /* margin-left: 12rem; */
-        align-items: center;
+        /* align-items: center;
         text-align: center;
-        display: flex;
+        display: flex; */
     }
 `;
 
@@ -201,10 +207,6 @@ const BlueLine = styled.div`
     border-radius: 0.4rem;
 
     @media (max-width: 62.5em) {
-        display: none;
-    }
-
-    @media (max-width: 56em) {
         display: none;
     }
 `;
@@ -224,11 +226,7 @@ const HeroSectionRight = styled.div`
     }
 
     @media (max-width: 62.5em) {
-        height: 50%;
-
-        img {
-            /* height: max-content; */
-        }
+        /* height: 50%; */
     }
     @media (max-width: 56.25em) {
         width: 100%;
@@ -237,8 +235,8 @@ const HeroSectionRight = styled.div`
 
         img {
             width: 60%;
-            text-align: center;
-            align-items: center;
+            /* text-align: center;
+            align-items: center; */
         }
     }
 `;
