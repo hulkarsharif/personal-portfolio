@@ -244,7 +244,7 @@ const HeroSectionRight = styled.div`
 //
 const Hero = () => {
     return (
-        <SectionsBase>
+        <SectionsBase id="hero">
             <HeroContainer>
                 <HeroSectionLeft>
                     <HeroTitle weight="bold" variant="h6" align="inherit">

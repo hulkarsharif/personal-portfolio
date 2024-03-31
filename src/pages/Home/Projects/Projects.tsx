@@ -119,7 +119,7 @@ const ProjectCardsWrapper = styled.div`
 
 const Projects = () => {
     return (
-        <SectionsBase>
+        <SectionsBase id="projects">
             <ProjectBase>
                 <Title variant="h3" weight="semibold">
                     Featured <span>Projects</span>

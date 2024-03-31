@@ -12,25 +12,19 @@ import { ToolsBar } from "./pages/Home/Tool-section/Tools-section";
 function App() {
     return (
         <>
-            <section id="contacts">
-                <TopNavigation />
-            </section>
-            <section id="hero">
-                <Hero />
-            </section>
+            <TopNavigation />
+
+            <Hero />
 
             <ToolsBar />
-            <section id="service">
-                <Service />
-            </section>
+
+            <Service />
 
             <Icon />
-            <section id="about">
-                <About />
-            </section>
-            <section id="projects">
-                <Projects />
-            </section>
+
+            <About />
+
+            <Projects />
 
             <Footer />
         </>

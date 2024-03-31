@@ -8,22 +8,16 @@ import project5 from "../../../../../assets/projects/project-5.png";
 export const projects = [
     {
         image: project1,
-
-        name: "Restaurant Website",
-        description: "Informational and promotional website"
+        name: "Cucina Italiana"
     },
     {
         image: project2,
-
-        name: "Furniture Website",
-        description: "Commercial website"
+        name: "Interior Decor"
     },
 
     {
         image: project3,
-
-        name: "Projectify-App",
-        description: "Web-based project management platform"
+        name: "Projectify-App"
     }
     // {
     //     image: project4,

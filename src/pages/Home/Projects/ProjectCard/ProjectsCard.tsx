@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { Button, Typography } from "../../../../design-system";
-import whiteArrow from "../../../../design-system/assets/image/whiteArrow.png";
+import whiteArrow from "../../../../design-system/assets/image/Arrow 7.png";
 
 type Project = {
     image: string;
     name: string;
-    description: string;
 };
 
 type ProjectCardProps = {
@@ -13,13 +12,12 @@ type ProjectCardProps = {
 };
 
 const ProjectCardWrapper = styled.div<{ name: string }>`
-    padding: var(--space-40);
+    padding: var(--space-50);
+
     height: 44rem;
     display: flex;
-    /* align-items: right; */
     gap: var(--space-20);
-
-    border-radius: var(--border-radius-8);
+    border-radius: 2.4rem;
     box-shadow: var(--shadow-m);
     /* margin-bottom: var(--space-40); */
 
@@ -27,9 +25,9 @@ const ProjectCardWrapper = styled.div<{ name: string }>`
         switch (name) {
             case "Projectify-App":
                 return "#1F1D2B";
-            case "Furniture Website":
+            case "Interior Decor":
                 return "#5F9FFE";
-            case "Restaurant Website":
+            case "Cucina Italiana":
                 return "#56B0B9";
             default:
                 return "transparent";
@@ -56,10 +54,11 @@ const ProjectCardWrapper = styled.div<{ name: string }>`
     @media (max-width: 37.5em) {
         //600
         align-items: center;
+        text-align: center;
         display: block;
         /* width: 56rem; */
-        height: 50rem;
-        /* margin-bottom: 5rem; */
+        /* height: 50rem; */
+        /* padding-bottom: 5rem; */
     }
 `;
 
@@ -67,121 +66,82 @@ const ProjectTextWrapper = styled.div`
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
 
     @media (max-width: 37.5em) {
         //600
-        /* display: block;
-        align-items: start; */
+
+        align-items: center;
+        text-align: center;
+
         width: 100%;
     }
 
-    @media (max-width: 25em) {
-        //400
+    @media (max-width: 26.75em) {
+        //428
 
-        width: 100%;
-        align-items: left;
-        text-align: left;
+        /* width: 100%;
+        align-items: center;
+        text-align: center; */
     }
 `;
 
 const ProjectName = styled(Typography)`
     margin-top: 9rem;
-    line-height: 2.3rem;
-    font-size: 3rem;
-    margin-bottom: var(--space-16);
+
+    font-size: 4rem;
+    margin-bottom: var(--space-20);
+
     /* margin-top: var(--space-20); */
     color: white;
 
     @media (max-width: 62.5em) {
         //1000
         display: flex;
-        line-height: 2.4rem;
-        font-size: 2rem;
     }
 
     @media (max-width: 37.5em) {
         //600
         margin-top: 2rem;
         display: flex;
-
-        line-height: 2rem;
-        font-size: 2.3rem;
-    }
-
-    @media (max-width: 25em) {
-        //400
-        margin-top: 2rem;
-
-        line-height: 1rem;
-        font-size: 2.3rem;
-        text-align: left;
-    }
-`;
-
-const ProjectDescription = styled(Typography)`
-    align-items: center;
-    text-align: center;
-
-    margin-bottom: var(--space-30);
-    color: white;
-
-    @media (max-width: 62.5em) {
-        //1000
-        display: flex;
-        line-height: 2.4rem;
-        font-size: 2rem;
-    }
-    @media (max-width: 37.5em) {
-        //600
-        /* display: flex;
-        text-align: start; */
-        padding-top: 3rem;
-
-        line-height: 0.5rem;
-        font-size: 1.8rem;
+        text-align: center;
+        align-items: center;
     }
 
     @media (max-width: 26.75em) {
-        //412
-        padding: 0;
-        line-height: 1rem;
-        font-size: 1.1rem;
-        text-align: left;
-    }
-    @media (max-width: 25.75em) {
-        //412
-        padding: 0;
-        line-height: 1rem;
-        font-size: 1.5rem;
-        text-align: left;
-    }
-    @media (max-width: 25em) {
         //400
-        padding: 0;
-        line-height: 1rem;
-        font-size: 1.2rem;
-        text-align: left;
+        margin-top: 1rem;
     }
 `;
 
 const Buttons = styled.div`
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
-    gap: var(--space-8);
+    gap: 1rem;
 
-    @media (max-width: 25em) {
+    @media (max-width: 37.5em) {
+        //600
+        margin-bottom: 2rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        /* line-height: 2rem;
+        font-size: 2.3rem; */
+    }
+
+    /* @media (max-width: 25em) {
         //400
         display: inline-flex;
         align-items: left;
         text-align: left;
-    }
+    } */
 `;
 const ProjectImageWrapper = styled.div`
     width: 60%;
     overflow: hidden;
-    border-radius: var(--border-radius-8);
+    border-radius: 2.4rem;
 
     img {
         /* height: 50rem; */
@@ -202,8 +162,9 @@ const ProjectImageWrapper = styled.div`
         height: auto;
 
         img {
+            border-radius: 2.4rem;
             height: auto;
-            width: 100%;
+            width: 80%;
             max-height: 18rem;
         }
     }
@@ -213,23 +174,14 @@ const ProjectImageWrapper = styled.div`
         height: auto;
 
         img {
+            border-radius: 2.4rem;
             height: auto;
-            width: 100%;
-            max-height: 18rem;
+            width: 80%;
+            max-height: 16rem;
         }
     }
 
-    @media (max-width: 25.75em) {
-        width: 100%;
-        height: auto;
-
-        img {
-            height: auto;
-            width: 100%;
-            max-height: 18rem;
-        }
-    }
-    @media (max-width: 25em) {
+    /* @media (max-width: 25em) {
         width: 100%;
         height: auto;
 
@@ -238,32 +190,34 @@ const ProjectImageWrapper = styled.div`
             width: 100%;
             max-height: 20rem;
         }
-    }
+    } */
 `;
-const ProjectArrow = styled.div`
-    padding-top: 6rem;
+// const ProjectArrow = styled.div`
+//     padding-top: 6rem;
+//     display: flex;
+//     color: white;
 
-    cursor: pointer;
+//     cursor: pointer;
 
-    @media (max-width: 62.5em) {
-        //1000
-        /* display: none; */
-    }
+//     @media (max-width: 62.5em) {
+//         //1000
+//         /* display: none; */
+//     }
 
-    @media (max-width: 37.5em) {
-        //600
-        padding: 3rem;
-        display: flex;
-        align-items: left;
-    }
+//     @media (max-width: 37.5em) {
+//         //600
+//         padding: 3rem;
+//         display: flex;
+//         align-items: left;
+//     }
 
-    @media (max-width: 26.75em) {
-        //428
-        padding: 2rem;
-        display: flex;
-        align-items: left;
-    }
-`;
+//     @media (max-width: 26.75em) {
+//         //428
+//         padding: 2rem;
+//         display: flex;
+//         align-items: left;
+//     }
+// `;
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
@@ -272,9 +226,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <ProjectName variant="h5" weight="bold">
                     {project.name}
                 </ProjectName>
-                <ProjectDescription variant="h6" weight="medium">
-                    {project.description}
-                </ProjectDescription>
+
                 <Buttons>
                     {" "}
                     <Button
@@ -295,9 +247,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     </Button>
                 </Buttons>
 
-                <ProjectArrow>
+                {/* <ProjectArrow>
+                    <Typography variant="paragraphSM">
+                        See Detail Project
+                    </Typography>
                     <img src={whiteArrow} alt="arrow" />
-                </ProjectArrow>
+                </ProjectArrow> */}
             </ProjectTextWrapper>
 
             <ProjectImageWrapper>

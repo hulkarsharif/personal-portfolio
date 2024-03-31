@@ -27,8 +27,7 @@ const SectionsBase = styled.section`
 `;
 const FooterSection = styled(PageContainer)`
     position: relative;
-
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
 `;
 
 const Circle = styled.span`
@@ -50,13 +49,12 @@ const MediumCircle = styled.span`
 `;
 const FooterWrapper = styled.div`
     text-align: left;
-    border-radius: var(--space-12);
+    border-radius: 2.4rem;
     background-color: var(--dodger-blue-200);
+    padding: 8rem;
 
-    padding: 7rem 7rem;
-
-    @media (max-width: 25em) {
-        padding: 3rem 1rem;
+    @media (max-width: 35em) {
+        padding: 7rem 4rem;
     }
 `;
 
@@ -65,16 +63,39 @@ const YellowLine = styled.span`
     left: 0;
     bottom: 4%;
     z-index: -1;
-    width: 50%;
+    width: 15%;
     height: 2.2rem;
     background-color: #ffbe62;
 
+    @media (max-width: 81.25em) {
+        //900
+
+        width: 54%;
+    }
+    @media (max-width: 56.25em) {
+        //900
+
+        width: 70%;
+    }
+    @media (max-width: 50em) {
+        //800
+        width: 80%;
+        left: 12rem;
+    }
+    @media (max-width: 44.95em) {
+        //719
+
+        width: 70%;
+        left: 12rem;
+    }
+
     @media (max-width: 45.87em) {
-        width: 20rem;
+        width: 30%;
+        left: 0;
     }
     @media (max-width: 26.75em) {
-        width: 40%;
-        left: 0;
+        width: 50%;
+        left: 1rem;
     }
     /*
     @media (max-width: 25em) {
@@ -95,17 +116,22 @@ const YellowLine = styled.span`
 `;
 
 const FooterTitle = styled(Typography)`
-    font-size: 7rem;
-    line-height: 9rem;
+    font-size: 6.5rem;
+    /* line-height: 1.2em; */
     display: block;
 
     position: relative;
     z-index: 4;
 
-    @media (max-width: 31.25em) {
-        //500px
-        font-size: 5rem;
-        line-height: 5rem;
+    @media (max-width: 25em) {
+        //400
+        font-size: 4.5rem;
+        line-height: 1.2em;
+    }
+    @media (max-width: 20em) {
+        //320
+        font-size: 3rem;
+        line-height: 1.2em;
     }
 `;
 
@@ -118,7 +144,7 @@ const FooterLinkWrapper = styled.div`
 `;
 
 const Buttons = styled.div`
-    display: flex;
+    /* display: flex; */
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -163,6 +189,11 @@ const ContactWrapper = styled.div`
             width: 50px; // Adjust the width of the images here
             height: auto; // Maintain aspect ratio
         }
+    }
+
+    @media (max-width: 20em) {
+        //320
+        display: block;
     }
 `;
 

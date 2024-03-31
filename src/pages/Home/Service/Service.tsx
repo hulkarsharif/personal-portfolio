@@ -136,7 +136,7 @@ const ServiceCardsWrapper = styled.div`
 
 const Service = () => {
     return (
-        <SectionsBase>
+        <SectionsBase id="service">
             <SectionBase>
                 <ServiceTextWrapper>
                     <Title variant="h5" weight="bold">

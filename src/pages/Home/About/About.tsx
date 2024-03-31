@@ -41,7 +41,7 @@ const AboutBase = styled(PageContainer)`
 
 const AboutLeftWrapper = styled.div`
     width: 50%;
-    border-radius: var(--space-8);
+    border-radius: var(--space-16);
     background-color: var(--black-100);
     position: relative;
     display: flex;
@@ -179,7 +179,7 @@ const AboutCard = styled.div`
     padding: 3.6rem;
     height: max-content;
     border: 1px solid var(--jaguar-300);
-    border-radius: var(--space-8);
+    border-radius: var(--space-16);
 
     display: flex;
     /*transition: all 1s;
@@ -212,13 +212,13 @@ const AboutDescriptionRight = styled(Typography)`
     text-align: left;
     /* line-height: 1.8rem;
     font-weight: 60rem; */
-    font-size: 1.4rem;
-    color: var(--jaguar-600);
+    font-size: 1.8rem;
+    color: var(--jaguar-900);
 `;
 
 const About = () => {
     return (
-        <SectionsBase>
+        <SectionsBase id="about">
             <AboutBase>
                 <AboutLeftWrapper>
                     <AboutEllipseBlueWrapper>

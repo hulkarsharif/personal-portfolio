@@ -15,7 +15,7 @@ type ServiceCardProps = {
 };
 
 export const ServiceCardBase = styled.div<{ icon: string }>`
-    border-radius: var(--border-radius-16);
+    border-radius: var(--space-16);
     padding: var(--space-24);
     box-shadow: var(--shadow-xs);
     /* max-width: 28rem; */

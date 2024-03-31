@@ -26,14 +26,22 @@ const SectionsBase = styled.section`
     }
     @media (max-width: 56.25em) {
         //900
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding-left: 2.5rem;
+        padding-right: 1.5rem;
     }
-
+    @media (max-width: 37.5em) {
+        //600
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+    }
+    @media (max-width: 31.25em) {
+        //500
+        padding-left: 1.5rem;
+        padding-right: 0rem;
+    }
     @media (max-width: 26.75em) {
         //428
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        padding-left: 1rem;
     }
 `;
 
@@ -135,7 +143,7 @@ const TopNavigation = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <SectionsBase>
+        <SectionsBase id="contacts">
             <Base>
                 <LogoWrapper>
                     <img src={KLogo} alt="ellipse" />
