@@ -48,7 +48,7 @@ const AboutLeftWrapper = styled.div`
     align-items: left;
     justify-content: center;
     flex-direction: column;
-    padding: 9rem 10rem;
+    padding: 9rem 9rem;
 
     /* padding-right: 10rem;
     padding-left: 10rem; */
@@ -83,32 +83,45 @@ const AboutLeftWrapper = styled.div`
         padding-top: 20rem;
         padding-bottom: 20rem;
     }
-    /*
-    @media (max-width: 56.12em) {
-        //834
+    @media (max-width: 43.75em) {
+        //700
         width: 100%;
+        display: inline-block;
+        align-items: stretch;
+        gap: var(--space-30);
+        margin-bottom: 1rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 
-    @media (max-width: 25.75em) {
-        //412
-        padding: 13rem 3rem;
+    @media (max-width: 26.75em) {
+        //428
+        width: 100%;
+        display: inline-block;
+        align-items: stretch;
+        gap: var(--space-20);
+        margin-bottom: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
-
-    @media (max-width: 25.75em) {
-        //412
-        padding: 15rem 3rem;
-    }*/
 `;
 
 const AboutTitle = styled(Typography)`
     color: var(--white);
-    margin-bottom: var(--space-20);
+    display: block;
+    /* margin-bottom: var(--space-20); */
+    font-size: var(--space-40);
+    line-height: 1.2em;
+    margin: 0 0 1.6rem;
 `;
 
 const AboutParagraph = styled(Typography)`
     color: var(--black-400);
-    line-height: 2.5rem;
+    line-height: 1.7em;
     margin-bottom: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+    font-weight: 500;
 `;
 
 const WhiteLine = styled.div`
@@ -122,6 +135,11 @@ const AboutEllipseBlueWrapper = styled.div`
     position: absolute;
     top: 11.3rem;
     right: 11.7rem;
+
+    @media (max-width: 26.75em) {
+        //428
+        top: 5rem;
+    }
 `;
 
 const AboutYellowEllipse = styled.div`
@@ -136,9 +154,7 @@ const AboutSectionRight = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 3rem;
-    /* > *:not(:last-child) {
-        margin-bottom: var(--space-30);
-    } */
+
     @media (max-width: 64em) {
         //1104
         width: 60%;
@@ -183,78 +199,21 @@ const RightIconWrapper = styled.div`
 `;
 
 const RightTextWrapper = styled.div`
-    padding-right: 8rem;
+    margin-left: 1rem;
 `;
 
 const AboutTitleRight = styled(Typography)`
     margin-bottom: var(--space-24);
-
-    @media (max-width: 75em) {
-        line-height: 2.1rem;
-        font-size: 2.1rem;
-    }
-    @media (max-width: 68.75em) {
-        line-height: 4.5rem;
-        font-size: 2.2rem;
-    }
-
-    @media (max-width: 62.5em) {
-        line-height: 3rem;
-        font-size: 2.2rem;
-    }
-    @media (max-width: 64em) {
-        //1024
-        line-height: 2.8rem;
-        font-size: 2rem;
-    }
-
-    @media (max-width: 57.875em) {
-        //926px
-        line-height: 2.5rem;
-        font-size: 2rem;
-    }
-
-    @media (max-width: 56.25em) {
-        //1000px
-        line-height: 1.8rem;
-        font-size: 2rem;
-    }
-
-    @media (max-width: 25em) {
-        display: flex;
-        line-height: 1rem;
-        font-size: 1rem;
-    }
+    font-size: var(--space-24);
 `;
 
 const AboutDescriptionRight = styled(Typography)`
     align-items: center;
     text-align: left;
-    line-height: 1.8rem;
-    font-weight: 60rem;
-    font-size: 2rem;
-
-    @media (max-width: 64em) {
-        //1024
-        line-height: 2.9rem;
-        font-size: 2rem;
-    }
-
-    @media (max-width: 57.87em) {
-        //926px
-        line-height: 2.5rem;
-        font-size: rem;
-    }
-    @media (max-width: 56.25em) {
-        line-height: 4rem;
-        font-size: 2.2rem;
-    }
-
-    @media (max-width: 25em) {
-        display: flex;
-        line-height: 2rem;
-        font-size: 1rem;
-    }
+    /* line-height: 1.8rem;
+    font-weight: 60rem; */
+    font-size: 1.4rem;
+    color: var(--jaguar-600);
 `;
 
 const About = () => {
