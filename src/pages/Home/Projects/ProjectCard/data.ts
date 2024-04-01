@@ -8,16 +8,22 @@ import project5 from "../../../../../assets/projects/project-5.png";
 export const projects = [
     {
         image: project1,
-        name: "Cucina Italiana"
+        name: "Cucina Italiana",
+        githubLink: "https://github.com/hulkarsharif/restaurant-website-react",
+        demoLink: "http://localhost:3000/"
     },
     {
         image: project2,
-        name: "Interior Decor"
+        name: "Interior Decor",
+        gitHubLink: "https://github.com/hulkarsharif/furniture-website-react",
+        demoLink: "http://localhost:3000/"
     },
 
     {
         image: project3,
-        name: "Projectify-App"
+        name: "Projectify-App",
+        gitHubLink: "https://github.com/hulkarsharif/personal-portfolio",
+        demoLink: "http://localhost:3000/"
     }
     // {
     //     image: project4,

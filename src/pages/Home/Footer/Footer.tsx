@@ -5,7 +5,6 @@ import phone from "../../../design-system/assets/image/Frame16.png";
 import email from "../../../design-system/assets/image/Frame15.png";
 import { useState } from "react";
 import { CreateContactUsModal } from "./createContactUsModal";
-import yellow from "../../../design-system/assets/image/HIGHLIGHT-md.png";
 import BigCircle from "../../../design-system/assets/image/ELLIPSE-cr-lg.png";
 import CircleMd from "../../../design-system/assets/image/ELLIPSE-cr-md.png";
 import circle from "../../../design-system/assets/image/ELLIPSE-cr.png";
@@ -27,7 +26,7 @@ const SectionsBase = styled.section`
 `;
 const FooterSection = styled(PageContainer)`
     position: relative;
-    /* margin-top: 8rem; */
+    margin-top: 3rem;
 `;
 
 const Circle = styled.span`
@@ -147,6 +146,12 @@ const Buttons = styled.div`
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    z-index: 0;
+
+    :hover {
+        background-color: blue;
+    }
 `;
 
 const StyledLink = styled.a`
@@ -181,11 +186,6 @@ const ContactWrapper = styled.div`
         display: inline-flex;
         flex-direction: column;
         gap: 1rem;
-
-        /* img {
-            width: 50px; // Adjust the width of the images here
-            height: auto; // Maintain aspect ratio
-        } */
     }
 
     @media (max-width: 20em) {
@@ -194,7 +194,7 @@ const ContactWrapper = styled.div`
     }
 `;
 
-const LogoWrapper = styled.div`
+const IconWrapper = styled.div`
     height: 3rem;
     width: 3rem;
     margin-right: 1rem;
@@ -222,7 +222,12 @@ const SocialMedia = styled.div`
 `;
 
 const Footer = () => {
-    const [showCreateUsContact, setShowCreateUsContact] = useState(false);
+    const [showCreateContactUs, setShowCreateContactUs] = useState(false);
+
+    // const handleOnClick = () => {
+    //     console.log("hello");
+    //     setShowCreateUsContact(true);
+    // };
 
     return (
         <>
@@ -254,22 +259,23 @@ const Footer = () => {
                                     size="lg"
                                     shape="circle"
                                     variant="outlined"
-                                    onClick={() => setShowCreateUsContact(true)}
+                                    onClick={() => setShowCreateContactUs(true)}
                                 >
                                     Contact Us
                                 </Button>
                             </Buttons>
                         </FooterLinkWrapper>
+
                         <ContactWrapper>
-                            <LogoWrapper>
+                            <IconWrapper>
                                 <img src={email} alt="email" />
-                            </LogoWrapper>
+                            </IconWrapper>
                             <StyledLink href="mailto:sharipovah01@gmail.com">
                                 sharipovah01@gmail.com
                             </StyledLink>
-                            <LogoWrapper>
+                            <IconWrapper>
                                 <img src={phone} alt="phone" />
-                            </LogoWrapper>
+                            </IconWrapper>
                             <StyledLink href="tel:+15714242397">
                                 +1 571 424 2397
                             </StyledLink>
@@ -282,17 +288,11 @@ const Footer = () => {
                         <Icon iconName="linkedin-svgrepo-com" />
                     </SocialMedia>
                 </FooterSection>
-
-                <CreateContactUsModal
-                    show={showCreateUsContact}
-                    closeModal={() => setShowCreateUsContact(false)}
-                />
-
-                {/* <ContactForm
-                show={showCreateUsContact}
-                closeModal={() => setShowCreateUsContact(false)}
-            /> */}
             </SectionsBase>
+            <CreateContactUsModal
+                show={showCreateContactUs}
+                closeModal={() => setShowCreateContactUs(false)}
+            />
         </>
     );
 };

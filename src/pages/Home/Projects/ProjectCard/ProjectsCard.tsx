@@ -5,6 +5,8 @@ import whiteArrow from "../../../../design-system/assets/image/Arrow 7.png";
 type Project = {
     image: string;
     name: string;
+    githubLink?: string;
+    demoLink: string;
 };
 
 type ProjectCardProps = {
@@ -139,7 +141,7 @@ const Buttons = styled.div`
     } */
 `;
 const ProjectImageWrapper = styled.div`
-    width: 60%;
+    width: 70%;
     overflow: hidden;
     border-radius: 2.4rem;
 
@@ -226,23 +228,27 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 </ProjectName>
 
                 <Buttons>
-                    {" "}
-                    <Button
-                        size="lg"
-                        variant="outlined"
-                        color="secondary"
-                        shape="rounded"
-                    >
-                        GitHub
-                    </Button>
-                    <Button
-                        size="lg"
-                        variant="outlined"
-                        color="secondary"
-                        shape="rounded"
-                    >
-                        Demo
-                    </Button>
+                    <a href={project.githubLink}>
+                        <Button
+                            size="lg"
+                            variant="outlined"
+                            color="secondary"
+                            shape="rounded"
+                        >
+                            GitHub
+                        </Button>
+                    </a>
+
+                    <a href={project.demoLink}>
+                        <Button
+                            size="lg"
+                            variant="outlined"
+                            color="secondary"
+                            shape="rounded"
+                        >
+                            Demo
+                        </Button>
+                    </a>
                 </Buttons>
 
                 {/* <ProjectArrow>
