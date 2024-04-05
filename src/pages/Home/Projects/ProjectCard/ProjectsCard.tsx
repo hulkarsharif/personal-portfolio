@@ -5,7 +5,7 @@ import whiteArrow from "../../../../design-system/assets/image/Arrow 7.png";
 type Project = {
     image: string;
     name: string;
-    githubLink?: string;
+    githubLink: string;
     demoLink: string;
 };
 
@@ -128,20 +128,10 @@ const Buttons = styled.div`
         display: flex;
         text-align: center;
         align-items: center;
-
-        /* line-height: 2rem;
-        font-size: 2.3rem; */
     }
-
-    /* @media (max-width: 25em) {
-        //400
-        display: inline-flex;
-        align-items: left;
-        text-align: left;
-    } */
 `;
 const ProjectImageWrapper = styled.div`
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     border-radius: 2.4rem;
 
@@ -168,6 +158,7 @@ const ProjectImageWrapper = styled.div`
             /* height: auto; */
             width: 100%;
             max-height: 19rem;
+            /* vertical-align: middle; */
         }
     }
 
@@ -177,47 +168,22 @@ const ProjectImageWrapper = styled.div`
         border-radius: 1rem;
 
         img {
+            vertical-align: middle;
             border-radius: 0;
         }
     }
 
     @media (max-width: 25em) {
         width: 100%;
-        height: 18rem;
+        height: 18em;
         border-radius: 0;
 
         img {
             height: 100%;
-            border-radius: 0;
+            border-radius: 1rem;
         }
     }
 `;
-// const ProjectArrow = styled.div`
-//     padding-top: 6rem;
-//     display: flex;
-//     color: white;
-
-//     cursor: pointer;
-
-//     @media (max-width: 62.5em) {
-//         //1000
-//         /* display: none; */
-//     }
-
-//     @media (max-width: 37.5em) {
-//         //600
-//         padding: 3rem;
-//         display: flex;
-//         align-items: left;
-//     }
-
-//     @media (max-width: 26.75em) {
-//         //428
-//         padding: 2rem;
-//         display: flex;
-//         align-items: left;
-//     }
-// `;
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
@@ -231,7 +197,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     <a href={project.githubLink}>
                         <Button
                             size="lg"
-                            variant="outlined"
+                            variant="contained"
                             color="secondary"
                             shape="rounded"
                         >
@@ -242,7 +208,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     <a href={project.demoLink}>
                         <Button
                             size="lg"
-                            variant="outlined"
+                            variant="contained"
                             color="secondary"
                             shape="rounded"
                         >
@@ -250,13 +216,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         </Button>
                     </a>
                 </Buttons>
-
-                {/* <ProjectArrow>
-                    <Typography variant="paragraphSM">
-                        See Detail Project
-                    </Typography>
-                    <img src={whiteArrow} alt="arrow" />
-                </ProjectArrow> */}
             </ProjectTextWrapper>
 
             <ProjectImageWrapper>

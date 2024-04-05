@@ -29,7 +29,8 @@ const Input: React.FC<InputProps> = (props) => {
         className,
         id,
         onChange,
-        value
+        value,
+        name
     } = props;
 
     const sizeClassName = size !== undefined ? sizeClassNames[size] : "";
@@ -67,6 +68,7 @@ const Input: React.FC<InputProps> = (props) => {
                     id={id}
                     onChange={handleOnChange}
                     value={value}
+                    name={name}
                 />
             ) : (
                 <input
@@ -77,6 +79,7 @@ const Input: React.FC<InputProps> = (props) => {
                     id={id}
                     onChange={handleOnChange}
                     value={value}
+                    name={name}
                 />
             )}
 

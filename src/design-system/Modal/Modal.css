@@ -7,6 +7,20 @@
 
     display: flex;
     z-index: 9999;
+
+    @media (max-width: 26.75em) {
+        .modal {
+            width: 80%; /* Adjust the width for smaller screens */
+            padding: var(--space-16); /* Adjust padding for smaller screens */
+        }
+    }
+
+    @media (max-width: 25em) {
+        .modal {
+            width: 90%; /* Further adjust the width for screens of 25em or smaller */
+            padding: var(--space-10);
+        }
+    }
 }
 
 .modal-overlay--center {

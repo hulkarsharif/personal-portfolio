@@ -10,6 +10,9 @@ type ModalProps = {
 };
 const ModalTitle = styled(Typography)`
     margin-bottom: var(--space-20);
+
+    @media (max-width: 26.75em) {
+    }
 `;
 const Inputs = styled.div`
     display: flex;
@@ -92,9 +95,10 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
             <ModalTitle variant="h6" weight="medium">
                 Contacts
             </ModalTitle>
-            <FormWrapperInput>
+            <FormWrapperInput ref={form} onSubmit={sendEmail}>
                 <Inputs>
                     <Input
+                        name="userFirstName"
                         type="text"
                         placeholder="First Name"
                         value={firstName}
@@ -103,6 +107,7 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
                         size="lg"
                     />
                     <Input
+                        name="userLastName"
                         type="text"
                         placeholder="Last Name"
                         value={lastName}
@@ -111,6 +116,7 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
                         size="lg"
                     />
                     <Input
+                        name="userEmail"
                         type="email"
                         placeholder="Email"
                         value={email}
@@ -120,6 +126,7 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
                     />
                 </Inputs>
                 <Input
+                    name="userPhone"
                     type="tel"
                     placeholder="Phone number"
                     shape="rounded"
@@ -128,6 +135,7 @@ const CreateContactUsModal: React.FC<ModalProps> = ({ show, closeModal }) => {
                     onChange={handleOnChangePhone}
                 />
                 <Input
+                    name="message"
                     labelText="Message"
                     type="textarea"
                     placeholder="Message or Description"

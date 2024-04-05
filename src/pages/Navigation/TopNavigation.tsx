@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { NavigationLink } from "./Links";
+import { Icon } from "../../design-system";
 
-import logoMe from "../../design-system/assets/image/Klogo.png";
 import { PageContainer } from "../components";
-import KLogo from "../../design-system/assets/image/L1995.png";
+import Logo from "../../design-system/assets/image/kLogo.svg";
 
 const links = [
     { text: "HOME", link: "#hero" },
@@ -146,7 +146,7 @@ const TopNavigation = () => {
         <SectionsBase id="contacts">
             <Base>
                 <LogoWrapper>
-                    <img src={KLogo} alt="ellipse" />
+                    <Icon iconName="logo" />
                 </LogoWrapper>
                 <StyledBurger open={open} onClick={() => setOpen(!open)}>
                     <div />

@@ -72,48 +72,6 @@ const YellowLine = styled.span`
         width: 30%;
         left: 1rem;
     }
-    /*
-    @media (max-width: 81.25em) {
-        //900
-
-        width: 54%;
-    }
-    @media (max-width: 56.25em) {
-        //900
-
-        width: 70%;
-    }
-    @media (max-width: 50em) {
-        //800
-        width: 80%;
-        left: 12rem;
-    }/*
-  
-/*
-    @media (max-width: 45.87em) {
-        width: 30%;
-        left: 0;
-    }
-    @media (max-width: 26.75em) {
-        width: 50%;
-        left: 1rem;
-    }
-    /*
-    @media (max-width: 25em) {
-        width: 30%;
-        left: 3rem;
-    }
-
-    @media (max-width: 24.375em) {
-        //390px
-        width: 40%;
-        left: 5rem;
-    }
-    @media (max-width: 24.375em) {
-        //370px
-        width: 40%;
-        left: 5rem;
-    }*/
 `;
 
 const FooterTitle = styled(Typography)`
@@ -125,11 +83,11 @@ const FooterTitle = styled(Typography)`
     z-index: 4;
 
     @media (max-width: 25em) {
-        /* font-size: 3.5rem; */
     }
 
     @media (max-width: 20em) {
-        /* font-size: 3rem; */
+        /* font-size: 3rem;
+        line-height: 3rem; */
     }
 `;
 
@@ -165,11 +123,9 @@ const StyledLink = styled.a`
     @media (max-width: 50em) {
         display: block;
     }
-    @media (max-width: 27.5em) {
-        padding-left: 0;
-        line-height: 2rem;
-        display: block;
-        font-size: 2rem;
+
+    @media (max-width: 20em) {
+        font-size: 1.5rem;
     }
 `;
 
@@ -223,11 +179,6 @@ const SocialMedia = styled.div`
 
 const Footer = () => {
     const [showCreateContactUs, setShowCreateContactUs] = useState(false);
-
-    // const handleOnClick = () => {
-    //     console.log("hello");
-    //     setShowCreateUsContact(true);
-    // };
 
     return (
         <>
@@ -283,9 +234,16 @@ const Footer = () => {
                     </FooterWrapper>
 
                     <SocialMedia>
-                        <Icon iconName="instagram" />
-                        <Icon iconName="github-icon" />
-                        <Icon iconName="linkedin-svgrepo-com" />
+                        <a href="https://twitter.com/home">
+                            <Icon iconName="twitter" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hulkar-sharipova-1a75b0231/">
+                            <Icon iconName="linkedin-svgrepo-com" />
+                        </a>
+                        <a href="https://github.com/hulkarsharif">
+                            <Icon iconName="github-icon" />
+                        </a>
                     </SocialMedia>
                 </FooterSection>
             </SectionsBase>

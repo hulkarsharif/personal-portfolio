@@ -1,6 +1,6 @@
 import project1 from "../../../../design-system/assets/image/delisiozo.png";
 import project2 from "../../../../design-system/assets/image/fur.png";
-import project3 from "../../../../design-system/assets/image/project-content1.png";
+import project3 from "../../../../design-system/assets/image/stories_comban view1.png";
 
 import project4 from "../../../../../assets/projects/project-4.jpg";
 import project5 from "../../../../../assets/projects/project-5.png";
@@ -15,16 +15,16 @@ export const projects = [
     {
         image: project2,
         name: "Interior Decor",
-        gitHubLink: "https://github.com/hulkarsharif/furniture-website-react",
-        demoLink: "http://localhost:3000/"
+        githubLink: "https://github.com/hulkarsharif/furniture-website-react",
+        demoLink: "https://furniture-website-khulkar.netlify.app/"
     },
-
     {
         image: project3,
         name: "Projectify-App",
-        gitHubLink: "https://github.com/hulkarsharif/personal-portfolio",
+        githubLink: "https://github.com/hulkarsharif/personal-portfolio",
         demoLink: "http://localhost:3000/"
     }
+
     // {
     //     image: project4,
     //     name: "Online Shopping Website",

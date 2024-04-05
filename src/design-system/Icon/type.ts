@@ -40,7 +40,10 @@ export type IconName =
     | "mail"
     | "phone"
     | "close"
-    | "list-menu";
+    | "list-menu"
+    | "arrow"
+    | "twitter"
+    | "logo";
 
 export type IconProps = {
     iconName?: IconName;
