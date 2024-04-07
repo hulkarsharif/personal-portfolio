@@ -18,6 +18,8 @@ const SectionsBase = styled.section`
     padding-left: 9.5rem;
     padding-right: 9.5rem;
     background-color: var(--black-200);
+    margin-right: auto;
+    margin-left: auto;
 
     @media (max-width: 81.25em) {
         //1300
@@ -27,21 +29,21 @@ const SectionsBase = styled.section`
     @media (max-width: 56.25em) {
         //900
         padding-left: 2.5rem;
-        padding-right: 1.5rem;
+        padding-right: 0;
     }
     @media (max-width: 37.5em) {
         //600
-        padding-left: 2.5rem;
-        padding-right: 1rem;
+        /* padding-left: 2.5rem;
+        padding-right: 1rem; */
     }
     @media (max-width: 31.25em) {
         //500
-        padding-left: 1.5rem;
-        padding-right: 0rem;
+        /* padding-left: 1.5rem;
+        padding-right: 0rem;*/
     }
     @media (max-width: 26.75em) {
         //428
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
     }
 `;
 
