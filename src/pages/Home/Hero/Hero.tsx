@@ -2,8 +2,10 @@ import { Button, Icon, Input, Typography } from "../../../design-system";
 import styled from "styled-components";
 import { PageContainer } from "../../components";
 import women from "../../../design-system/assets/image/blue-img.png";
+import { CreateContactUsModal } from "../Footer/createContactUsModal";
 
 import FileViewer from "./FileViewer";
+import { useState } from "react";
 
 const SectionsBase = styled.section`
     padding-left: 9.5rem;
@@ -243,50 +245,64 @@ const HeroSectionRight = styled.div`
 
 //
 const Hero = () => {
+    const [showCreateContactUs, setShowCreateContactUs] = useState(false);
+
     return (
-        <SectionsBase id="hero">
-            <HeroContainer>
-                <HeroSectionLeft>
-                    <HeroTitle weight="bold" variant="h6" align="inherit">
-                        HI, I AM KHULKAR
-                    </HeroTitle>
+        <>
+            <SectionsBase id="hero">
+                <HeroContainer>
+                    <HeroSectionLeft>
+                        <HeroTitle weight="bold" variant="h6" align="inherit">
+                            HI, I AM KHULKAR
+                        </HeroTitle>
 
-                    <HeroDescription
-                        weight="bold"
-                        variant="displaySM"
-                        align="left"
-                    >
-                        I am FullStack Developer
-                        <YellowLine></YellowLine>
-                    </HeroDescription>
+                        <HeroDescription
+                            weight="bold"
+                            variant="displaySM"
+                            align="left"
+                        >
+                            I am FullStack Developer
+                            <YellowLine></YellowLine>
+                        </HeroDescription>
 
-                    <HeroParagraph
-                        weight="semibold"
-                        variant="subtitleSM"
-                        align="left"
-                    >
-                        With a keen eye for detail and a passion for creating
-                        seamless user experiences, I have crafted innovative
-                        solutions that meet client requirements and exceed
-                        expectations.
-                    </HeroParagraph>
-                    <SocialMedia>
-                        <a href="mailto:sharipovah01@gmail.com">
-                            <Button size="lg" color="success" shape="circle">
-                                Contact me
-                            </Button>
-                        </a>
-                        <FileViewer />
+                        <HeroParagraph
+                            weight="semibold"
+                            variant="subtitleSM"
+                            align="left"
+                        >
+                            With a keen eye for detail and a passion for
+                            creating seamless user experiences, I have crafted
+                            innovative solutions that meet client requirements
+                            and exceed expectations.
+                        </HeroParagraph>
+                        <SocialMedia>
+                            <a href="mailto:sharipovah01@gmail.com">
+                                <Button
+                                    size="lg"
+                                    color="success"
+                                    shape="circle"
+                                    onClick={() => setShowCreateContactUs(true)}
+                                >
+                                    Contact me
+                                </Button>
+                            </a>
+                            <FileViewer />
 
-                        <BlueLine></BlueLine>
-                    </SocialMedia>
-                </HeroSectionLeft>
+                            <BlueLine></BlueLine>
+                        </SocialMedia>
+                    </HeroSectionLeft>
 
-                <HeroSectionRight>
-                    <img src={women} alt="women" />
-                </HeroSectionRight>
-            </HeroContainer>
-        </SectionsBase>
+                    <HeroSectionRight>
+                        <img src={women} alt="women" />
+                    </HeroSectionRight>
+                </HeroContainer>
+            </SectionsBase>
+
+            <CreateContactUsModal
+                show={showCreateContactUs}
+                closeModal={() => setShowCreateContactUs(false)}
+            />
+        </>
     );
 };
 
