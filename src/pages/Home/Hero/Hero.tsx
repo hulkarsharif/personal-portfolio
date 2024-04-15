@@ -276,16 +276,14 @@ const Hero = () => {
                             and exceed expectations.
                         </HeroParagraph>
                         <SocialMedia>
-                            <a href="mailto:sharipovah01@gmail.com">
-                                <Button
-                                    size="lg"
-                                    color="success"
-                                    shape="circle"
-                                    onClick={() => setShowCreateContactUs(true)}
-                                >
-                                    Contact me
-                                </Button>
-                            </a>
+                            <Button
+                                size="lg"
+                                color="success"
+                                shape="circle"
+                                onClick={() => setShowCreateContactUs(true)}
+                            >
+                                Contact me
+                            </Button>
                             <FileViewer />
 
                             <BlueLine></BlueLine>
