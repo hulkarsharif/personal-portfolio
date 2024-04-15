@@ -4,6 +4,7 @@ import styled from "styled-components";
 type PropsType = {
     linkText: string;
     linkTo: string;
+    onClick?: () => void;
 };
 
 const StyledLink = styled.a`
@@ -12,9 +13,9 @@ const StyledLink = styled.a`
     font-size: var(--font-size-14);
 `;
 
-const NavigationLink: React.FC<PropsType> = ({ linkText, linkTo }) => {
+const NavigationLink: React.FC<PropsType> = ({ linkText, linkTo, onClick }) => {
     return (
-        <StyledLink href={linkTo} className="paragraph-md">
+        <StyledLink href={linkTo} className="paragraph-md" onClick={onClick}>
             {linkText}
         </StyledLink>
     );

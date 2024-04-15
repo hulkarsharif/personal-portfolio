@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { NavigationLink } from "./Links";
 import { Icon } from "../../design-system";
 
 import { PageContainer } from "../components";
 import Logo from "../../design-system/assets/image/kLogo.svg";
+import { FC, useState } from "react";
 
-const links = [
+export const links = [
     { text: "HOME", link: "#hero" },
     { text: "SERVICE", link: "#service" },
     { text: "ABOUT", link: "#about" },
     { text: "PROJECTS", link: "#projects" },
-    { text: "CONTACT", link: "contacts" }
+    { text: "CONTACT", link: "#contacts" }
 ];
+
+export interface MenuLinksProps {
+    onClose: () => void;
+    show: boolean;
+}
 
 const SectionsBase = styled.section`
     padding-left: 9.5rem;
@@ -88,22 +94,7 @@ const NavigationLinks = styled.div<{ open: boolean }>`
     }
 `;
 
-const LogoWrapper = styled.div`
-    /* width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* margin-right: var(--space-40); */
-`;
-
-// const LogoText = styled.span`
-//     color: #fff; // White color for the initials
-//     font-size: 1.5rem;
-//     font-weight: bolder;
-// `;
+const LogoWrapper = styled.div``;
 
 const StyledBurger = styled.div<{ open: boolean }>`
     display: none;
@@ -141,7 +132,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
     }
 `;
 
-const TopNavigation = () => {
+const TopNavigation: FC<MenuLinksProps> = ({ show, onClose }) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -161,6 +152,7 @@ const TopNavigation = () => {
                             key={idx}
                             linkText={link.text}
                             linkTo={link.link}
+                            onClick={() => setOpen(!open)}
                         />
                     ))}
                 </NavigationLinks>
