@@ -152,18 +152,16 @@ const TopNavigation: FC<MenuLinksProps> = ({ show, onClose }) => {
                     <div />
                     <div />
                 </StyledBurger>
-                {open && (
-                    <NavigationLinks open={open}>
-                        {links.map((link, idx) => (
-                            <NavigationLink
-                                key={idx}
-                                linkText={link.text}
-                                linkTo={link.link}
-                                onClick={() => setOpen(!false)}
-                            />
-                        ))}
-                    </NavigationLinks>
-                )}
+                <NavigationLinks open={open}>
+                    {links.map((link, idx) => (
+                        <NavigationLink
+                            key={idx}
+                            linkText={link.text}
+                            linkTo={link.link}
+                            onClick={() => setOpen(!open)}
+                        />
+                    ))}
+                </NavigationLinks>
             </Base>
         </SectionsBase>
     );
