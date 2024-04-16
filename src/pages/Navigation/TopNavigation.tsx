@@ -98,6 +98,7 @@ const LogoWrapper = styled.div``;
 
 const StyledBurger = styled.div<{ open: boolean }>`
     display: none;
+    /* position: absolute; */
 
     @media (max-width: 56.25em) {
         //900
@@ -132,6 +133,10 @@ const StyledBurger = styled.div<{ open: boolean }>`
     }
 `;
 
+const BurgerWrapper = styled.div`
+    /* position: relative; */
+`;
+
 const TopNavigation: FC<MenuLinksProps> = ({ show, onClose }) => {
     const [open, setOpen] = useState(false);
 
@@ -141,21 +146,24 @@ const TopNavigation: FC<MenuLinksProps> = ({ show, onClose }) => {
                 <LogoWrapper>
                     <Icon iconName="logo" />
                 </LogoWrapper>
+
                 <StyledBurger open={open} onClick={() => setOpen(!open)}>
                     <div />
                     <div />
                     <div />
                 </StyledBurger>
-                <NavigationLinks open={open}>
-                    {links.map((link, idx) => (
-                        <NavigationLink
-                            key={idx}
-                            linkText={link.text}
-                            linkTo={link.link}
-                            onClick={() => setOpen(!open)}
-                        />
-                    ))}
-                </NavigationLinks>
+                {open && (
+                    <NavigationLinks open={open}>
+                        {links.map((link, idx) => (
+                            <NavigationLink
+                                key={idx}
+                                linkText={link.text}
+                                linkTo={link.link}
+                                onClick={() => setOpen(!false)}
+                            />
+                        ))}
+                    </NavigationLinks>
+                )}
             </Base>
         </SectionsBase>
     );
