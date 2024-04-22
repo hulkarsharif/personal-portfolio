@@ -113,7 +113,7 @@ const StyledBurger = styled.div<{ open: boolean }>`
     }
 
     div {
-        width: 3.5rem;
+        width: 3rem;
         height: 0.3rem;
         background-color: #333333bc;
         border-radius: 15px;
@@ -141,7 +141,7 @@ const TopNavigation: FC<MenuLinksProps> = ({ show, onClose }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <SectionsBase id="contacts">
+        <SectionsBase>
             <Base>
                 <LogoWrapper>
                     <Icon iconName="logo" />

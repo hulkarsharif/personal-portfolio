@@ -182,7 +182,7 @@ const Footer = () => {
 
     return (
         <>
-            <SectionsBase>
+            <SectionsBase id="contacts">
                 <FooterSection>
                     <FooterWrapper>
                         <Circle>
