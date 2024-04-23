@@ -10,7 +10,7 @@ export const projects = [
         image: project1,
         name: "Cucina Italiana",
         githubLink: "https://github.com/hulkarsharif/restaurant-website-react",
-        demoLink: "http://localhost:3000/"
+        demoLink: "https://restaurant-website-my.netlify.app/"
     },
     {
         image: project2,
