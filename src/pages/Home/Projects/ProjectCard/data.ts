@@ -22,7 +22,7 @@ export const projects = [
         image: project3,
         name: "Projectify-App",
         githubLink: "https://github.com/hulkarsharif/personal-portfolio",
-        demoLink: "http://localhost:3000/"
+        demoLink: "https://projectify-app-ui-1vi7.onrender.com"
     }
 
     // {

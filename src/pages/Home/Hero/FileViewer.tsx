@@ -7,7 +7,7 @@ interface State {}
 
 class FileViewer extends React.Component<Props, State> {
     openFile() {
-        window.open(process.env.PUBLIC_URL + "/resume.pdf", "_blank");
+        window.open(process.env.PUBLIC_URL + "/hulkarResume.pdf", "_blank");
     }
 
     render() {
